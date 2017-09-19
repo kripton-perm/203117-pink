@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Михаил Шардин](https://up.htmlacademy.ru/adaptive/12/user/203117).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Ожерельев](https://up.htmlacademy.ru/adaptive/12/user/29002).
 
 ---
 
