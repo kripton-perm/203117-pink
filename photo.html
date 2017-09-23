@@ -7,7 +7,7 @@
   <body>
     <h1 class="visually-hidden">Приложение для обработки фотографий Pink</h1>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/headerlogo.svg" alt="Логотип приложения Пинк">
       </a>
       <nav class="main-nav">
@@ -15,10 +15,10 @@
         <h2 class="visually-hidden">Главное меню</h2>
         <ul class="main-nav__list site-menu">
           <li class="site-menu__item">
-            <a class="site-menu__link">Главная</a>
+            <a class="site-menu__link" href="index.html">Главная</a>
           </li>
           <li class="site-menu__item">
-            <a class="site-menu__link" href="photo.html">Фотографии</a>
+            <a class="site-menu__link">Фотографии</a>
           </li>
           <li class="site-menu__item">
             <a class="site-menu__link" href="form.html">Конкурс</a>
@@ -30,10 +30,130 @@
       </nav>
     </header>
     <main class="page-main">
-      
+      <section class="gallery">
+        <h2 class="gallery__title">Фотографии <span class="visually-hidden">наших</span> пользователей</h2>
+        <p class="gallery__intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <ul class="gallery__list">
+          <li class="gallery__item">
+            <a class="gallery__link" href="#">
+              <img class="gallery__image" src="http://placehold.it/320x137" alt="Картинка 1" width="320" height="137">
+              <div class="gallery__badge">Панорама дня</div>
+            </a>
+            <blockquote class="gallery__text comment">
+              <header class="comment__header">
+                <cite class="comment__author">Анна</cite>
+                <time class="comment__time" datetime="2017-09-23T18:04:18">5 минут назад</time>
+              </header>
+              <p class="comment__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <footer class="comment__footer">
+                <button class="comment__like" type="button">Мне нравится</button>
+                <span class="comment__rating">Нравится: 215</span>
+              </footer>
+            </blockquote>
+          </li>
+          <li class="gallery__item">
+            <a class="gallery__link" href="#">
+              <img class="gallery__image" src="http://placehold.it/280x180" alt="Картинка 2" width="280" height="180">
+            </a>
+            <blockquote class="gallery__text comment">
+              <header class="comment__header">
+                <cite class="comment__author">Левон</cite>
+                <time class="comment__time" datetime="2017-09-23T13:04:18">5 часов назад</time>
+              </header>
+              <p class="comment__text">
+                Вчера он на луну летал, сегодня в руки к нам попал.
+              </p>
+              <footer class="comment__footer">
+                <button class="comment__like" type="button">Мне нравится</button>
+                <span class="comment__rating">Нравится: 356</span>
+              </footer>
+            </blockquote>
+          </li>
+          <li class="gallery__item">
+            <a class="gallery__link" href="#">
+              <img class="gallery__image" src="http://placehold.it/280x180" alt="Картинка 3" width="280" height="180">
+            </a>
+            <blockquote class="gallery__text comment">
+              <header class="comment__header">
+                <cite class="comment__author">Антон</cite>
+                <time class="comment__time" datetime="2017-09-23T06:04:18">12 часов назад</time>
+              </header>
+              <p class="comment__text">Соседи будут рады!</p>
+              <footer class="comment__footer">
+                <button class="comment__like" type="button">Мне нравится</button>
+                <span class="comment__rating">Нравится: 666</span>
+              </footer>
+            </blockquote>
+          </li>
+          <li class="gallery__item">
+            <a class="gallery__link" href="#">
+              <img class="gallery__image" src="http://placehold.it/280x180" alt="Картинка 4" width="280" height="180">
+            </a>
+            <blockquote class="gallery__text comment">
+              <header class="comment__header">
+                <cite class="comment__author">Борис</cite>
+                <time class="comment__time" datetime="2017-09-22T22:04:18">20 часов назад</time>
+              </header>
+              <p class="comment__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <footer class="comment__footer">
+                <button class="comment__like" type="button">Мне нравится</button>
+                <span class="comment__rating">Нравится: 215</span>
+              </footer>
+            </blockquote>
+          </li>
+          <li class="gallery__item">
+            <a class="gallery__link" href="#">
+              <img class="gallery__image" src="http://placehold.it/280x180" alt="Картинка 5" width="280" height="180">
+            </a>
+            <blockquote class="gallery__text comment">
+              <header class="comment__header">
+                <cite class="comment__author">Сергей</cite>
+                <time class="comment__time" datetime="2017-09-22T17:04:18">25 часов назад</time>
+              </header>
+              <p class="comment__text">Самая кубанская в мире!</p>
+              <footer class="comment__footer">
+                <button class="comment__like" type="button">Мне нравится</button>
+                <span class="comment__rating">Нравится: 4</span>
+              </footer>
+            </blockquote>
+          </li>
+          <li class="gallery__item">
+            <a class="gallery__link" href="#">
+              <img class="gallery__image" src="http://placehold.it/280x180" alt="Картинка 6" width="280" height="180">
+            </a>
+            <blockquote class="gallery__text comment">
+              <header class="comment__header">
+                <cite class="comment__author">Максим</cite>
+                <time class="comment__time" datetime="2017-09-22T02:04:18">40 часов назад</time>
+              </header>
+              <p class="comment__text">Где снег-то?</p>
+              <footer class="comment__footer">
+                <button class="comment__like" type="button">Мне нравится</button>
+                <span class="comment__rating">Нравится: 150</span>
+              </footer>
+            </blockquote>
+          </li>
+          <li class="gallery__item">
+            <a class="gallery__link" href="#">
+              <img class="gallery__image" src="http://placehold.it/280x180" alt="Картинка 7" width="280" height="180">
+            </a>
+            <blockquote class="gallery__text comment">
+              <header class="comment__header">
+                <cite class="comment__author">Надежда</cite>
+                <time class="comment__time" datetime="2017-09-21T21:04:18">45 часов назад</time>
+              </header>
+              <p class="comment__text">Всем GM и взаимные лайки!</p>
+              <footer class="comment__footer">
+                <button class="comment__like" type="button">Мне нравится</button>
+                <span class="comment__rating">Нравится: 2560</span>
+              </footer>
+            </blockquote>
+          </li>
+        </ul>
+      </section>
     </main>
     <footer class="page-footer">
-      <a href="" class="page-footer__logo">
+      <a class="page-footer__logo" href="index.html">
         <img class="page-footer__logo-image" src="img/footerlogo.svg" alt="Логотип приложения Пинк">
       </a>
       <section class="page-footer__social social">
