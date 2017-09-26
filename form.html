@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <h1 class="visually-hidden">Приложение для обработки фотографий Pink</h1>
@@ -106,14 +107,14 @@
               </li>
               <li class="form__item form__item--radio">
                 <input class="form__input form__input--radio" type="radio" name="app" value="windows" id="windows">
-                <label for="windows">Windows Phone</label>
+                <label class="form__label" for="windows">Windows Phone</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--textarea">
             <legend class="visually-hidden">Ваш комментарий</legend>
             <p class="form__comment">
-              <label for="comment">Опишите свои эмоции</label>
+              <label class="form__label" for="comment">Опишите свои эмоции</label>
               <textarea class="form__textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </p>
           </fieldset>
@@ -140,9 +141,9 @@
           </li>
         </ul>
       </section>
-      <div class="page-footer__copyright">
-        <p class="page-footer__text">Разработано</p>
-        <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
     <section class="modal modal--success">
