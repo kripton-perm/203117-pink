@@ -33,21 +33,21 @@
     <main class="page-main">
       <section class="contest">
         <h2 class="contest__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
-        <p class="contest__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-        <form action="https://echo.htmlacademy.ru" class="contest__form form">
+        <p class="contest__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <form class="contest__form form" action="https://echo.htmlacademy.ru">
           <fieldset class="form__fieldset form__fieldset--text">
             <legend class="visually-hidden">Персональные данные</legend>
             <ul class="form__list form__list--text">
               <li class="form__item form__item--text">
-                <label class="form__label" for="surname">Фамилия:</label>
+                <label class="form__label form__label--text" for="surname">Фамилия:</label>
                 <input class="form__input form__input--text" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
               </li>
               <li class="form__item form__item--text">
-                <label class="form__label" for="name">Имя:</label>
+                <label class="form__label form__label--text" for="name">Имя:</label>
                 <input class="form__input form__input--text" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
               </li>
               <li class="form__item form__item--text">
-                <label class="form__label" for="patronymic">Отчество:</label>
+                <label class="form__label form__label--text" for="patronymic">Отчество:</label>
                 <input class="form__input form__input--text" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
               </li>
             </ul>
@@ -85,11 +85,11 @@
             <legend class="visually-hidden">Контактные данные</legend>
             <ul class="form__list form__list--text">
               <li class="form__item form__item--text">
-                <label class="form__label" for="phone">Номер телефона</label>
+                <label class="form__label  form__label--text" for="phone">Номер телефона</label>
                 <input class="form__input form__input--text" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
               </li>
               <li class="form__item form__item--text">
-                <label class="form__label" for="email">Адрес почты</label>
+                <label class="form__label  form__label--text" for="email">Адрес почты</label>
                 <input class="form__input form__input--text" type="email" id="email" placeholder="Введите почту *">
               </li>
             </ul>
@@ -114,7 +114,7 @@
           <fieldset class="form__fieldset form__fieldset--textarea">
             <legend class="visually-hidden">Ваш комментарий</legend>
             <p class="form__comment">
-              <label class="form__label" for="comment">Опишите свои эмоции</label>
+              <label class="form__label form__label--text form__label--textarea" for="comment">Опишите свои эмоции</label>
               <textarea class="form__textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </p>
           </fieldset>
