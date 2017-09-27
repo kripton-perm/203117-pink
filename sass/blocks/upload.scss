@@ -38,19 +38,16 @@
   &--upload {
     color: $pink;
   }
-  
   &--upload:hover,
   &--upload:focus {
     background-color: $pink;
     color: #ffffff;
   }
-    
   &--upload:active {
     background-color: $pink;
     color: #ffffff;
     opacity: 0.3;
-  }
-    
+  } 
   &--reset {
     border-color: #283645;
     color: #283645;
