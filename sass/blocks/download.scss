@@ -16,13 +16,13 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
-  
+
   &:hover,
   &:focus {
     background-color: #ffffff;
     color: $pink;
   }
-  
+
   &:active {
     background-color: #ffffff;
     color: rgba($pink, 0.3);
