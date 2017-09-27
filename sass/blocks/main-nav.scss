@@ -1,0 +1,6 @@
+.main-nav {
+  background-color: transparent;
+}
+.main-nav__list {
+  @include list-reset;
+}
