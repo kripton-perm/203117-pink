@@ -2,6 +2,7 @@
   background-color: transparent;
   @include list-reset;
 }
+
 .site-menu__link {
   color: #ffffff;
   text-decoration: none;
@@ -9,10 +10,12 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 32px;
+  
   &[href]:hover,
   &[href]:focus {
     color: $pink;
   }
+  
   &[href]:active {
     color: #ffffff;
     opacity: 0.3;

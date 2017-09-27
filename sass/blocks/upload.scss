@@ -2,6 +2,7 @@
   background-color: #f2f2f2;
   padding-bottom: 40px;
 }
+
 .upload__intro {
   margin: 0;
   padding: 0;
@@ -16,6 +17,7 @@
   font-weight: 400;
   line-height: 30px;
 }
+
 .upload__picture {
   text-align: center;
   margin: 0;
@@ -23,13 +25,16 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 .upload__form {
   margin-top: 20px;
 }
+
 .upload__controls {
   @include list-reset;
   margin-bottom: 40px;
 }
+
 .upload__button {
   background-color: #ffffff;
   border-radius: 30px;
@@ -38,26 +43,31 @@
   &--upload {
     color: $pink;
   }
+  
   &--upload:hover,
   &--upload:focus {
     background-color: $pink;
     color: #ffffff;
   }
+    
   &--upload:active {
     background-color: $pink;
     color: #ffffff;
     opacity: 0.3;
   }
+    
   &--reset {
     border-color: #283645;
     color: #283645;
     opacity: 0.1;
   }
+    
   &--reset:hover,
   &--reset:focus {
     color: #283645;
     opacity: 0.3;
   }
+    
   &--reset:active {
     background-color: #283645;
     color: #ffffff;

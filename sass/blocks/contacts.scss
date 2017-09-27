@@ -2,6 +2,7 @@
   background-color: #ffffff;
   padding-top: 50px;
 }
+
 .contacts__intro {
   margin: 0;
   padding: 0;
@@ -12,13 +13,16 @@
   line-height: 30px;
   margin-bottom: 30px;
 }
+
 .contacts__list {
   @include list-reset;
   text-align: center;
 }
+
 .contacts__item {
   margin-bottom: 20px;
 }
+
 .contacts__title {
   color: #283645;
   font-size: 18px;
@@ -26,6 +30,7 @@
   margin: 0;
   padding: 0;
 }
+
 .contacts__text {
   color: $pink;
   font-size: 24px;
@@ -34,6 +39,7 @@
   margin: 0;
   padding: 0;
 }
+
 .contacts__phone {
   color: $pink;
   text-decoration: none;
@@ -41,17 +47,20 @@
   font-weight: 300;
   line-height: 30px;
 }
+
 .contacts__email {
   color: $pink;
   text-decoration: none;
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;
+  
   &:hover,
   &:focus {
     text-decoration: underline;
     color: #283645;
   }
+  
   &:active {
     color: #283645;
     opacity: 0.3;

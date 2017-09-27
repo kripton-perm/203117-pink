@@ -1,19 +1,23 @@
 .form {
   background-color: #ffffff;
 }
+
 .form__fieldset {
   background-color: transparent;
   border: 0;
   padding-top: 30px;
   padding-bottom: 30px;
+  
   &--checkbox,
   &--radio {
     background-color: #f3f3f3;
   }
 }
+
 .form__list {
   @include list-reset;
 }
+
 .form__label {
   &--text {
     font-size: 14px;
@@ -23,6 +27,7 @@
     display: block;
     text-transform: uppercase;
   }
+  
   &--checkbox,
   &--radio {
     font-size: 18px;
@@ -30,10 +35,12 @@
     font-weight: 400;
     color: #283645;
   }
+  
   &--textarea {
     text-align: center;
   }
 }
+
 .form__legend {
   color: $pink;
   text-transform: uppercase;
@@ -44,6 +51,7 @@
   padding-left: 25px;
   padding-right: 25px;
 }
+
 .form__input {
   &--text {
     font: inherit;
@@ -51,13 +59,16 @@
     border: 2px solid #e5e5e5;
     outline: none;
   }
+  
   &--text:hover {
     border-color: #283645;
     }
+    
   &--text:active,
   &--text:focus {
     border-color: $pink;
   }
+    
   &--text::placeholder {
     color: #283645;
     font-size: 18px;
@@ -65,6 +76,7 @@
     font-weight: 400;
     }
 }
+
 .form__textarea {
   font: inherit;
   box-sizing: border-box;
@@ -72,13 +84,16 @@
   margin-right: 20px;
   border: 2px solid #e5e5e5;
   outline: none;
+  
   &:hover {
     border-color: #283645;
   }
+  
   &:active,
   &:focus {
     border-color: $pink;
   }
+  
   &::placeholder {
     color: #283645;
     font-size: 18px;
@@ -86,25 +101,30 @@
     font-weight: 400;
   }
 }
+
 .form__button {
   background-color: #2aab6d;
   border-color: #2aab6d;
   cursor: pointer;
+  
   &:hover,
   &:focus {
     background-color: #1c9b5e;
     border-color: #1c9b5e;
   }
+  
   &:active {
     background-color: #1c9b5e;
     border-color: #1c9b5e;
     color: rgba(#ffffff, 0.3);
   }
+  
   &:disabled {
     background-color: #e5e5e5;
     border-color: #e5e5e5;
   }
 }
+
 .form__note {
   text-align: center;
   font-size: 14px;
@@ -112,6 +132,7 @@
   font-weight: 400;
   color: #283645;
   text-transform: uppercase;
+  
   span {
     color: $pink;
   }

@@ -4,6 +4,7 @@
   background-position: center top;
   background-repeat: no-repeat;
 }
+
 .gallery__title {
   background-color: transparent;
   color: #ffffff;
@@ -17,6 +18,7 @@
   padding-right: 20px;
   margin: 0;
 }
+
 .gallery__intro {
   background-color: #ffffff;
   text-align: center;
@@ -29,10 +31,12 @@
   padding-right: 35px;
   padding-bottom: 50px;
 }
+
 .gallery__list {
   @include list-reset;
   background-color: #ffffff;
 }
+
 .gallery__link {
   position: relative;
   text-decoration: none;
@@ -41,6 +45,7 @@
   text-align: center;
   display: block;
 }
+
 .gallery__badge {
   position: absolute;
   top: 0;
@@ -50,6 +55,7 @@
   display: inline-block;
   padding: 10px 20px;
 }
+
 .gallery__text {
   background-color: #f3f3f3;
   margin: 0;
