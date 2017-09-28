@@ -133,7 +133,7 @@
   color: $blue;
   text-transform: uppercase;
 
-  &:before {
+  &::before {
     content: "* ";
     color: $pink;
   }
