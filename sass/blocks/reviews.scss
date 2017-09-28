@@ -1,5 +1,5 @@
 .reviews {
-  background-color: #ffffff;
+  background-color: $white;
   margin-top: -40px;
   padding-top: 50px;
   padding-left: 25px;
@@ -14,7 +14,7 @@
 
 .reviews__name {
   display: block;
-  color: #000000;
+  color: $black;
   font-style: normal;
   text-align: center;
   font-size: 18px;
@@ -23,7 +23,7 @@
 }
 
 .reviews__text {
-  color: #283645;
+  color: $blue;
   text-align: center;
   font-size: 14px;
   font-weight: 400;

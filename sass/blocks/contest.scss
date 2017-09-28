@@ -12,13 +12,13 @@
 }
 
 .contest__intro {
-  background-color: #ffffff;
-  color: #283645;
+  background-color: $white;;
+  color: $blue;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
   margin: 0;
-  padding: 0;
+  padding-bottom: 0;
   padding-top: 55px;
   padding-left: 25px;
   padding-right: 25px;
@@ -26,6 +26,6 @@
 }
 
 .contest__form {
-  background-color: #ffffff;
-  color: #283645;
+  background-color: $white;
+  color: $blue;
 }

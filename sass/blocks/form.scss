@@ -1,5 +1,5 @@
 .form {
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .form__fieldset {
@@ -10,7 +10,7 @@
 
   &--checkbox,
   &--radio {
-    background-color: #f3f3f3;
+    background-color: $grey;
   }
 }
 
@@ -33,7 +33,7 @@
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
-    color: #283645;
+    color: $blue;
   }
 
   &--textarea {
@@ -56,12 +56,12 @@
   &--text {
     font: inherit;
     box-sizing: border-box;
-    border: 2px solid #e5e5e5;
+    border: 2px solid $greyDark;
     outline: none;
   }
 
   &--text:hover {
-    border-color: #283645;
+    border-color: $blue;
   }
 
   &--text:active,
@@ -70,7 +70,7 @@
   }
 
   &--text::placeholder {
-    color: #283645;
+    color: $blue;
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
@@ -82,11 +82,11 @@
   box-sizing: border-box;
   margin-left: 20px;
   margin-right: 20px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid $greyDark;
   outline: none;
 
   &:hover {
-    border-color: #283645;
+    border-color: $blue;
   }
 
   &:active,
@@ -95,7 +95,7 @@
   }
 
   &::placeholder {
-    color: #283645;
+    color: $blue;
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
@@ -103,25 +103,25 @@
 }
 
 .form__button {
-  background-color: #2aab6d;
-  border-color: #2aab6d;
+  background-color: $greenLight;
+  border-color: $greenLight;
   cursor: pointer;
 
   &:hover,
   &:focus {
-    background-color: #1c9b5e;
-    border-color: #1c9b5e;
+    background-color: $green;
+    border-color: $green;
   }
 
   &:active {
-    background-color: #1c9b5e;
-    border-color: #1c9b5e;
-    color: rgba(#ffffff, 0.3);
+    background-color: $green;
+    border-color: $green;
+    color: rgba($white, 0.3);
   }
 
   &:disabled {
-    background-color: #e5e5e5;
-    border-color: #e5e5e5;
+    background-color: $greyDark;
+    border-color: $greyDark;
   }
 }
 
@@ -130,10 +130,11 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
-  color: #283645;
+  color: $blue;
   text-transform: uppercase;
 
-  span {
+  &:before {
+    content: "* ";
     color: $pink;
   }
 }

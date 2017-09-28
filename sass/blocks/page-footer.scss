@@ -1,11 +1,7 @@
 .page-footer {
   padding-top: 40px;
   text-align: center;
-  background-color: #ffffff;
-
-  &--no {
-    display: none;
-  }
+  background-color: $white;
 }
 
 .page-footer__logo-image {

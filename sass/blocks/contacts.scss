@@ -1,12 +1,12 @@
 .contacts {
-  background-color: #ffffff;
+  background-color: $white;
   padding-top: 50px;
 }
 
 .contacts__intro {
   margin: 0;
   padding: 0;
-  color: #283645;
+  color: $blue;
   text-align: center;
   font-size: 24px;
   font-weight: 300;
@@ -24,7 +24,7 @@
 }
 
 .contacts__title {
-  color: #283645;
+  color: $blue;
   font-size: 18px;
   font-weight: 700;
   margin: 0;
@@ -58,11 +58,11 @@
   &:hover,
   &:focus {
     text-decoration: underline;
-    color: #283645;
+    color: $blue;
   }
 
   &:active {
-    color: #283645;
+    color: $blue;
     opacity: 0.3;
   }
 }

@@ -1,5 +1,5 @@
 .price {
-  background-color: #f3f3f3;
+  background-color: $grey;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -9,14 +9,14 @@
 }
 
 .price__item {
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .price__title {
   margin: 0;
   padding: 0;
-  background-color: #243344;
-  color: #ffffff;
+  background-color: $blueDarker;
+  color: $white;
   text-align: center;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .price__table {
-  color: #283645;
+  color: $blue;
 }
 
 .price__option {

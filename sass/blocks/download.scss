@@ -1,17 +1,17 @@
 .download {
-  background-color: #17212e;
-  color: #ffffff;
+  background-color: $blueDark;
+  color: $white;
   padding: 30px 20px 35px 20px;
 }
 
 .download__button {
   background-color: transparent;
-  border-color: #ffffff;
+  border-color: $white;
   border-width: 3px;
   border-radius: 20px;
   padding: 15px;
   text-align: center;
-  color: #ffffff;
+  color: $white;
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
@@ -19,12 +19,12 @@
 
   &:hover,
   &:focus {
-    background-color: #ffffff;
+    background-color: $white;
     color: $pink;
   }
 
   &:active {
-    background-color: #ffffff;
+    background-color: $white;
     color: rgba($pink, 0.3);
   }
 }
@@ -35,7 +35,7 @@
 
 .download__link {
   display: block;
-  color: #ffffff;
+  color: $white;
   text-decoration: none;
   padding-top: 40px;
 }

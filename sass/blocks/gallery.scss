@@ -1,13 +1,6 @@
-.gallery {
-  background-color: transparent;
-  color: #000000;
-  background-position: center top;
-  background-repeat: no-repeat;
-}
-
 .gallery__title {
   background-color: transparent;
-  color: #ffffff;
+  color: $white;
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;
@@ -20,7 +13,8 @@
 }
 
 .gallery__intro {
-  background-color: #ffffff;
+  background-color: $white;
+  color: $black;
   text-align: center;
   font-size: 14px;
   font-weight: 400;
@@ -34,13 +28,13 @@
 
 .gallery__list {
   @include list-reset;
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .gallery__link {
   position: relative;
   text-decoration: none;
-  color: #ffffff;
+  color: $white;
   text-transform: uppercase;
   text-align: center;
   display: block;
@@ -49,7 +43,7 @@
 .gallery__badge {
   position: absolute;
   top: 0;
-  background-color: #d32456;
+  background-color: $pinkLight;
   font-size: 12px;
   font-weight: 700;
   display: inline-block;
@@ -57,7 +51,7 @@
 }
 
 .gallery__text {
-  background-color: #f3f3f3;
+  background-color: $grey;
   margin: 0;
   margin-left: 20px;
   margin-right: 20px;

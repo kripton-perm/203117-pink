@@ -1,5 +1,5 @@
 .modal {
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .modal__title {
@@ -7,7 +7,7 @@
   font-weight: 700;
   line-height: 30px;
   text-align: center;
-  color: #000000;
+  color: $black;
 }
 
 .modal__message {
@@ -15,11 +15,11 @@
   font-weight: 400;
   line-height: 20px;
   text-align: center;
-  color: #283645;
+  color: $blue;
 }
 
 .modal__close {
-  background-color: #2aab6d;
-  border-color: #2aab6d;
+  background-color: $greenLight;
+  border-color: $greenLight;
   cursor: pointer;
 }
