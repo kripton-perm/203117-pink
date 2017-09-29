@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <h1 class="visually-hidden">Приложение для обработки фотографий Pink</h1>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/75x22" alt="Логотип приложения Пинк" width="75" height="22">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения Пинк" width="75" height="23">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle">Закрыть меню</button>
@@ -18,7 +19,7 @@
             <a class="site-menu__link" href="index.html">Главная</a>
           </li>
           <li class="site-menu__item">
-            <a class="site-menu__link">Фотографии</a>
+            <a class="site-menu__link site-menu__link--current">Фотографии</a>
           </li>
           <li class="site-menu__item">
             <a class="site-menu__link" href="form.html">Конкурс</a>
@@ -36,7 +37,7 @@
         <ul class="gallery__list">
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__image" src="http://placehold.it/320x137" alt="Картинка 1" width="320" height="137">
+              <img class="gallery__image" src="img/panorama-mobile@1x.jpg" alt="Картинка 1" width="320" height="137">
               <div class="gallery__badge">Панорама дня</div>
             </a>
             <blockquote class="gallery__text comment">
@@ -46,14 +47,16 @@
               </header>
               <p class="comment__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
               <footer class="comment__footer">
-                <button class="comment__like" type="button">Мне нравится</button>
-                <span class="comment__rating">Нравится: 215</span>
+                <button class="comment__like like" type="button">
+                  <span class="like__text"><span class="visually-hidden">Мне</span> Нравится:</span>
+                  <span class="like__amount">215</span>
+                </button>
               </footer>
             </blockquote>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__image" src="http://placehold.it/280x180" alt="Картинка 2" width="280" height="180">
+              <img class="gallery__image" src="img/photo-car-mobile@1x.jpg" alt="Картинка 2" width="280" height="180">
             </a>
             <blockquote class="gallery__text comment">
               <header class="comment__header">
@@ -64,14 +67,16 @@
                 Вчера он на луну летал, сегодня в руки к нам попал.
               </p>
               <footer class="comment__footer">
-                <button class="comment__like" type="button">Мне нравится</button>
-                <span class="comment__rating">Нравится: 356</span>
+                <button class="comment__like like" type="button">
+                  <span class="like__text"><span class="visually-hidden">Мне</span> Нравится:</span>
+                  <span class="like__amount">356</span>
+                </button>
               </footer>
             </blockquote>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__image" src="http://placehold.it/280x180" alt="Картинка 3" width="280" height="180">
+              <img class="gallery__image" src="img/photo-drumset-mobile@1x.jpg" alt="Картинка 3" width="280" height="180">
             </a>
             <blockquote class="gallery__text comment">
               <header class="comment__header">
@@ -80,14 +85,16 @@
               </header>
               <p class="comment__text">Соседи будут рады!</p>
               <footer class="comment__footer">
-                <button class="comment__like" type="button">Мне нравится</button>
-                <span class="comment__rating">Нравится: 666</span>
+                <button class="comment__like like" type="button">
+                  <span class="like__text"><span class="visually-hidden">Мне</span> Нравится:</span>
+                  <span class="like__amount">666</span>
+                </button>
               </footer>
             </blockquote>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__image" src="http://placehold.it/280x180" alt="Картинка 4" width="280" height="180">
+              <img class="gallery__image" src="img/photo-window-mobile@1x.jpg" alt="Картинка 4" width="280" height="180">
             </a>
             <blockquote class="gallery__text comment">
               <header class="comment__header">
@@ -96,14 +103,16 @@
               </header>
               <p class="comment__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <footer class="comment__footer">
-                <button class="comment__like" type="button">Мне нравится</button>
-                <span class="comment__rating">Нравится: 215</span>
+                <button class="comment__like like" type="button">
+                  <span class="like__text"><span class="visually-hidden">Мне</span> Нравится:</span>
+                  <span class="like__amount">215</span>
+                </button>
               </footer>
             </blockquote>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__image" src="http://placehold.it/280x180" alt="Картинка 5" width="280" height="180">
+              <img class="gallery__image" src="img/photo-fair-mobile@1x.jpg" alt="Картинка 5" width="280" height="180">
             </a>
             <blockquote class="gallery__text comment">
               <header class="comment__header">
@@ -112,14 +121,16 @@
               </header>
               <p class="comment__text">Самая кубанская в мире!</p>
               <footer class="comment__footer">
-                <button class="comment__like" type="button">Мне нравится</button>
-                <span class="comment__rating">Нравится: 4</span>
+                <button class="comment__like like" type="button">
+                  <span class="like__text"><span class="visually-hidden">Мне</span> Нравится:</span>
+                  <span class="like__amount">4</span>
+                </button>
               </footer>
             </blockquote>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__image" src="http://placehold.it/280x180" alt="Картинка 6" width="280" height="180">
+              <img class="gallery__image" src="img/photo-pov-mobile@1x.jpg" alt="Картинка 6" width="280" height="180">
             </a>
             <blockquote class="gallery__text comment">
               <header class="comment__header">
@@ -128,14 +139,16 @@
               </header>
               <p class="comment__text">Где снег-то?</p>
               <footer class="comment__footer">
-                <button class="comment__like" type="button">Мне нравится</button>
-                <span class="comment__rating">Нравится: 150</span>
+                <button class="comment__like like" type="button">
+                  <span class="like__text"><span class="visually-hidden">Мне</span> Нравится:</span>
+                  <span class="like__amount">150</span>
+                </button>
               </footer>
             </blockquote>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__image" src="http://placehold.it/280x180" alt="Картинка 7" width="280" height="180">
+              <img class="gallery__image" src="img/photo-wing-mobile@1x.jpg" alt="Картинка 7" width="280" height="180">
             </a>
             <blockquote class="gallery__text comment">
               <header class="comment__header">
@@ -144,8 +157,10 @@
               </header>
               <p class="comment__text">Всем GM и взаимные лайки!</p>
               <footer class="comment__footer">
-                <button class="comment__like" type="button">Мне нравится</button>
-                <span class="comment__rating">Нравится: 2560</span>
+                <button class="comment__like like" type="button">
+                  <span class="like__text"><span class="visually-hidden">Мне</span> Нравится:</span>
+                  <span class="like__amount">2560</span>
+                </button>
               </footer>
             </blockquote>
           </li>
@@ -155,7 +170,7 @@
         <h2 class="visually-hidden">Загрузите свою фотографию</h2>
         <p class="upload__intro">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
         <p class="upload__picture">
-          <img class="upload__image" src="http://placehold.it/280x374" alt="Фотография для обработки" width="280" height="374">
+          <img class="upload__image" src="img/photo-road-mobile@1x.jpg" alt="Фотография для обработки" width="280" height="374">
         </p>
         <form class="upload__form" action="https://echo.htmlacademy.ru" method="post">
           <ul class="upload__controls controls">
@@ -172,14 +187,14 @@
               <input class="controls__range" type="range">
             </li>
           </ul>
-          <button class="upload__button button" type="submit">Запостить</button>
-          <button class="upload__button button" type="reset" disabled>Отмена</button>
+          <button class="upload__button upload__button--upload button" type="submit">Запостить</button>
+          <button class="upload__button upload__button--reset button" type="reset">Отмена</button>
         </form>
       </section>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="http://placehold.it/147x40" alt="Логотип приложения Пинк" width="147" height="40">
+        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Логотип приложения Пинк" width="147" height="41">
       </a>
       <section class="page-footer__social social">
         <h2 class="visually-hidden">Ищите нас в социальных сетях</h2>
@@ -195,9 +210,9 @@
           </li>
         </ul>
       </section>
-      <div class="page-footer__copyright">
-        <p class="page-footer__text">Разработано</p>
-        <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
   </body>

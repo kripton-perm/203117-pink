@@ -1,0 +1,140 @@
+.form {
+  background-color: $white;
+}
+
+.form__fieldset {
+  background-color: transparent;
+  border: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &--checkbox,
+  &--radio {
+    background-color: $grey;
+  }
+}
+
+.form__list {
+  @include list-reset;
+}
+
+.form__label {
+  &--text {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $pink;
+    display: block;
+    text-transform: uppercase;
+  }
+
+  &--checkbox,
+  &--radio {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $blue;
+  }
+
+  &--textarea {
+    text-align: center;
+  }
+}
+
+.form__legend {
+  color: $pink;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.form__input {
+  &--text {
+    font: inherit;
+    box-sizing: border-box;
+    border: 2px solid $greyDark;
+    outline: none;
+  }
+
+  &--text:hover {
+    border-color: $blue;
+  }
+
+  &--text:active,
+  &--text:focus {
+    border-color: $pink;
+  }
+
+  &--text::placeholder {
+    color: $blue;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+}
+
+.form__textarea {
+  font: inherit;
+  box-sizing: border-box;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 2px solid $greyDark;
+  outline: none;
+
+  &:hover {
+    border-color: $blue;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $pink;
+  }
+
+  &::placeholder {
+    color: $blue;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+}
+
+.form__button {
+  background-color: $greenLight;
+  border-color: $greenLight;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $green;
+    border-color: $green;
+  }
+
+  &:active {
+    background-color: $green;
+    border-color: $green;
+    color: rgba($white, 0.3);
+  }
+
+  &:disabled {
+    background-color: $greyDark;
+    border-color: $greyDark;
+  }
+}
+
+.form__note {
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $blue;
+  text-transform: uppercase;
+
+  &::before {
+    content: "* ";
+    color: $pink;
+  }
+}

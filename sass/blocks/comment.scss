@@ -1,0 +1,32 @@
+.comment {
+  background-color: $grey;
+  color: $blue;
+}
+
+.comment__author {
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.comment__time {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  &::before {
+    content: "(";
+  }
+
+  &::after {
+    content: ")";
+  }
+}
+
+.comment__text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}

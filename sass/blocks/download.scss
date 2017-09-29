@@ -1,0 +1,50 @@
+.download {
+  background-color: $blueDark;
+  color: $white;
+  padding: 30px 20px 35px 20px;
+}
+
+.download__button {
+  background-color: transparent;
+  border-color: $white;
+  border-width: 3px;
+  border-radius: 20px;
+  padding: 15px;
+  text-align: center;
+  color: $white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $pink;
+  }
+
+  &:active {
+    background-color: $white;
+    color: rgba($pink, 0.3);
+  }
+}
+
+.download__list {
+  @include list-reset;
+}
+
+.download__link {
+  display: block;
+  color: $white;
+  text-decoration: none;
+  padding-top: 40px;
+}
+
+.download__description {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+}

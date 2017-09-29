@@ -1,0 +1,30 @@
+.site-menu {
+  background-color: transparent;
+
+  @include list-reset;
+}
+
+.site-menu__link {
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+
+  &:hover,
+  &:focus {
+    color: $pink;
+  }
+
+  &:active {
+    color: $white;
+    opacity: 0.3;
+  }
+
+  &--current:hover,
+  &--current:focus,
+  &--current:active {
+    color: $white;
+  }
+}

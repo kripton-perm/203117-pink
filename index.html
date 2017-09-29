@@ -3,19 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <h1 class="visually-hidden">Приложение для обработки фотографий Pink</h1>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/75x22" alt="Логотип приложения Пинк" width="75" height="22">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения Пинк" width="75" height="23">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle">Закрыть меню</button>
         <h2 class="visually-hidden">Главное меню</h2>
         <ul class="main-nav__list site-menu">
           <li class="site-menu__item">
-            <a class="site-menu__link">Главная</a>
+            <a class="site-menu__link site-menu__link--current">Главная</a>
           </li>
           <li class="site-menu__item">
             <a class="site-menu__link" href="photo.html">Фотографии</a>
@@ -29,10 +30,10 @@
         </ul>
       </nav>
     </header>
-    <main class="page-main">
+    <main class="page-main page-main--index">
       <section class="download">
         <h2 class="visually-hidden">Скачайте наше приложение</h2>
-        <a class="download__button button" href="#">Скачать приложение</a>
+        <a class="button download__button" href="#">Скачать приложение</a>
         <ul class="download__list">
           <li class="download__item">
             <a class="download__link download__link--apple" href="#">Apple</a>
@@ -52,7 +53,7 @@
         <h2 class="visually-hidden">Преимущества нашего приложения</h2>
         <div class="features__intro">
           <p class="features__ask">Устали от серости мегаполиса?</p>
-          <p class="answer">Нам есть, что вам предложить!</p>
+          <p class="features__answer">Нам есть, что вам предложить!</p>
         </div>
         <ul class="features__list">
           <li class="features__item">
@@ -102,15 +103,15 @@
             <table class="price__table">
               <tr>
                 <td class="price__option">Розовый фильтр</td>
-                <td class="access">Доступен</td>
+                <td class="price__access">Доступен</td>
               </tr>
               <tr>
                 <td class="price__option">Смайлики</td>
-                <td class="access">Не доступны</td>
+                <td class="price__access">Не доступны</td>
               </tr>
               <tr>
                 <td class="price__option">Комментарии</td>
-                <td class="access">Не доступны</td>
+                <td class="price__access">Не доступны</td>
               </tr>
             </table>
           </li>
@@ -122,15 +123,15 @@
             <table class="price__table">
               <tr>
                 <td class="price__option">Розовый фильтр</td>
-                <td class="access">Доступен</td>
+                <td class="price__access">Доступен</td>
               </tr>
               <tr>
                 <td class="price__option">Смайлики</td>
-                <td class="access">Доступны</td>
+                <td class="price__access">Доступны</td>
               </tr>
               <tr>
                 <td class="price__option">Комментарии</td>
-                <td class="access">Не доступны</td>
+                <td class="price__access">Не доступны</td>
               </tr>
             </table>
           </li>
@@ -183,32 +184,9 @@
           </li>
         </ul>
         <p class="contacts__map map">
-          <img class="map__image" src="http://placehold.it/320x645" alt="Мы находимся по адресу ул. Большая Конюшенная, 19/8" width="320" height="645">
+          <img class="map__image" src="img/bg-map-mobile@1x.png" alt="Мы находимся по адресу ул. Большая Конюшенная, 19/8" width="320" height="421">
         </p>
       </section>
     </main>
-    <footer class="page-footer page-footer--no">
-      <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="http://placehold.it/147x40" alt="Логотип приложения Пинк" width="147" height="40">
-      </a>
-      <section class="page-footer__social social">
-        <h2 class="visually-hidden">Ищите нас в социальных сетях</h2>
-        <ul class="social__list">
-          <li class="social__item social__item--twitter">
-            <a href="" class="social__link">Мы в Твиттере</a>
-          </li>
-          <li class="social__item social__item--facebook">
-            <a href="" class="social__link">Мы в Фейсбуке</a>
-          </li>
-          <li class="social__item social__item--youtube">
-            <a href="" class="social__link">Мы на YouTube</a>
-          </li>
-        </ul>
-      </section>
-      <div class="page-footer__copyright">
-        <p class="page-footer__text">Разработано</p>
-        <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
-    </footer>
   </body>
 </html>

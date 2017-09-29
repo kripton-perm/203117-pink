@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <h1 class="visually-hidden">Приложение для обработки фотографий Pink</h1>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/75x22" alt="Логотип приложения Пинк" width="75" height="22">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения Пинк" width="75" height="23">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle">Закрыть меню</button>
@@ -21,7 +22,7 @@
             <a class="site-menu__link" href="photo.html">Фотографии</a>
           </li>
           <li class="site-menu__item">
-            <a class="site-menu__link">Конкурс</a>
+            <a class="site-menu__link site-menu__link--current">Конкурс</a>
           </li>
           <li class="site-menu__item">
             <a class="site-menu__link" href="#">HTML Academy</a>
@@ -32,21 +33,21 @@
     <main class="page-main">
       <section class="contest">
         <h2 class="contest__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
-        <p class="contest__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-        <form action="https://echo.htmlacademy.ru" class="contest__form form">
+        <p class="contest__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <form class="contest__form form" action="https://echo.htmlacademy.ru">
           <fieldset class="form__fieldset form__fieldset--text">
             <legend class="visually-hidden">Персональные данные</legend>
             <ul class="form__list form__list--text">
               <li class="form__item form__item--text">
-                <label class="form__label" for="surname">Фамилия:</label>
+                <label class="form__label form__label--text" for="surname">Фамилия:</label>
                 <input class="form__input form__input--text" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
               </li>
               <li class="form__item form__item--text">
-                <label class="form__label" for="name">Имя:</label>
+                <label class="form__label form__label--text" for="name">Имя:</label>
                 <input class="form__input form__input--text" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
               </li>
               <li class="form__item form__item--text">
-                <label class="form__label" for="patronymic">Отчество:</label>
+                <label class="form__label form__label--text" for="patronymic">Отчество:</label>
                 <input class="form__input form__input--text" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
               </li>
             </ul>
@@ -84,11 +85,11 @@
             <legend class="visually-hidden">Контактные данные</legend>
             <ul class="form__list form__list--text">
               <li class="form__item form__item--text">
-                <label class="form__label" for="phone">Номер телефона</label>
+                <label class="form__label form__label--text" for="phone">Номер телефона</label>
                 <input class="form__input form__input--text" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
               </li>
               <li class="form__item form__item--text">
-                <label class="form__label" for="email">Адрес почты</label>
+                <label class="form__label form__label--text" for="email">Адрес почты</label>
                 <input class="form__input form__input--text" type="email" id="email" placeholder="Введите почту *">
               </li>
             </ul>
@@ -106,25 +107,25 @@
               </li>
               <li class="form__item form__item--radio">
                 <input class="form__input form__input--radio" type="radio" name="app" value="windows" id="windows">
-                <label for="windows">Windows Phone</label>
+                <label class="form__label" for="windows">Windows Phone</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--textarea">
             <legend class="visually-hidden">Ваш комментарий</legend>
             <p class="form__comment">
-              <label for="comment">Опишите свои эмоции</label>
+              <label class="form__label form__label--text form__label--textarea" for="comment">Опишите свои эмоции</label>
               <textarea class="form__textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </p>
           </fieldset>
           <button class="button form__button" type="submit">Отправить форму</button>
-          <p class="form__note"><span>*</span> — обязательные поля</p>
+          <p class="form__note">&mdash; Обязательные поля</p>
         </form>
       </section>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="http://placehold.it/147x40" alt="Логотип приложения Пинк" width="147" height="40">
+        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Логотип приложения Пинк" width="147" height="41">
       </a>
       <section class="page-footer__social social">
         <h2 class="visually-hidden">Ищите нас в социальных сетях</h2>
@@ -140,9 +141,9 @@
           </li>
         </ul>
       </section>
-      <div class="page-footer__copyright">
-        <p class="page-footer__text">Разработано</p>
-        <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
     <section class="modal modal--success">
