@@ -1,7 +1,28 @@
 .main-nav {
   background-color: transparent;
+  outline: 1px solid red;
 }
 
 .main-nav__list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    flex-basis: 620px;
+    flex-shrink: 0;
+    flex-grow: 1;
+  }
+  
+  .main-nav__toggle {
+    display: none;
+  }
+  
+  .main-nav__list {
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
 }

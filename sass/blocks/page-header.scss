@@ -11,6 +11,12 @@
   outline: 1px solid white;
 }
 
+.page-header__logo {
+  outline: 1px solid red;
+  width: 75px;
+  height: 23px;
+}
+
 .page-header__logo-image {
   width: 75px;
   height: 23px;
@@ -20,11 +26,20 @@
   .page-header__wrapper {
     width: $tablet-width;
   }
+  
+  .page-header__logo {
+    width: 147px;
+    height: 40px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
-    width: $desktop-width;
+    width: $desktop-width - 2 * $desktop-padding;
+    padding: 0 10px;
+    min-height: 110px;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
