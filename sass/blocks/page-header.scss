@@ -8,6 +8,7 @@
   flex-direction: column;
   width: $mobile-width;
   margin: 0 auto;
+  padding: 0 20px;
   outline: 1px solid white;
 }
 
@@ -35,7 +36,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
-    width: $desktop-width - 2 * $desktop-padding;
+    width: 960px;
     padding: 0 10px;
     min-height: 110px;
     flex-direction: row;
