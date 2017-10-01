@@ -1,7 +1,8 @@
 .page-footer {
+  min-height: 284px;
   padding-top: 40px;
   text-align: center;
-  background-color: $white;
+  /*background-color: $white;*/
   
   &--hidden {
     display: none;
@@ -29,8 +30,8 @@
 }
 
 .page-footer__social {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 15px;
   outline: 1px solid blue;
 }
 
@@ -40,6 +41,8 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
+    min-height: 127px;
+    padding-top: 10px;
     &--hidden {
     display: block;
     }
@@ -63,9 +66,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer {
+    min-height: 197px;
+    padding-top: 40px;
+  }
   .page-footer__wrapper {
-    width: $desktop-width - 2 * $desktop-padding;
-    padding: 0 10px;
+    width: $desktop-wrapper-width;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
