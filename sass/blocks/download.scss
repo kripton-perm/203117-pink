@@ -1,19 +1,26 @@
 .download {
-  /*background-color: $blueDark;*/
+  background-color: $blueDark;
+  /*background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-position: center 0;
+  background-repeat: no-repeat;*/
   color: $white;
-  padding: 30px 20px 35px 20px;
   display: flex;
   justify-content: center;
+  outline: 1px solid orange;
+  margin-top: -65px;
+  padding-top: 490px;
+  padding-bottom: 35px;
 }
 
 .download__wrapper {
+  min-height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: $mobile-width;
   margin: 0 auto;
   padding: 0 20px;
-  outline: 1px solid white;
+  outline: 1px solid red;
 }
 
 .download__intro {
@@ -25,7 +32,7 @@
   background-color: transparent;
   border-color: $white;
   border-width: 3px;
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 15px;
   text-align: center;
   color: $white;
@@ -33,6 +40,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
+  margin-bottom: 40px;
 
   &:hover,
   &:focus {
@@ -48,7 +56,6 @@
 
 .download__list {
   @include list-reset;
-  outline: 1px solid orange;
 }
 
 .download__link {
@@ -58,34 +65,62 @@
 }
 
 .download__description {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
   text-align: center;
   padding-left: 25px;
   padding-right: 25px;
-  outline: 1px solid orange;
 }
 
 @media (min-width: $tablet-width) {
   .download {
-    margin-top: -300px;
+    margin-top: -110px;
+    padding-top: 200px;
+    padding-bottom: 110px;
     background-color: transparent;
+    background-color: $blueDark;
   }
   .download__wrapper {
     width: $tablet-width;
+    min-height: 420px;
     padding-right: 340px;
   }
   .download__intro {
     display: block;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 48px;
+    text-align: center;
+    width: 185px;
+    margin-bottom: 35px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .download {
+    padding-top: 225px;
+  }
+
   .download__wrapper {
-    width: 960px;
-    padding-left: 10px;
-    padding-right: 650px;
+    width: $desktop-wrapper-width;
+    min-height: 520px;
+    padding-left: 0;
+    padding-right: 640px;
     outline: 1px solid red;
+  }
+
+  .download__intro {
+    font-size: 50px;
+    line-height: 58px;
+    text-align: center;
+    width: 235px;
+    margin-bottom: 55px;
+  }
+
+  .download__button {
+    margin-bottom: 80px;
   }
 }
