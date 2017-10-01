@@ -80,14 +80,15 @@
     margin-top: -110px;
     padding-top: 200px;
     padding-bottom: 110px;
-    background-color: transparent;
     background-color: $blueDark;
   }
+
   .download__wrapper {
     width: $tablet-width;
     min-height: 420px;
     padding-right: 340px;
   }
+
   .download__intro {
     display: block;
     font-size: 40px;

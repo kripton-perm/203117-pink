@@ -73,6 +73,7 @@
   &--textarea {
     padding-left: 0;
     margin-bottom: 10px;
+    text-align: center;
   }
 
   &--checkbox,
@@ -82,10 +83,6 @@
     font-weight: 400;
     color: $blue;
     padding-left: 45px;
-  }
-
-  &--textarea {
-    text-align: center;
   }
 }
 
@@ -376,7 +373,7 @@
 
     &--id {
       width: 440px;
-      margin-left: 0px;
+      margin-left: 0;
       border: none;
       padding-left: 0;
       padding-right: 5px;

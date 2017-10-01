@@ -43,6 +43,7 @@
   .page-footer {
     min-height: 127px;
     padding-top: 10px;
+
     &--hidden {
     display: block;
     }
@@ -70,6 +71,7 @@
     min-height: 197px;
     padding-top: 40px;
   }
+
   .page-footer__wrapper {
     width: $desktop-wrapper-width;
     padding-left: 0;

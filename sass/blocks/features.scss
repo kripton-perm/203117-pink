@@ -41,6 +41,7 @@
 
 .features__list {
   background-color: $grey;
+
   @include list-reset;
   margin-left: -20px;
   margin-right: -20px;
