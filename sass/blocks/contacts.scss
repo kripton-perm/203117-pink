@@ -100,13 +100,13 @@
     padding-top: 30px;
     padding-bottom: 380px;
   }
-  
+
   .contacts__wrapper {
     width: $tablet-width;
     padding-top: 20px;
     padding-bottom: 10px;
   }
-  
+
   .contacts__intro {
     font-size: 40px;
     font-weight: 300;
@@ -115,17 +115,17 @@
     padding-right: 50px;
     margin-bottom: 40px;
   }
-  
+
   .contacts__list {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  
+
   .contacts__item {
     width: 300px;
     outline: 1px solid orange;
-    
+
     &--last {
       width: 280px;
       margin-top: 25px;
@@ -166,7 +166,7 @@
     outline: 1px solid orange;
     margin: 0;
     justify-content: space-between;
-    
+
     &--second {
       order: 1;
     }
