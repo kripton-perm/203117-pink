@@ -6,31 +6,31 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-  HTML {
+    <!-- <style>
+      HTML {
     background-repeat: no-repeat;
     background-position:  50% 0;
     /* По умолчанию показывается мобильный макет */
     background-image: url( "pp/pink-photo-mobile.jpg" );
-  }
-  /* Планшет */
-  @media ( min-width: 660px ) {
+      }
+      /* Планшет */
+      @media ( min-width: 660px ) {
     HTML {
       /* Планшетный макет */
       background-image: url( "pp/pink-photo-tablet.jpg" );
     }
-  }
-  /* Десктоп */
-  @media ( min-width: 1200px ) {
+      }
+      /* Десктоп */
+      @media ( min-width: 1200px ) {
     HTML {
       /* Десктопный макет */
       background-image: url( "pp/pink-photo-desktop.jpg" );
     }
-  }
+      }
       BODY {
         opacity: 0.5;
       }
-</style>
+    </style> -->
   </head>
   <body>
     <h1 class="visually-hidden">Приложение для обработки фотографий Pink</h1>
@@ -64,12 +64,12 @@
         <h2 class="gallery__title">Фотографии <span class="visually-hidden">наших</span> пользователей</h2>
         <p class="gallery__intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <ul class="gallery__list">
-          <li class="gallery__item">
+          <li class="gallery__item gallery__item--day">
             <a class="gallery__link" href="#">
-              <img class="gallery__image" src="img/panorama-mobile@1x.jpg" alt="Картинка 1" width="320" height="137">
+              <img class="gallery__image gallery__image--day" src="img/panorama-mobile@1x.jpg" alt="Картинка 1" width="320" height="137">
               <div class="gallery__badge">Панорама дня</div>
             </a>
-            <blockquote class="gallery__text comment">
+            <blockquote class="gallery__text gallery__text--day comment">
               <header class="comment__header">
                 <cite class="comment__author">Анна</cite>
                 <time class="comment__time" datetime="2017-09-23T18:04:18">5 минут назад</time>
@@ -196,29 +196,31 @@
         </ul>
       </section>
       <section class="upload">
-        <h2 class="visually-hidden">Загрузите свою фотографию</h2>
-        <p class="upload__intro">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
-        <p class="upload__picture">
-          <img class="upload__image" src="img/photo-road-mobile@1x.jpg" alt="Фотография для обработки" width="280" height="374">
-        </p>
-        <form class="upload__form" action="https://echo.htmlacademy.ru" method="post">
-          <ul class="upload__controls controls">
-            <li class="controls__item">
-              <button class="controls__action controls__action--crop">Обрезка</button>
-              <input class="controls__range" type="range">
-            </li>
-            <li class="controls__item">
-              <button class="controls__action controls__action--fill">Заливка</button>
-              <input class="controls__range" type="range">
-            </li>
-            <li class="controls__item">
-              <button class="controls__action controls__action--contrast">Контраст</button>
-              <input class="controls__range" type="range">
-            </li>
-          </ul>
-          <button class="upload__button upload__button--upload button" type="submit">Запостить</button>
-          <button class="upload__button upload__button--reset button" type="reset">Отмена</button>
-        </form>
+        <div class="upload__wrapper">
+          <h2 class="visually-hidden">Загрузите свою фотографию</h2>
+          <p class="upload__intro">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
+          <p class="upload__picture">
+            <img class="upload__image" src="img/photo-road-mobile@1x.jpg" alt="Фотография для обработки" width="280" height="374">
+          </p>
+          <form class="upload__form" action="https://echo.htmlacademy.ru" method="post">
+            <ul class="upload__controls controls">
+              <li class="controls__item">
+                <!-- <button class="controls__action controls__action--crop">Обрезка</button>
+                <input class="controls__range" type="range"> -->
+              </li>
+              <li class="controls__item">
+                <!-- <button class="controls__action controls__action--fill">Заливка</button>
+                <input class="controls__range" type="range"> -->
+              </li>
+              <li class="controls__item">
+                <!-- <button class="controls__action controls__action--contrast">Контраст</button>
+                <input class="controls__range" type="range"> -->
+              </li>
+            </ul>
+            <button class="upload__button upload__button--upload button" type="submit">Запостить</button>
+            <button class="upload__button upload__button--reset button" type="reset">Отмена</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
