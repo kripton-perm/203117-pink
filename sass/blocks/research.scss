@@ -1,9 +1,7 @@
 .research {
   display: none;
-}
 
-@media (min-width: $tablet-width) {
-  .research {
+  @media (min-width: $tablet-width) {
     display: block;
     background-color: $grey;
     outline: 1px solid orange;
@@ -11,7 +9,14 @@
     padding-bottom: 50px;
   }
 
-  .research__wrapper {
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+    padding-bottom: 65px;
+  }
+}
+
+.research__wrapper {
+  @media (min-width: $tablet-width) {
     width: $tablet-width;
     margin: 0 auto;
     padding: 0 20px;
@@ -21,7 +26,16 @@
     outline: 1px solid red;
   }
 
-  .research__title {
+  @media (min-width: $desktop-width) {
+    width: $desktop-wrapper-width;
+    padding-top: 95px;
+    padding-bottom: 50px;
+    padding-left: 365px;
+  }
+}
+
+.research__title {
+  @media (min-width: $tablet-width) {
     margin: 0;
     margin-bottom: 10px;
     padding: 0;
@@ -31,38 +45,7 @@
     color: $black;
   }
 
-  .research__text {
-    margin: 0;
-    margin-bottom: 10px;
-    padding: 0;
-    padding-right: 10px;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
-    color: $blue;
-  }
-
-  .research__link {
-    color: $pink;
-    font-size: 14px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .research {
-    padding-top: 30px;
-    padding-bottom: 65px;
-  }
-
-  .research__wrapper {
-    width: $desktop-wrapper-width;
-    padding-top: 95px;
-    padding-bottom: 50px;
-    padding-left: 365px;
-    outline: 1px solid red;
-  }
-
-  .research__title {
+  @media (min-width: $desktop-width) {
     margin-bottom: 20px;
     padding: 0;
     font-size: 30px;
@@ -74,8 +57,21 @@
       display: none;
     }
   }
+}
 
-  .research__text {
+.research__text {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    padding-right: 10px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $blue;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 33px;
     padding-right: 40px;
     font-size: 18px;
@@ -87,9 +83,15 @@
       display: none;
     }
   }
+}
 
-  .research__link {
+.research__link {
+  @media (min-width: $tablet-width) {
     color: $pink;
+    font-size: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
     font-size: 18px;
   }
 }

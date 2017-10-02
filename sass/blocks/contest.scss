@@ -5,6 +5,14 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-wrapper-width;
+  }
 }
 
 .contest__title {
@@ -18,10 +26,22 @@
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 70px;
+    font-size: 50px;
+    line-height: 60px;
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 65px;
+    padding-bottom: 100px;
+  }
 }
 
 .contest__intro {
-  /*background-color: $white;*/
+  background-color: $white;
   color: $blue;
   font-size: 14px;
   font-weight: 400;
@@ -34,57 +54,32 @@
   padding-left: 20px;
   padding-right: 20px;
   outline: 1px solid red;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 90px;
+    font-size: 18px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 15px;
+  }
 }
 
 .contest__invite {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
 }
 
 .contest__form {
   /*background-color: $white;*/
   color: $blue;
   outline: 1px solid red;
-}
-
-@media (min-width: $tablet-width) {
-  .contest {
-    width: $tablet-width;
-  }
-
-  .contest__title {
-    padding-top: 70px;
-    font-size: 50px;
-    line-height: 60px;
-    padding-bottom: 80px;
-  }
-
-  .contest__intro {
-    padding-top: 90px;
-    font-size: 18px;
-    line-height: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 12px;
-  }
-
-  .contest__invite {
-    display: inline;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .contest {
-    width: $desktop-wrapper-width;
-  }
-
-  .contest__title {
-    padding-top: 65px;
-    padding-bottom: 100px;
-  }
-
-  .contest__intro {
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-bottom: 15px;
-  }
 }

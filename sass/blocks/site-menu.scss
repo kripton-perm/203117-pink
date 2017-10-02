@@ -27,10 +27,8 @@
   &--current:active {
     color: $white;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .site-menu__link {
+  @media (min-width: $desktop-width) {
     text-transform: none;
   }
 }

@@ -4,6 +4,14 @@
   /*background-image: url("../../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center bottom;*/
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .features__wrapper {
@@ -14,6 +22,16 @@
   margin: 0 auto;
   padding: 0 20px;
   outline: 1px solid red;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-wrapper-width;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .features__intro {
@@ -26,32 +44,82 @@
   font-size: 24px;
   font-weight: 300;
   outline: 1px solid green;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin-bottom: 45px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 65px;
+    padding-bottom: 80px;
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
 
 .features__ask {
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .features__answer {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
 
 .features__list {
-  background-color: $grey;
-
   @include list-reset;
+  background-color: $grey;
   margin-left: -20px;
   margin-right: -20px;
   outline: 1px solid green;
   padding-top: 50px;
   padding-bottom: 285px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 310px;
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 250px;
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .features__item {
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    outline: 1px solid blue;
+    width: 240px;
+  }
 }
 
 .features__title {
@@ -63,6 +131,17 @@
   margin: 0;
   margin-bottom: 11px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 23px;
+  }
 }
 
 .features__text {
@@ -74,101 +153,14 @@
   margin: 0;
   margin-bottom: 33px;
   padding: 0 20px;
-}
 
-@media (min-width: $tablet-width) {
-  .features {
-    padding-bottom: 15px;
-  }
-
-  .features__wrapper {
-    width: $tablet-width;
-  }
-
-  .features__intro {
-    padding-top: 45px;
-    padding-bottom: 45px;
-    margin-bottom: 45px;
-    font-size: 40px;
-    line-height: 50px;
-  }
-
-  .features__ask {
-    margin-bottom: 0;
-  }
-
-  .features__answer {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .features__list {
-    padding-left: 310px;
-    padding-top: 30px;
-    padding-bottom: 0;
-  }
-
-  .features__title {
+  @media (min-width: $tablet-width) {
     text-align: left;
   }
 
-  .features__text {
-    text-align: left;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .features {
-    padding-bottom: 0;
-  }
-
-  .features__wrapper {
-    width: $desktop-wrapper-width;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .features__intro {
-    padding-top: 65px;
-    padding-bottom: 80px;
-    margin-bottom: 45px;
-    font-size: 50px;
-    line-height: 60px;
-  }
-
-  .features__answer {
-    padding-left: 120px;
-    padding-right: 120px;
-  }
-
-  .features__list {
-    width: 100%;
-    margin-left: 0;
-    margin-top: 250px;
-    padding-top: 60px;
-    padding-left: 10px;
-    padding-right: 10px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .features__item {
-    outline: 1px solid blue;
-    width: 240px;
-  }
-
-  .features__title {
-    text-align: center;
-    font-size: 30px;
-    line-height: 30px;
-    font-weight: 700;
-    margin-bottom: 23px;
-  }
-
-  .features__text {
+  @media (min-width: $desktop-width) {
     text-align: center;
     font-size: 18px;
     line-height: 30px;
-    font-weight: 400;
   }
 }

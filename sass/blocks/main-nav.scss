@@ -2,6 +2,13 @@
   background-color: transparent;
   outline: 1px solid white;
   min-height: 255px;
+
+  @media (min-width: $desktop-width) {
+    min-height: 110px;
+    flex-basis: 620px;
+    flex-shrink: 0;
+    flex-grow: 1;
+  }
 }
 
 .main-nav__list {
@@ -9,23 +16,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
 
-@media (min-width: $desktop-width) {
-  .main-nav {
-    min-height: 110px;
-    flex-basis: 620px;
-    flex-shrink: 0;
-    flex-grow: 1;
-  }
-
-  .main-nav__toggle {
-    display: none;
-  }
-
-  .main-nav__list {
+  @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: flex-end;
     flex-wrap: wrap;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }

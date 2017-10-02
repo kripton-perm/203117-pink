@@ -10,6 +10,16 @@
   margin-top: -65px;
   padding-top: 490px;
   padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -110px;
+    padding-top: 200px;
+    padding-bottom: 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 225px;
+  }
 }
 
 .download__wrapper {
@@ -21,10 +31,41 @@
   margin: 0 auto;
   padding: 0 20px;
   outline: 1px solid red;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    min-height: 420px;
+    padding-right: 340px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-wrapper-width;
+    min-height: 520px;
+    padding-left: 0;
+    padding-right: 640px;
+    outline: 1px solid red;
+  }
 }
 
 .download__intro {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 48px;
+    text-align: center;
+    width: 185px;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 58px;
+    width: 235px;
+    margin-bottom: 55px;
+  }
 }
 
 .download__button {
@@ -52,6 +93,10 @@
     background-color: $white;
     color: rgba($pink, 0.3);
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+  }
 }
 
 .download__list {
@@ -73,55 +118,4 @@
   text-align: center;
   padding-left: 25px;
   padding-right: 25px;
-}
-
-@media (min-width: $tablet-width) {
-  .download {
-    margin-top: -110px;
-    padding-top: 200px;
-    padding-bottom: 110px;
-    background-color: $blueDark;
-  }
-
-  .download__wrapper {
-    width: $tablet-width;
-    min-height: 420px;
-    padding-right: 340px;
-  }
-
-  .download__intro {
-    display: block;
-    font-size: 40px;
-    font-weight: 300;
-    line-height: 48px;
-    text-align: center;
-    width: 185px;
-    margin-bottom: 35px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .download {
-    padding-top: 225px;
-  }
-
-  .download__wrapper {
-    width: $desktop-wrapper-width;
-    min-height: 520px;
-    padding-left: 0;
-    padding-right: 640px;
-    outline: 1px solid red;
-  }
-
-  .download__intro {
-    font-size: 50px;
-    line-height: 58px;
-    text-align: center;
-    width: 235px;
-    margin-bottom: 55px;
-  }
-
-  .download__button {
-    margin-bottom: 80px;
-  }
 }
