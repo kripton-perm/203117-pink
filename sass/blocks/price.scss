@@ -34,6 +34,7 @@
   width: 100%;
   outline: 1px solid green;
   margin-bottom: 30px;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -44,7 +45,6 @@
 }
 
 .price__item {
-  background-color: $white;
   display: none;
 
   &:nth-child(2) {
