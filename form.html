@@ -3,39 +3,68 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <style>
+      HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* По умолчанию показывается мобильный макет */
+    background-image: url( "pp/pink-form-mobile.jpg" );
+      }
+      /* Планшет */
+      @media ( min-width: 660px ) {
+    HTML {
+      /* Планшетный макет */
+      background-image: url( "pp/pink-form-tablet.jpg" );
+    }
+      }
+      /* Десктоп */
+      @media ( min-width: 1200px ) {
+    HTML {
+      /* Десктопный макет */
+      background-image: url( "pp/pink-form-desktop.jpg" );
+    }
+      }
+      body {
+        opacity: 0.5;
+      }
+    </style> -->
   </head>
   <body>
     <h1 class="visually-hidden">Приложение для обработки фотографий Pink</h1>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения Пинк" width="75" height="23">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle">Закрыть меню</button>
-        <h2 class="visually-hidden">Главное меню</h2>
-        <ul class="main-nav__list site-menu">
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-menu__item">
-            <a class="site-menu__link site-menu__link--current">Конкурс</a>
-          </li>
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения Пинк" width="75" height="23">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle">Закрыть меню</button>
+          <h2 class="visually-hidden">Главное меню</h2>
+          <ul class="main-nav__list site-menu">
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link site-menu__link--current">Конкурс</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
       <section class="contest">
         <h2 class="contest__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
-        <p class="contest__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <p class="contest__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="contest__invite">Пожалуйста, заполните форму ниже:</span></p>
         <form class="contest__form form" action="https://echo.htmlacademy.ru">
-          <fieldset class="form__fieldset form__fieldset--text">
+          <fieldset class="form__fieldset form__fieldset--text form__fieldset--id">
             <legend class="visually-hidden">Персональные данные</legend>
             <ul class="form__list form__list--text">
               <li class="form__item form__item--text">
@@ -57,39 +86,39 @@
             <ul class="form__list form__list--checkbox">
               <li class="form__item form__item--checkbox">
                 <input class="form__input form__input--checkbox" type="checkbox" name="shark" id="shark" checked>
-                <label class="form__label" for="shark">Сделал селфи с акулой</label>
+                <label class="form__label form__label--checkbox" for="shark">Сделал селфи с акулой</label>
               </li>
               <li class="form__item form__item--checkbox">
                 <input class="form__input form__input--checkbox" type="checkbox" name="beach" id="beach" checked>
-                <label class="form__label" for="beach">Обгорел на пляже</label>
+                <label class="form__label form__label--checkbox" for="beach">Обгорел на пляже</label>
               </li>
               <li class="form__item form__item--checkbox">
                 <input class="form__input form__input--checkbox" type="checkbox" name="chuck" id="chuck">
-                <label class="form__label" for="chuck">Видел Чака Норриса</label>
+                <label class="form__label form__label--checkbox" for="chuck">Видел Чака Норриса</label>
               </li>
               <li class="form__item form__item--checkbox">
                 <input class="form__input form__input--checkbox" type="checkbox" name="gift" id="gift">
-                <label class="form__label" for="gift">Накупил сувениров</label>
+                <label class="form__label form__label--checkbox" for="gift">Накупил сувениров</label>
               </li>
               <li class="form__item form__item--checkbox">
                 <input class="form__input form__input--checkbox" type="checkbox" name="tower" id="tower" checked>
-                <label class="form__label" for="tower">Удержал башню</label>
+                <label class="form__label form__label--checkbox" for="tower">Удержал башню</label>
               </li>
               <li class="form__item form__item--checkbox">
                 <input class="form__input form__input--checkbox" type="checkbox" name="hotel" id="hotel">
-                <label class="form__label" for="hotel">Разгромил отель</label>
+                <label class="form__label form__label--checkbox" for="hotel">Разгромил отель</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__fieldset form__fieldset--text">
-            <legend class="visually-hidden">Контактные данные</legend>
-            <ul class="form__list form__list--text">
-              <li class="form__item form__item--text">
-                <label class="form__label form__label--text" for="phone">Номер телефона</label>
+          <fieldset class="form__fieldset form__fieldset--text form__fieldset--contacts">
+            <legend class="form__legend form__legend--hidden">Контактная информация</legend>
+            <ul class="form__list form__list--text form__list--contacts">
+              <li class="form__item form__item--text form__item--contacts">
+                <label class="form__label form__label--text form__label--contacts" for="phone">Номер телефона</label>
                 <input class="form__input form__input--text" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
               </li>
-              <li class="form__item form__item--text">
-                <label class="form__label form__label--text" for="email">Адрес почты</label>
+              <li class="form__item form__item--text form__item--contacts">
+                <label class="form__label form__label--text form__label--contacts" for="email">Адрес почты</label>
                 <input class="form__input form__input--text" type="email" id="email" placeholder="Введите почту *">
               </li>
             </ul>
@@ -99,51 +128,50 @@
             <ul class="form__list form__list--radio">
               <li class="form__item form__item--radio">
                 <input class="form__input form__input--radio" type="radio" name="app" value="ios" id="ios" checked>
-                <label class="form__label" for="ios">Pink для iOS</label>
+                <label class="form__label form__label--radio" for="ios">Pink для iOS</label>
               </li>
               <li class="form__item form__item--radio">
                 <input class="form__input form__input--radio" type="radio" name="app" value="android" id="android">
-                <label class="form__label" for="android">Pink для Android</label>
+                <label class="form__label form__label--radio" for="android">Pink на Android</label>
               </li>
               <li class="form__item form__item--radio">
                 <input class="form__input form__input--radio" type="radio" name="app" value="windows" id="windows">
-                <label class="form__label" for="windows">Windows Phone</label>
+                <label class="form__label form__label--radio" for="windows">Windows Phone</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--textarea">
-            <legend class="visually-hidden">Ваш комментарий</legend>
-            <p class="form__comment">
-              <label class="form__label form__label--text form__label--textarea" for="comment">Опишите свои эмоции</label>
-              <textarea class="form__textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </p>
+            <legend class="form__legend form__legend--textarea">Опишите свои эмоции</legend>
+            <textarea class="form__textarea" name="comment" id="comment" cols="10" rows="4" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
           <button class="button form__button" type="submit">Отправить форму</button>
-          <p class="form__note">&mdash; Обязательные поля</p>
+          <p class="form__note">&mdash; Обязательные <span class="form__hidden">для заполнения</span> поля</p>
         </form>
       </section>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Логотип приложения Пинк" width="147" height="41">
-      </a>
-      <section class="page-footer__social social">
-        <h2 class="visually-hidden">Ищите нас в социальных сетях</h2>
-        <ul class="social__list">
-          <li class="social__item social__item--twitter">
-            <a href="" class="social__link">Мы в Твиттере</a>
-          </li>
-          <li class="social__item social__item--facebook">
-            <a href="" class="social__link">Мы в Фейсбуке</a>
-          </li>
-          <li class="social__item social__item--youtube">
-            <a href="" class="social__link">Мы на YouTube</a>
-          </li>
-        </ul>
-      </section>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="index.html">
+          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Логотип приложения Пинк" width="147" height="41">
+        </a>
+        <section class="page-footer__social social">
+          <h2 class="visually-hidden">Ищите нас в социальных сетях</h2>
+          <ul class="social__list">
+            <li class="social__item social__item--twitter">
+              <a href="" class="social__link">Мы в Твиттере</a>
+            </li>
+            <li class="social__item social__item--facebook">
+              <a href="" class="social__link">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item social__item--youtube">
+              <a href="" class="social__link">Мы на YouTube</a>
+            </li>
+          </ul>
+        </section>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
       </div>
     </footer>
     <section class="modal modal--success">

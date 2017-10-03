@@ -27,4 +27,8 @@
   &--current:active {
     color: $white;
   }
+
+  @media (min-width: $desktop-width) {
+    text-transform: none;
+  }
 }
