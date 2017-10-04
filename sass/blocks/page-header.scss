@@ -1,67 +1,32 @@
 .page-header {
-  background-color: $blueDarker;
-  outline: 1px solid red;
-
+  background-color: rgba($black, 0.3);
+  
+  &--opened {
+    background-color: $blueDarker;
+  }
+  
   @media (min-width: $desktop-width) {
     background-color: rgba($black, 0.3);
   }
 }
 
 .page-header__wrapper {
-  outline: 1px solid yellow;
   display: flex;
   flex-direction: column;
   width: $mobile-width;
   margin: 0 auto;
   padding: 0 20px;
-  min-height: 325px;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
-    min-height: 365px;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-wrapper-width;
     padding-left: 0;
     padding-right: 0;
-    min-height: 110px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  }
-}
-
-.page-header__logo {
-  width: 75px;
-  padding-top: 20px;
-  outline: 1px solid red;
-  padding-bottom: 23px;
-
-  svg {
-    width: 75px;
-    height: 23px;
-    outline: 1px solid red;
-  }
-
-  &[href]:hover path,
-  &[href]:focus path {
-    fill: $pink;
-  }
-  
-  &[href]:active path {
-    fill: $white;
-    opacity: 0.3;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 147px;
-    padding-top: 27px;
-    padding-bottom: 39px;
-
-    svg {
-      width: 147px;
-      height: 40px;
-    }
   }
 }

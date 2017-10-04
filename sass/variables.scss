@@ -19,4 +19,5 @@ $black: #000000;
 $mobile-width: 320px;
 $tablet-width: 660px;
 $desktop-width: 1200px;
+$tablet-width-only: $desktop-width - 1;
 $desktop-wrapper-width: 940px;

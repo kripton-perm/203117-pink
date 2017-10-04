@@ -1,8 +1,16 @@
 .main-nav {
-  background-color: transparent;
-  outline: 1px solid white;
-  min-height: 255px;
-
+  position: relative;
+  background-color: $blueDarker;
+  
+  &--closed {
+    padding-top: 270px;
+    background-color: transparent;
+  }
+  /*
+  &--closed .main-nav__logo {
+    background-color: rgba($black, 0.3);
+  }
+*/
   @media (min-width: $desktop-width) {
     min-height: 110px;
     flex-basis: 620px;
@@ -11,21 +19,116 @@
   }
 }
 
+.main-nav__logo {
+  display: block;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 21px;
+  box-shadow: 0 1px 0 #000000;
+
+  svg {
+    width: 75px;
+    height: 23px;
+  }
+
+  &[href]:hover path,
+  &[href]:focus path {
+    fill: $pink;
+  }
+  
+  &[href]:active path {
+    fill: $white;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 38px;
+
+    svg {
+      width: 147px;
+      height: 40px;
+    }
+  }
+}
+
 .main-nav__list {
   @include list-reset;
-  display: flex;
+  margin-left: -20px;
+  margin-right: -20px;
+  /*display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;*/
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
+    /*flex-direction: row;
     justify-content: flex-end;
-    flex-wrap: wrap;
+    flex-wrap: wrap;*/
+  }
+}
+
+.main-nav--closed .main-nav__list {
+  @media (max-width: $tablet-width-only) {
+    display: none;
   }
 }
 
 .main-nav__toggle {
+  position: absolute;
+  right: -7px;
+  display: block;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  
+  &:hover path {
+    fill: $pink;
+  }
+  
+  &:active path {
+    opacity: 0.3;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
 }
+
+.main-nav--closed .main-nav__toggle {
+  bottom: 17px;
+  
+  @media (min-width: $tablet-width) {
+    bottom: 50px;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 20px;
+
+  @media (min-width: $tablet-width) {
+    top: 50px;
+  }
+}
+
+.main-nav__toggle-image {
+  &--close {
+    width: 24px;
+    height: 23px;
+  }
+  
+  &--open {
+    width: 50px;
+    height: 24px;
+  }
+}
+
+.main-nav--opened .main-nav__toggle-image--open {
+  display: none;
+}
+
+.main-nav--closed .main-nav__toggle-image--close {
+  display: none;
+}
+
