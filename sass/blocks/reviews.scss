@@ -1,17 +1,19 @@
 .reviews {
+  position: relative;
+  z-index: 1;
+  margin-top: -40px;
   background-color: $white;
-  outline: 1px solid orange;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 30px;
+    padding-top: 87px;
     padding-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 70px;
-    padding-bottom: 10px;
+    padding-bottom: 0;
   }
 }
 
@@ -19,24 +21,26 @@
   width: $mobile-width;
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  outline: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
-    padding-top: 0;
-    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     width: $desktop-wrapper-width;
-    padding-top: 100px;
-    padding-bottom: 10px;
+    padding-top: 117px;
+    background-image: url("../../img/quotes.png");
+    background-repeat: no-repeat;
+    background-position: center top;
   }
+}
+
+.reviews__list {
+  position: relative;
 }
 
 .reviews__item {
@@ -67,9 +71,11 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    margin-bottom: 9px;
   }
 
   @media (min-width: $desktop-width) {
@@ -101,6 +107,9 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 18px;
 
   &::before {
     content: "«";
@@ -113,7 +122,7 @@
   @media (min-width: $tablet-width) {
     order: -1;
     font-size: 18px;
-    margin-bottom: 32px;
+    margin-bottom: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -122,7 +131,7 @@
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
-    margin-bottom: 32px;
+    margin-bottom: 35px;
 
     &::before {
       content: "";
@@ -134,7 +143,7 @@
   }
 }
 
-.teviews__toggles {
+.reviews__toggles {
   @media (min-width: $desktop-width) {
     display: none;
   }
@@ -145,5 +154,6 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    position: absolute;
   }
 }
