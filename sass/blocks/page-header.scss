@@ -1,11 +1,11 @@
 .page-header {
   background-color: $blueDarker;
-  color: $white;
-  outline: 1px solid $blue;
+  /*color: $white;*/
+  outline: 1px solid red;
 }
 
 .page-header__wrapper {
-  outline: 1px solid red;
+  outline: 1px solid yellow;
   display: flex;
   flex-direction: column;
   width: $mobile-width;
@@ -31,17 +31,34 @@
 
 .page-header__logo {
   width: 75px;
-  height: 70px;
   padding-top: 20px;
+  outline: 1px solid red;
+  padding-bottom: 23px;
+
+  svg {
+    width: 75px;
+    height: 23px;
+    outline: 1px solid red;
+  }
+
+  &[href]:hover path,
+  &[href]:focus path {
+    fill: $pink;
+  }
+  
+  &[href]:active path {
+    fill: $white;
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     width: 147px;
-    height: 110px;
     padding-top: 27px;
-  }
-}
+    padding-bottom: 39px;
 
-.page-header__logo-image {
-  width: 75px;
-  height: 23px;
+    svg {
+      width: 147px;
+      height: 40px;
+    }
+  }
 }
