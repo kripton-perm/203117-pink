@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
-    <style>
+    <!-- <style>
       HTML {
     background-repeat: no-repeat;
     background-position:  50% 0;
@@ -30,7 +30,7 @@
       body {
         opacity: 0.5;
       }
-    </style>
+    </style> -->
   </head>
   <body class="body">
     <h1 class="visually-hidden">Приложение для обработки фотографий Pink</h1>
@@ -83,7 +83,7 @@
         </nav>
       </div>
     </header>
-    <main class="page-main page-main--index">
+    <main>
       <section class="download">
         <h2 class="visually-hidden">Скачайте наше приложение</h2>
         <div class="download__wrapper">
@@ -137,10 +137,10 @@
           <a class="research__link" href="#">Узнать больше об исследовании</a>
         </div>
       </section>
-      <section class="reviews slider">
+      <section class="reviews">
         <div class="reviews__wrapper">
           <h2 class="visually-hidden">Отзывы наших пользователей</h2>
-          <div class="reviews__list slider__list">
+          <div class="reviews__list slider slider--reviews">
             <blockquote class="reviews__item slider__item">
               <cite class="reviews__name">
                 Николай Петров
@@ -168,10 +168,10 @@
           </div>
         </div>
       </section>
-      <section class="price slider">
+      <section class="price">
         <div class="price__wrapper">
           <h2 class="visually-hidden">Наши тарифные планы</h2>
-          <ul class="price__list slider__list">
+          <ul class="price__list slider slider--price">
             <li class="price__item slider__item">
               <h3 class="price__title">
                 <b class="price__name">База</b>
@@ -179,16 +179,16 @@
               </h3>
               <table class="price__table">
                 <tr>
-                  <td class="price__option">Розовый фильтр</td>
-                  <td class="price__access">Доступен</td>
+                  <td class="price__option price__option--yes">Розовый фильтр</td>
+                  <td class="price__access"><span class="visually-hidden">Доступен</span></td>
                 </tr>
                 <tr>
-                  <td class="price__option">Смайлики</td>
-                  <td class="price__access">Не доступны</td>
+                  <td class="price__option price__option--no">Смайлики</td>
+                  <td class="price__access"><span class="visually-hidden">Не доступны</span></td>
                 </tr>
                 <tr>
-                  <td class="price__option">Комментарии</td>
-                  <td class="price__access">Не доступны</td>
+                  <td class="price__option price__option--no">Комментарии</td>
+                  <td class="price__access"><span class="visually-hidden">Не доступны</span></td>
                 </tr>
               </table>
             </li>
@@ -199,16 +199,16 @@
               </h3>
               <table class="price__table">
                 <tr>
-                  <td class="price__option price__option--hidden">Розовый фильтр</td>
-                  <td class="price__access">Доступен</td>
+                  <td class="price__option price__option--hidden price__option--yes">Розовый фильтр</td>
+                  <td class="price__access"><span class="visually-hidden">Доступен</span></td>
                 </tr>
                 <tr>
-                  <td class="price__option price__option--hidden">Смайлики</td>
-                  <td class="price__access">Доступны</td>
+                  <td class="price__option price__option--hidden price__option--yes">Смайлики</td>
+                  <td class="price__access"><span class="visually-hidden">Доступны</span></td>
                 </tr>
                 <tr>
-                  <td class="price__option price__option--hidden">Комментарии</td>
-                  <td class="price__access">Не доступны</td>
+                  <td class="price__option price__option--hidden price__option--no">Комментарии</td>
+                  <td class="price__access"><span class="visually-hidden">Не доступны</span></td>
                 </tr>
               </table>
             </li>
@@ -219,28 +219,27 @@
               </h3>
               <table class="price__table">
                 <tr>
-                  <td class="price__option price__option--hidden">Розовый фильтр</td>
-                  <td class="price__access">Доступен</td>
+                  <td class="price__option price__option--hidden price__option--yes">Розовый фильтр</td>
+                  <td class="price__access"><span class="visually-hidden">Доступен</span></td>
                 </tr>
                 <tr>
-                  <td class="price__option price__option--hidden">Смайлики</td>
-                  <td class="price__access">Доступны</td>
+                  <td class="price__option price__option--hidden price__option--yes">Смайлики</td>
+                  <td class="price__access"><span class="visually-hidden">Доступны</span></td>
                 </tr>
                 <tr>
-                  <td class="price__option price__option--hidden">Комментарии</td>
-                  <td class="price__access">Доступны</td>
+                  <td class="price__option price__option--hidden price__option--yes">Комментарии</td>
+                  <td class="price__access"><span class="visually-hidden">Доступны</span></td>
                 </tr>
               </table>
             </li>
           </ul>
           <div class="price__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle slider__toggle--price" type="button"><span class="visually-hidden">Тариф База</span></button>
+            <button class="slider__toggle slider__toggle--price slider__toggle--active" type="button"><span class="visually-hidden">Тариф Стандарт</span></button>
+            <button class="slider__toggle slider__toggle--price" type="button"><span class="visually-hidden">Тариф Анлим</span></button>
           </div>
         </div>
       </section>
-      <!--
       <section class="contacts">
         <div class="contacts__wrapper">
           <h2 class="visually-hidden">Наши контакты</h2>
@@ -268,7 +267,6 @@
           </p>
         </div>
       </section>
-      -->
     </main>
     <!-- <footer class="page-footer page-footer--hidden">
       <div class="page-footer__wrapper">

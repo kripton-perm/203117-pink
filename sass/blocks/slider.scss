@@ -1,3 +1,28 @@
+.slider {
+  &--reviews .slider__item {
+    display: none;
+
+    &:nth-child(1) {
+      display: flex;
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    &--price {
+      display: flex;
+      width: 100%;
+      position: relative;
+      left: -282px;
+    }
+
+    &--price .slider__item {
+      width: 100%;
+      flex-shrink: 0;
+      margin-right: 2px;
+    }
+  }
+}
+
 .slider__toggles {
   display: flex;
 }
@@ -14,6 +39,10 @@
   border-radius: 50%;
   margin-right: 13px;
   cursor: pointer;
+  
+  &--price {
+    border-color: $grey;
+  }
   
   &:hover,
   &:focus {
