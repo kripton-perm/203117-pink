@@ -1,19 +1,56 @@
 .like {
+  position: relative;
+  outline: 1px solid green;
+  padding-left: 31px;
+  background-color: transparent;
   color: $pink;
   cursor: pointer;
   font: inherit;
   border: 0;
-  background-color: transparent;
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
+  
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 6px;
+    content: "";
+    width: 13px;
+    height: 12px;
+    background-image: url("../../img/icon-heart.svg");
+  }
+  
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    width: 100%;
+    text-align: left;
+    
+    &::before {
+      left: auto;
+      right: 0;
+      top: 5px;
+    }
+    
+    &--day {
+      padding-right: 29px;
+      width: auto;
+      
+      &::before {
+        left: auto;
+        right: 0;
+        top: 5px;
+      }
+    }
+  }
+  
+  @media (min-width: $desktop-width) {
+    &--day {
+      padding-right: 31px;
+    }
+  }
 }
 
 .like__text {
-  padding-left: 30px;
-  background-color: transparent;
-  background-image: url("../../img/icon-heart.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
   text-transform: uppercase;
 }

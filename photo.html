@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <style>
+    <style>
       HTML {
     background-repeat: no-repeat;
     background-position:  50% 0;
@@ -30,7 +30,7 @@
       BODY {
         opacity: 0.5;
       }
-    </style> -->
+    </style>
   </head>
   <body class="body">
     <h1 class="visually-hidden">Приложение для обработки фотографий Pink</h1>
@@ -86,138 +86,126 @@
     <main>
       <section class="gallery">
         <h2 class="gallery__title">Фотографии <span class="visually-hidden">наших</span> пользователей</h2>
-        <p class="gallery__intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-        <ul class="gallery__list">
-          <li class="gallery__item gallery__item--day">
-            <a class="gallery__link" href="#">
-              <img class="gallery__image gallery__image--day" src="img/panorama-mobile@1x.jpg" alt="Картинка 1" width="320" height="137">
-              <div class="gallery__badge">Панорама дня</div>
-            </a>
-            <blockquote class="gallery__text gallery__text--day comment">
-              <header class="comment__header">
-                <cite class="comment__author">Анна</cite>
-                <time class="comment__time" datetime="2017-09-23T18:04:18">5 минут назад</time>
-              </header>
-              <p class="comment__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <footer class="comment__footer">
-                <button class="comment__like like" type="button">
+        <div class="gallery__wrapper">
+          <p class="gallery__intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          <ul class="gallery__list">
+            <li class="gallery__item gallery__item--day">
+              <a class="gallery__link" href="#">
+                <img class="gallery__image gallery__image" src="img/panorama-mobile@1x.jpg" alt="Картинка 1" width="320" height="137">
+                <div class="gallery__badge">Панорама дня</div>
+              </a>
+              <blockquote class="gallery__text comment comment--day">
+                <header class="comment__header">
+                  <cite class="comment__author">Анна</cite>
+                  <time class="comment__time" datetime="2017-09-23T18:04:18">5 минут назад</time>
+                </header>
+                <p class="comment__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <button class="comment__like like like--day" type="button">
                   <span class="like__text"><span class="visually-hidden">Мне</span> Нравится:</span>
                   <span class="like__amount">215</span>
                 </button>
-              </footer>
-            </blockquote>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__link" href="#">
-              <img class="gallery__image" src="img/photo-car-mobile@1x.jpg" alt="Картинка 2" width="280" height="180">
-            </a>
-            <blockquote class="gallery__text comment">
-              <header class="comment__header">
-                <cite class="comment__author">Левон</cite>
-                <time class="comment__time" datetime="2017-09-23T13:04:18">5 часов назад</time>
-              </header>
-              <p class="comment__text">
-                Вчера он на луну летал, сегодня в руки к нам попал.
-              </p>
-              <footer class="comment__footer">
+              </blockquote>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__link" href="#">
+                <img class="gallery__image" src="img/photo-car-mobile@1x.jpg" alt="Картинка 2" width="280" height="180">
+              </a>
+              <blockquote class="gallery__text comment">
+                <header class="comment__header">
+                  <cite class="comment__author">Левон</cite>
+                  <time class="comment__time" datetime="2017-09-23T13:04:18">5 часов назад</time>
+                </header>
+                <p class="comment__text">
+                  Вчера он на луну летал, сегодня в руки к нам попал.
+                </p>
                 <button class="comment__like like" type="button">
                   <span class="like__text"><span class="visually-hidden">Мне</span> Нравится:</span>
                   <span class="like__amount">356</span>
                 </button>
-              </footer>
-            </blockquote>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__link" href="#">
-              <img class="gallery__image" src="img/photo-drumset-mobile@1x.jpg" alt="Картинка 3" width="280" height="180">
-            </a>
-            <blockquote class="gallery__text comment">
-              <header class="comment__header">
-                <cite class="comment__author">Антон</cite>
-                <time class="comment__time" datetime="2017-09-23T06:04:18">12 часов назад</time>
-              </header>
-              <p class="comment__text">Соседи будут рады!</p>
-              <footer class="comment__footer">
+              </blockquote>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__link" href="#">
+                <img class="gallery__image" src="img/photo-drumset-mobile@1x.jpg" alt="Картинка 3" width="280" height="180">
+              </a>
+              <blockquote class="gallery__text comment">
+                <header class="comment__header">
+                  <cite class="comment__author">Антон</cite>
+                  <time class="comment__time" datetime="2017-09-23T06:04:18">12 часов назад</time>
+                </header>
+                <p class="comment__text">Соседи будут рады!</p>
                 <button class="comment__like like" type="button">
                   <span class="like__text"><span class="visually-hidden">Мне</span> Нравится:</span>
                   <span class="like__amount">666</span>
                 </button>
-              </footer>
-            </blockquote>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__link" href="#">
-              <img class="gallery__image" src="img/photo-window-mobile@1x.jpg" alt="Картинка 4" width="280" height="180">
-            </a>
-            <blockquote class="gallery__text comment">
-              <header class="comment__header">
-                <cite class="comment__author">Борис</cite>
-                <time class="comment__time" datetime="2017-09-22T22:04:18">20 часов назад</time>
-              </header>
-              <p class="comment__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <footer class="comment__footer">
+              </blockquote>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__link" href="#">
+                <img class="gallery__image" src="img/photo-window-mobile@1x.jpg" alt="Картинка 4" width="280" height="180">
+              </a>
+              <blockquote class="gallery__text comment">
+                <header class="comment__header">
+                  <cite class="comment__author">Борис</cite>
+                  <time class="comment__time" datetime="2017-09-22T22:04:18">20 часов назад</time>
+                </header>
+                <p class="comment__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
                 <button class="comment__like like" type="button">
                   <span class="like__text"><span class="visually-hidden">Мне</span> Нравится:</span>
                   <span class="like__amount">215</span>
                 </button>
-              </footer>
-            </blockquote>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__link" href="#">
-              <img class="gallery__image" src="img/photo-fair-mobile@1x.jpg" alt="Картинка 5" width="280" height="180">
-            </a>
-            <blockquote class="gallery__text comment">
-              <header class="comment__header">
-                <cite class="comment__author">Сергей</cite>
-                <time class="comment__time" datetime="2017-09-22T17:04:18">25 часов назад</time>
-              </header>
-              <p class="comment__text">Самая кубанская в мире!</p>
-              <footer class="comment__footer">
+              </blockquote>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__link" href="#">
+                <img class="gallery__image" src="img/photo-fair-mobile@1x.jpg" alt="Картинка 5" width="280" height="180">
+              </a>
+              <blockquote class="gallery__text comment">
+                <header class="comment__header">
+                  <cite class="comment__author">Сергей</cite>
+                  <time class="comment__time" datetime="2017-09-22T17:04:18">25 часов назад</time>
+                </header>
+                <p class="comment__text">Самая кубанская в мире!</p>
                 <button class="comment__like like" type="button">
                   <span class="like__text"><span class="visually-hidden">Мне</span> Нравится:</span>
                   <span class="like__amount">4</span>
                 </button>
-              </footer>
-            </blockquote>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__link" href="#">
-              <img class="gallery__image" src="img/photo-pov-mobile@1x.jpg" alt="Картинка 6" width="280" height="180">
-            </a>
-            <blockquote class="gallery__text comment">
-              <header class="comment__header">
-                <cite class="comment__author">Максим</cite>
-                <time class="comment__time" datetime="2017-09-22T02:04:18">40 часов назад</time>
-              </header>
-              <p class="comment__text">Где снег-то?</p>
-              <footer class="comment__footer">
+              </blockquote>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__link" href="#">
+                <img class="gallery__image" src="img/photo-pov-mobile@1x.jpg" alt="Картинка 6" width="280" height="180">
+              </a>
+              <blockquote class="gallery__text comment">
+                <header class="comment__header">
+                  <cite class="comment__author">Максим</cite>
+                  <time class="comment__time" datetime="2017-09-22T02:04:18">40 часов назад</time>
+                </header>
+                <p class="comment__text">Где снег-то?</p>
                 <button class="comment__like like" type="button">
                   <span class="like__text"><span class="visually-hidden">Мне</span> Нравится:</span>
                   <span class="like__amount">150</span>
                 </button>
-              </footer>
-            </blockquote>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__link" href="#">
-              <img class="gallery__image" src="img/photo-wing-mobile@1x.jpg" alt="Картинка 7" width="280" height="180">
-            </a>
-            <blockquote class="gallery__text comment">
-              <header class="comment__header">
-                <cite class="comment__author">Надежда</cite>
-                <time class="comment__time" datetime="2017-09-21T21:04:18">45 часов назад</time>
-              </header>
-              <p class="comment__text">Всем GM и взаимные лайки!</p>
-              <footer class="comment__footer">
+              </blockquote>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__link" href="#">
+                <img class="gallery__image" src="img/photo-wing-mobile@1x.jpg" alt="Картинка 7" width="280" height="180">
+              </a>
+              <blockquote class="gallery__text comment">
+                <header class="comment__header">
+                  <cite class="comment__author">Надежда</cite>
+                  <time class="comment__time" datetime="2017-09-21T21:04:18">45 часов назад</time>
+                </header>
+                <p class="comment__text">Всем GM и взаимные лайки!</p>
                 <button class="comment__like like" type="button">
                   <span class="like__text"><span class="visually-hidden">Мне</span> Нравится:</span>
                   <span class="like__amount">2560</span>
                 </button>
-              </footer>
-            </blockquote>
-          </li>
-        </ul>
+              </blockquote>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="upload">
         <div class="upload__wrapper">
@@ -272,5 +260,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
