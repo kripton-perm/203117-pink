@@ -1,7 +1,6 @@
 .body {
   margin: 0;
   padding: 0;
-  min-height: 717px;
   background-color: $blueDarker;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-position: center 255px;
@@ -10,7 +9,7 @@
   @media (min-width: $tablet-width) {
     /*background-image: url("../../img/bg-back-tablet@1x.jpg");*/
     background-position: center 270px;
-    background-size: cover;
+    background-size: contain;
   }
 
   @media (min-width: $desktop-width) {

@@ -1,37 +1,59 @@
 .contacts {
-  /*background-color: $white;*/
-  padding-top: 30px;
-  padding-bottom: 200px;
-  outline: 1px solid orange;
+  background-color: $white;
+  padding-top: 42px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 30px;
-    padding-bottom: 380px;
+    padding-top: 43px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 495px;
+    padding-top: 63px;
   }
 }
 
 .contacts__wrapper {
+  position: relative;
+  background-color: transparent;
   width: $mobile-width;
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 15px;
   padding-bottom: 20px;
-  outline: 1px solid red;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+	height: 0;
+	border-left: 200px solid transparent;
+	border-right: 200px solid transparent;
+	border-top: 50px solid $white;
+  }
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 28px;
+    
+    &::after {
+      bottom: -65px;
+      border-left: 320px solid transparent;
+	  border-right: 320px solid transparent;
+	  border-top: 65px solid $white;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-wrapper-width;
-    padding: 0;
-    padding-top: 35px;
+    padding-bottom: 20px;
+    
+    &::after {
+      bottom: -105px;
+      border-left: 600px solid transparent;
+	  border-right: 600px solid transparent;
+	  border-top: 105px solid $white;
+    }
   }
 }
 
@@ -43,14 +65,14 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
-    line-height: 50px;
+    line-height: 48px;
     padding-left: 50px;
     padding-right: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -65,7 +87,6 @@
 .contacts__list {
   @include list-reset;
   text-align: center;
-  outline: 1px solid green;
   display: flex;
   flex-direction: column;
 
@@ -74,24 +95,43 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  
+  @media (min-width: $desktop-width) {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
 }
 
 .contacts__item {
   @media (min-width: $tablet-width) {
-    width: 300px;
-    outline: 1px solid orange;
+    width: 50%;
+    
+    &--phone {
+      padding-right: 10px;
+    }
+    
+    &--mail {
+      padding-left: 10px;
+    }
 
-    &--last {
-      width: 280px;
-      margin-top: 25px;
+    &--address {
+      margin-top: 22px;
       margin-left: auto;
       margin-right: auto;
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    &--second {
+    width: 33%;
+    
+    &--mail {
       order: 1;
+    }
+    
+    &--address {
+      margin-top: 0;
     }
   }
 }
@@ -102,6 +142,19 @@
   font-weight: 700;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 3px;
+  }
+}
+
+.contacts__item--mail .contacts__title {
+  padding-left: 8px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
+    padding-left: 0;
+  }
 }
 
 .contacts__text {
@@ -124,7 +177,7 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;
-  margin-top: 2px;
+  margin-top: 1px;
   margin-bottom: 21px;
 }
 
@@ -150,9 +203,13 @@
     opacity: 0.3;
   }
 
+  @media (min-width: $tablet-width) {
+    padding-left: 2px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-top: 24px;
-    padding-right: 5px;
+    padding: 0;
   }
 }
 
@@ -165,9 +222,41 @@
   padding: 0;
   margin-top: 4px;
   margin-bottom: 0;
+  
+  @media (min-width: $tablet-width) {
+    margin-top: 6px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-top: 22px;
     padding-right: 5px;
+  }
+}
+
+.contacts__map {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 200px;
+  background-image: url("../../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
+  iframe {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    iframe {
+      height: 370px;
+    }
+  }
+  
+  @media (min-width: $desktop-width) {
+    iframe {
+      height: 500px;
+    }
   }
 }
