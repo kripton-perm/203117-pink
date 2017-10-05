@@ -1,5 +1,14 @@
 .features {
-  background-color: $white;
+  background-color: $grey;
+  background-image: linear-gradient(174deg, $white 250px, $grey 250px);
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(175deg, $white 300px, $grey 300px);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(175.6deg, $white 420px, $grey 420px);
+  }
 }
 
 .features__wrapper {
@@ -72,29 +81,25 @@
 
 .features__list {
   @include list-reset;
-  background-color: $grey;
   margin-left: -20px;
   margin-right: -20px;
   padding-top: 110px;
   padding-bottom: 358px;
 
   @media (max-width: $tablet-width-only) {
-    background-image: url("../../img/iphone-screen-mobile@1x.png"), url("../../img/bg-triangle-white.svg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: center bottom, center top;
+    background-image: url("../../img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
   }
 
   @media (min-width: $tablet-width) {
     padding-left: 330px;
     padding-top: 30px;
     padding-bottom: 40px;
-    background-position: left bottom, center top;
+    background-position: left bottom;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../../img/bg-triangle-white.svg");
-    background-repeat: no-repeat;
-    background-position: center top;
     padding-left: 160px;
     padding-right: 160px;
     padding-top: 0;
