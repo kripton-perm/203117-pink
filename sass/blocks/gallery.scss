@@ -1,6 +1,5 @@
 .gallery {
   background-color: $white;
-  outline: 1px solid orange;
   margin-top: 172px;
   position: relative;
 
@@ -16,24 +15,22 @@
 
 .gallery__title {
   position: absolute;
-  top: -172px;
+  bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
   background-color: transparent;
   color: $white;
   font-size: 24px;
-  outline: 1px solid yellow;
   font-weight: 300;
   line-height: 30px;
   text-align: center;
   padding-top: 30px;
-  padding-bottom: 80px;
+  padding-bottom: 82px;
   padding-left: 23px;
   padding-right: 20px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    top: -330px;
     font-size: 50px;
     line-height: 60px;
     padding-left: 107px;
@@ -43,7 +40,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -285px;
     padding-top: 63px;
     padding-left: 157px;
     padding-right: 150px;
@@ -58,7 +54,6 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  outline: 1px solid orange;
   
   @media (min-width: $tablet-width) {
     width: $tablet-width;
@@ -82,7 +77,6 @@
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 48px;
-  outline: 1px solid yellow;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -271,7 +265,6 @@
 }
 
 .gallery__text {
-  /*outline: 1px solid blue;*/
   margin: 0;
   padding: 0;
   flex-grow: 1;
@@ -279,6 +272,8 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 30px;
     margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
     min-height: 152px;
 
     &--day {

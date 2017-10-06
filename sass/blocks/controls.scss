@@ -1,3 +1,217 @@
 .controls {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.controls__item {
+  &--active::after {
+    position: absolute;
+    content: "";
+    bottom: -72px;
+    left: -20px;
+    right: -20px;
+    height: 1px;
+    background-color: #dddfe0;
+  }
+  
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 26px;
+    padding-bottom: 22px;
+    
+    &:after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      right: -15px;
+      height: 1px;
+      background-color: #dddfe0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 16px;
+    padding-bottom: 10px;
+    
+    &:after {
+      bottom: 0;
+      left: 0;
+      right: -25px;
+    }
+  }
+}
+
+.controls__range {
+  position: absolute;
+  width: 240px;
+  left: 15px;
+  bottom: -39px;
+  display: none;
+  -webkit-appearance: none;
   background-color: transparent;
+  color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: static;
+    width: 202px;
+    margin-top: -4px;
+  }
+  
+  @media (min-width: $desktop-width) {
+    width: 288px;
+  }
+  
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    position: relative;
+    top: -6px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: $greyLight;
+    border: 2px solid $pink;
+  }
+  
+  &:focus::-webkit-slider-thumb {
+    background-color: $pink;
+  }
+  
+  &::-webkit-slider-runnable-track {
+    height: 2px;
+    cursor: pointer;
+    background-color: $blueDarker;
+  }
+
+  &::-moz-range-thumb {
+    /*-webkit-appearance: none;*/
+    position: relative;
+    top: -6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $greyLight;
+    border: 2px solid $pink;
+  }
+  
+  &:focus::-moz-range-thumb {
+    background-color: $pink;
+  }
+  
+  &::-moz-range-track {
+    height: 2px;
+    cursor: pointer;
+    background-color: $blueDarker;
+  }
+  
+  &::-ms-thumb {
+    /*-webkit-appearance: none;*/
+    position: relative;
+    top: -6px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: $greyLight;
+    border: 2px solid $pink;
+  }
+  
+  &:focus::-ms-thumb {
+    background-color: $pink;
+  }
+  
+  &::-moz-ms-track {
+    height: 2px;
+    cursor: pointer;
+    background-color: $blueDarker;
+  }
+  
+  &--active {
+    display: block;
+  }
+}
+
+.controls__action {
+  padding: 0;
+  margin: 0;
+  display: block;
+  background-color: transparent;
+  border: 0;
+  opacity: 0.3;
+  cursor: pointer;
+  
+  &:hover {
+    opacity: 0.5;
+  }
+  
+  &--active,
+  &--active:hover {
+    opacity: 1;
+    cursor: default;
+  }
+  
+  &--active .controls__icon {
+    fill: $pink;
+  }
+  
+  &--fill {
+    margin-right: 8px;
+  }
+
+  @media (min-width: $tablet-width) {
+    opacity: 1;
+    
+    .controls__icon {
+      fill: $pink;
+    }
+    
+    &--crop svg {
+      width: 24px;
+      height: 24px;
+    }
+    
+    &--fill svg {
+      width: 24px;
+      height: 22px;
+    }
+    
+    &--contrast {
+      padding-left: 6px;
+    }
+    
+    &--contrast svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--crop svg {
+      width: 48px;
+      height: 48px;
+    }
+    
+    &--fill svg {
+      width: 48px;
+      height: 43px;
+    }
+    
+    &--contrast svg {
+      width: 32px;
+      height: 32px;
+      margin-bottom: 9px;
+    }
+  }
 }
