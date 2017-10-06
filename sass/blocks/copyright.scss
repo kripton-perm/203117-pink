@@ -1,10 +1,44 @@
 .copyright {
   background-color: transparent;
+  display: flex;
+  align-items: center;
 }
 
 .copyright__text {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   color: $blue;
+  margin-right: 15px;
+  
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    margin-right: 13px;
+  }
+}
+
+.copyright__link {
+  width: 27px;
+  height: 35px;
+  margin-top: 2px;
+  
+  path {
+    fill: $pink;
+    transition: all 0.2s;
+  }
+  
+  &:hover path,
+  &:focus path {
+    fill: $blue;
+  }
+  
+  &:active path {
+    fill: rgba($blue, 0.3);
+  }
+  
+  @media (min-width: $desktop-width) {
+    margin-top: 10px;
+  }
 }
