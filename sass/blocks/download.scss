@@ -1,7 +1,7 @@
 .download {
   background-color: transparent;
   color: $white;
-  
+
   @media (max-width: $mobile-width-only) {
     background-image: linear-gradient(to bottom, transparent 396px, $blueDark 396px);
   }
@@ -11,7 +11,7 @@
   padding: 0 20px;
   padding-top: 424px;
   padding-bottom: 31px;
-  background-image: url("../../img/iphone-hand-mobile@1x.png");
+  background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: left 110px;
   display: flex;
@@ -31,7 +31,6 @@
   @media (min-width: $desktop-width) {
     width: $desktop-wrapper-width;
     background-position: right 100px;
-    min-height: 520px;
     padding-top: 110px;
     padding-left: 0;
     padding-right: 640px;
@@ -129,13 +128,13 @@
   &--apple {
     width: 47px;
     height: 57px;
-    background-image: url("../../img/logo-apple.svg");
+    background-image: url("../img/logo-apple.svg");
   }
 
   &--android {
     width: 43px;
     height: 48px;
-    background-image: url("../../img/logo-android.svg");
+    background-image: url("../img/logo-android.svg");
     margin-left: 35px;
     margin-right: 35px;
 
@@ -147,7 +146,7 @@
   &--microsoft {
     width: 44px;
     height: 42px;
-    background-image: url("../../img/logo-microsoft.svg");
+    background-image: url("../img/logo-microsoft.svg");
   }
 }
 
@@ -160,7 +159,7 @@
   text-align: center;
   padding-left: 25px;
   padding-right: 25px;
-  
+
   @media (min-width: $tablet-width) {
     padding: 0;
     font-size: 18px;

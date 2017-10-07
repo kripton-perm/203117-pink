@@ -53,11 +53,11 @@
     position: relative;
     width: 50%;
     margin-right: -25%;
-    
+
     &:nth-child(1) {
       z-index: 3;
     }
-    
+
     &:nth-child(2) {
       z-index: 2;
     }
@@ -73,12 +73,12 @@
   background-color: $blueDarker;
   color: $white;
   text-align: center;
-  
+
   &--hit {
-    background-image: url(../../img/bg-hit.svg);
+    background-image: url(../img/bg-hit.svg);
     background-repeat: no-repeat;
     background-position: left top;
-    
+
     &::before {
       content: "Хит";
       position: absolute;
@@ -95,10 +95,10 @@
     margin-left: 50%;
     padding-top: 12px;
     padding-bottom: 10px;
-    
+
     &--hit {
       background-size: 61px 61px;
-    
+
       &::before {
         top: 5px;
         left: 5px;
@@ -109,10 +109,10 @@
   @media (min-width: $desktop-width) {
     padding-top: 15px;
     padding-bottom: 21px;
-    
+
     &--hit {
       background-size: 74px 73px;
-    
+
       &::before {
         top: 13px;
         left: 8px;
@@ -173,17 +173,17 @@
   padding-right: 40px;
   padding-bottom: 14px;
   border-bottom: 2px solid $greyDark;
-  
+
   &--yes {
-    background-image: url("../../img/icon-yes.svg");
+    background-image: url("../img/icon-yes.svg");
     background-repeat: no-repeat;
     background-size: 31px 21px;
     background-position: 93% center;
   }
-  
+
   &--no {
     display: block;
-    background-image: url("../../img/icon-no.svg");
+    background-image: url("../img/icon-no.svg");
     background-repeat: no-repeat;
     background-size: 27px 26px;
     background-position: 93% center;
@@ -194,11 +194,11 @@
     padding-top: 7px;
     padding-bottom: 8px;
     text-transform: none;
-    
+
     &--yes {
       background-position: 79% center;
     }
-    
+
     &--no {
       background-position: 79% center;
     }
@@ -209,11 +209,11 @@
     padding-top: 14px;
     padding-bottom: 15px;
     font-size: 18px;
-    
+
     &--yes {
       background-position: 77% center;
     }
-    
+
     &--no {
       background-position: 77% center;
     }

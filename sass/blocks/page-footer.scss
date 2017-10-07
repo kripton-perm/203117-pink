@@ -46,28 +46,28 @@
   width: 147px;
   height: 41px;
   margin-bottom: 40px;
-  
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-    margin-top: -15px;
-  }
-  
+
   path {
     transition: all 0.5s;
   }
-  
+
   svg {
     width: 147px;
     height: 41px;
   }
-  
+
   &:hover path,
   &:focus path {
     fill: $pink;
   }
-  
+
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-top: -15px;
   }
 }
 
@@ -80,7 +80,7 @@
     margin-bottom: 0;
     margin-right: 15px;
   }
-  
+
   @media (min-width: $desktop-width) {
     width: 177px;
     margin-bottom: 0;

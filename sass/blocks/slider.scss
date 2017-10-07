@@ -39,29 +39,29 @@
   border-radius: 50%;
   margin-right: 13px;
   cursor: pointer;
-  
+
   &--price {
     border-color: $grey;
   }
-  
+
   &:hover,
   &:focus {
     background-color: rgba($black, 0.6);
   }
-  
+
   &:active {
     background-color: rgba($black, 0.1);
   }
-  
+
   &:last-child {
     margin-right: 0;
   }
-  
+
   &--active {
     background-color: $white;
     border-color: $blue;
     cursor: default;
-    
+
     &:hover,
     &:focus,
     &:active {
@@ -91,13 +91,13 @@
   padding: 0;
   cursor: pointer;
   transition: all 0.3s;
-  
+
   &:hover,
   &:focus {
     transform: rotate(45deg) scale(1.2);
     border-color: $pink;
   }
-  
+
   &--prev,
   &--prev:hover,
   &--prev:focus {
@@ -105,13 +105,12 @@
     border-right-color: transparent;
     border-top-color: transparent;
   }
-  
+
   &--next,
   &--next:hover,
   &--next:focus {
     right: 5px;
     border-left-color: transparent;
     border-bottom-color: transparent;
-    
   }
 }

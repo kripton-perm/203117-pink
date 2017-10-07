@@ -62,11 +62,11 @@
     margin-bottom: 40px;
     margin-left: 80px;
     font-weight: 400;
-    
+
     &--current {
     position: relative;
     }
-    
+
     &--current::after {
       position: absolute;
       content: "";

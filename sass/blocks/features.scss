@@ -87,7 +87,7 @@
   padding-bottom: 358px;
 
   @media (max-width: $tablet-width-only) {
-    background-image: url("../../img/iphone-screen-mobile@1x.png");
+    background-image: url("../img/iphone-screen-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: center bottom;
   }
@@ -113,7 +113,7 @@
 .features__item {
   margin: 0;
   margin-bottom: 33px;
-  
+
   &:last-child {
     margin-bottom: 0;
   }

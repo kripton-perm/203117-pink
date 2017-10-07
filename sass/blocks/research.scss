@@ -24,11 +24,11 @@
     padding-top: 38px;
     padding-bottom: 30px;
     padding-left: 330px;
-    background-image: url("../../img/icon-editor-diagram-fill.svg"), url("../../img/timer.png");
+    background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/timer.png");
     background-repeat: no-repeat, no-repeat;
     background-size: 202px 202px, 238px 276px;
     background-position: 39px 56px, 20px, top;
-    
+
     &::before {
       content: "24";
       position: absolute;
@@ -47,7 +47,7 @@
     padding-left: 365px;
     background-size: 253px 253px, 298px 345px;
     background-position: 22px 67px, left top;
-    
+
     &::before {
       left: 80px;
       top: 105px;
@@ -112,7 +112,7 @@
     color: $pink;
     font-size: 14px;
     transition: all 0.3s;
-    
+
     &:hover,
     &:focus {
       color: $blue;
