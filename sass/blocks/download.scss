@@ -1,6 +1,10 @@
 .download {
   background-color: transparent;
   color: $white;
+  
+  @media (max-width: $mobile-width-only) {
+    background-image: linear-gradient(to bottom, transparent 396px, $blueDark 396px);
+  }
 }
 
 .download__wrapper {
