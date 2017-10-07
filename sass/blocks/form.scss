@@ -20,6 +20,7 @@
 
   &--id {
     padding-bottom: 26px;
+
     .form__legend {
       display: none;
     }
@@ -598,7 +599,6 @@
 }
 
 .form__label {
-
   @media (min-width: $tablet-width) {
     &--textarea {
       padding-left: 20px;
@@ -625,7 +625,6 @@
 }
 
 .form__input {
-
   @media (min-width: $desktop-width) {
     &--text {
       flex-grow: 1;
@@ -739,7 +738,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-right: 0px;
+    margin-right: 0;
     margin-top: 18px;
     margin-bottom: 0;
   }

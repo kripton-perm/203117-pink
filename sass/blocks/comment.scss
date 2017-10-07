@@ -43,7 +43,7 @@
       }
 
       .comment__text {
-        margin-top: 0px;
+        margin-top: 0;
         padding-bottom: 0;
       }
     }
@@ -103,10 +103,6 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 12px;
   }
-/*
-  @media (min-width: $desktop-width) {
-    margin-bottom: 0;
-  }*/
 }
 
 .comment__like {

@@ -29,7 +29,7 @@
     padding-top: 26px;
     padding-bottom: 22px;
 
-    &:after {
+    &::after {
       position: absolute;
       content: "";
       bottom: 0;
@@ -44,7 +44,7 @@
     padding-top: 16px;
     padding-bottom: 10px;
 
-    &:after {
+    &::after {
       bottom: 0;
       left: 0;
       right: -25px;
@@ -58,7 +58,7 @@
   left: 15px;
   bottom: -39px;
   display: none;
-  -webkit-appearance: none;
+  appearance: none;
   background-color: transparent;
   color: transparent;
   border-color: transparent;
@@ -76,7 +76,7 @@
   }
 
   &::-webkit-slider-thumb {
-    -webkit-appearance: none;
+    appearance: none;
     position: relative;
     top: -6px;
     width: 14px;
