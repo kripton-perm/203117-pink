@@ -255,8 +255,6 @@
     
     .form__label {
       display: block;
-      position: relative;
-      z-index: 1;
       font-size: 18px;
       line-height: 30px;
       font-weight: 400;
@@ -266,6 +264,14 @@
       padding-bottom: 15px;
       cursor: pointer;
       outline: 1px solid blue;
+      
+      &:hover .form__checkbox {
+        border-color: $blue;
+      }
+      
+      &:active .form__checkbox {
+        border-color: $pink;
+      }
     }
     
     .form__input {
@@ -274,12 +280,21 @@
     
     .form__checkbox {
       position: absolute;
+      cursor: pointer;
       top: 10px;
       left: 0;
       width: 39px;
       height: 39px;
       background-color: $white;
       border: 2px solid $greyDark;
+      
+      &:hover {
+        border-color: $blue;
+      }
+      
+      &:active {
+        border-color: $pink;
+      }
     }
     
     .form__input:checked + .form__checkbox::before {
@@ -329,8 +344,6 @@
     }
     
     .form__label {
-      position: relative;
-      z-index: 1;
       display: block;
       font-size: 18px;
       line-height: 30px;
@@ -340,6 +353,14 @@
       padding-top: 15px;
       padding-bottom: 15px;
       cursor: pointer;
+      
+      &:hover .form__radio {
+        border-color: $blue;
+      }
+      
+      &:active .form__radio {
+        border-color: $pink;
+      }
     }
     
     .form__input {
@@ -355,6 +376,14 @@
       border-radius: 50%;
       background-color: $white;
       border: 2px solid $greyDark;
+      
+      &:hover {
+        border-color: $blue;
+      }
+      
+      &:active {
+        border-color: $pink;
+      }
     }
     
     .form__input:checked + .form__radio::before {
