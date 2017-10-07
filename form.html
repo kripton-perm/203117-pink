@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <style>
+    <style>
       HTML {
     background-repeat: no-repeat;
     background-position:  50% 0;
@@ -30,7 +30,7 @@
       body {
         opacity: 0.5;
       }
-    </style> -->
+    </style>
   </head>
   <body class="body">
     <h1 class="visually-hidden">Приложение для обработки фотографий Pink</h1>
@@ -153,11 +153,11 @@
               <ul class="form__list">
                 <li class="form__item">
                   <label class="form__label" for="phone">Номер телефона</label>
-                  <input class="form__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+                  <input class="form__input form__input--phone" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
                 </li>
                 <li class="form__item">
                   <label class="form__label" for="email">Адрес почты</label>
-                  <input class="form__input" type="email" id="email" placeholder="Введите почту *">
+                  <input class="form__input form__input--mail" type="email" id="email" placeholder="Введите почту *">
                 </li>
               </ul>
             </fieldset>
@@ -186,7 +186,7 @@
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--comment">
               <legend class="form__legend">Опишите свои эмоции</legend>
-              <textarea class="form__textarea" name="comment" id="comment" cols="10" rows="4" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <textarea class="form__textarea" name="comment" id="comment" cols="5" rows="4" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
             <button class="button form__button" type="submit">Отправить форму</button>
             <p class="form__note">&mdash; Обязательные <span class="form__hidden">для заполнения</span> поля</p>
