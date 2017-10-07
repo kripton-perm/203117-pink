@@ -98,7 +98,6 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
-  /*outline: 1px solid red;*/
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -115,6 +114,7 @@
 }
 
 .gallery__item {
+  outline: 1px solid red;
   margin-bottom: 22px;
   display: flex;
   flex-direction: column;
@@ -158,6 +158,7 @@
   &--day .gallery__text {
     margin-left: 20px;
     margin-right: 20px;
+    min-height: 118px;
   }
 
   @media (min-width: $tablet-width) {
@@ -166,7 +167,7 @@
 
     &--day {
       width: $tablet-width;
-      margin-bottom: 50px;
+      margin-bottom: 53px;
     }
   }
 
@@ -178,12 +179,13 @@
       width: $desktop-width;
       margin-left: -120px;
       margin-right: -120px;
-      margin-bottom: 50px;
+      margin-bottom: 51px;
     }
 
     &--day .gallery__text {
       margin-left: 130px;
       margin-right: 130px;
+      min-height: 92px;
     }
   }
 }
@@ -258,18 +260,14 @@
   padding: 0;
   flex-grow: 1;
 
+  @media (min-width: $tablet-width) {
+    min-height: 155px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-bottom: 30px;
     margin-bottom: 0;
     margin-left: 10px;
     margin-right: 10px;
-    min-height: 152px;
-
-    &--day {
-      min-height: 20px;
-      padding-bottom: 0;
-      margin-left: 120px;
-      margin-right: 120px;
-    }
   }
 }
