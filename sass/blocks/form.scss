@@ -36,7 +36,7 @@
 
     @media (min-width: $tablet-width) {
       padding-top: 51px;
-      padding-bottom: 5px;
+      padding-bottom: 3px;
       border: none;
       order: -3;
       width: $tablet-width;
@@ -63,7 +63,7 @@
     }
 
     .form__item {
-      margin-bottom: 15px;
+      margin-bottom: 14px;
       padding-top: 4px;
 
       @media (min-width: $tablet-width) {
@@ -101,8 +101,8 @@
       border: 2px solid $greyDark;
       outline: none;
       padding: 20px;
-      padding-top: 17px;
-      padding-bottom: 18px;
+      padding-top: 20px;
+      padding-bottom: 20px;
       width: 100%;
 
       &:hover {
@@ -124,20 +124,22 @@
   }
 
   &--contacts {
+    padding-bottom: 22px;
+
     @media (min-width: $tablet-width) {
       order: -1;
-      padding-top: 25px;
+      padding-top: 24px;
       padding-bottom: 10px;
-      margin-bottom: 56px;
+      margin-bottom: 57px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-top: 60px;
+      margin-top: 56px;
       padding-top: 35px;
-      padding-left: 60px;
-      padding-right: 60px;
-      padding-bottom: 10px;
-      margin-bottom: 60px;
+      padding-left: 59px;
+      padding-right: 59px;
+      padding-bottom: 14px;
+      margin-bottom: 57px;
     }
 
     .form__legend {
@@ -163,7 +165,7 @@
     }
 
     .form__item {
-      margin-bottom: 20px;
+      margin-bottom: 18px;
 
       @media (min-width: $tablet-width) {
         display: flex;
@@ -175,7 +177,7 @@
       }
 
       @media (min-width: $desktop-width) {
-        width: 371px;
+        width: 373px;
         padding: 0;
         margin: 0;
       }
@@ -206,7 +208,6 @@
       border: 2px solid $greyDark;
       outline: none;
       padding: 20px;
-      padding-bottom: 15px;
       width: 100%;
 
       &--phone {
@@ -223,8 +224,6 @@
 
       @media (min-width: $tablet-width) {
         padding-left: 17px;
-        padding-top: 18px;
-        padding-bottom: 18px;
         margin-bottom: 10px;
         padding-right: 60px;
         background-repeat: no-repeat;
@@ -270,7 +269,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 21px;
+      padding-top: 15px;
       padding-left: 58px;
       padding-right: 58px;
       padding-bottom: 0;
@@ -413,7 +412,7 @@
 
     @media (min-width: $desktop-width) {
       width: 435px;
-      padding-top: 25px;
+      padding-top: 20px;
       margin: 0;
     }
 
@@ -519,20 +518,20 @@
   &--comment {
     padding-top: 60px;
     position: relative;
-    padding-bottom: 44px;
+    padding-bottom: 45px;
 
     @media (min-width: $tablet-width) {
       padding-top: 38px;
-      padding-bottom: 45px;
+      padding-bottom: 48px;
       padding-left: 59px;
       padding-right: 59px;
-      margin-bottom: 68px;
+      margin-bottom: 67px;
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 33px;
+      padding-top: 28px;
       padding-bottom: 38px;
-      margin-bottom: 64px;
+      margin-bottom: 65px;
     }
 
     .form__legend {

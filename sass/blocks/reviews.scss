@@ -1,12 +1,15 @@
 .reviews {
   position: relative;
-  z-index: 1;
-  margin-top: -40px;
   background-color: $white;
-  padding-top: 40px;
+
+  @media (max-width: $mobile-width-only) {
+    z-index: 1;
+    margin-top: -40px;
+    padding-top: 40px;
+  }
 
   @media (min-width: $tablet-width) {
-    padding-top: 87px;
+    padding-top: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -82,7 +85,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    margin-top: 3px;
+    margin-top: 2px;
     font-size: 14px;
     font-weight: 400;
   }

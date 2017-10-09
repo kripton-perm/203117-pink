@@ -3,14 +3,14 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    background-color: $grey;
     padding-top: 60px;
     padding-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 28px;
-    padding-bottom: 105px;
+    padding-bottom: 68px;
+    background-color: $grey;
   }
 }
 
@@ -21,14 +21,14 @@
       position: absolute;
       color: $pink;
       left: 85px;
-      top: 85px;
+      top: 98px;
       font-size: 96px;
       font-weight: 700;
     }
 
     @media (min-width: $desktop-width) {
       left: 80px;
-      top: 105px;
+      top: 120px;
       font-size: 120px;
     }
   }
@@ -93,7 +93,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
     padding: 0;
     padding-right: 10px;
     font-size: 14px;
@@ -103,7 +103,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 35px;
+    margin-bottom: 37px;
     padding-right: 40px;
     font-size: 18px;
     line-height: 30px;

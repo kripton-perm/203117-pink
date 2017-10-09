@@ -1,13 +1,13 @@
 .price {
   background-color: $grey;
-  background-image: linear-gradient(175.8deg, $white 67px, $grey 67px);
+  background-image: linear-gradient(175.8deg, $white 73px, $grey 73px);
   padding-top: 133px;
   padding-bottom: 47px;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
     padding-top: 108px;
-    background-image: linear-gradient(175.5deg, $white 72px, $grey 72px);
+    background-image: linear-gradient(175.6deg, $white 76px, $grey 76px);
     padding-bottom: 70px;
   }
 
