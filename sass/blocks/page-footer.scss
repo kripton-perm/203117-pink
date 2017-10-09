@@ -6,10 +6,8 @@
 
   &--hidden {
     display: none;
-  }
 
-  @media (min-width: $tablet-width) {
-    &--hidden {
+    @media (min-width: $tablet-width) {
       display: block;
     }
   }
@@ -32,7 +30,6 @@
     padding: 0 20px;
     flex-direction: row;
     justify-content: space-between;
-    /*align-items: flex-start;*/
   }
 
   @media (min-width: $desktop-width) {

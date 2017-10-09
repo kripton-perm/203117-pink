@@ -4,7 +4,6 @@
   @media (min-width: $tablet-width) {
     display: block;
     background-color: $grey;
-    outline: 1px solid orange;
     padding-top: 60px;
     padding-bottom: 50px;
   }
@@ -16,6 +15,24 @@
 }
 
 .research__wrapper {
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "24";
+      position: absolute;
+      color: $pink;
+      left: 85px;
+      top: 85px;
+      font-size: 96px;
+      font-weight: 700;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 80px;
+      top: 105px;
+      font-size: 120px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     width: $tablet-width;
     position: relative;
@@ -28,16 +45,6 @@
     background-repeat: no-repeat, no-repeat;
     background-size: 202px 202px, 238px 276px;
     background-position: 39px 56px, 20px, top;
-
-    &::before {
-      content: "24";
-      position: absolute;
-      color: $pink;
-      left: 85px;
-      top: 85px;
-      font-size: 96px;
-      font-weight: 700;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -47,16 +54,16 @@
     padding-left: 365px;
     background-size: 253px 253px, 298px 345px;
     background-position: 22px 67px, left top;
-
-    &::before {
-      left: 80px;
-      top: 105px;
-      font-size: 120px;
-    }
   }
 }
 
 .research__title {
+  br {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
     margin-bottom: 10px;
@@ -74,14 +81,16 @@
     font-weight: 700;
     line-height: 36px;
     color: $black;
-
-    br {
-      display: none;
-    }
   }
 }
 
 .research__text {
+  br {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
     margin-bottom: 10px;
@@ -100,24 +109,21 @@
     line-height: 30px;
     font-weight: 400;
     color: $blue;
-
-    br {
-      display: none;
-    }
   }
 }
 
 .research__link {
+  transition: all 0.3s;
+
+  &:hover,
+  &:focus {
+    color: $blue;
+    text-decoration: none;
+  }
+
   @media (min-width: $tablet-width) {
     color: $pink;
     font-size: 14px;
-    transition: all 0.3s;
-
-    &:hover,
-    &:focus {
-      color: $blue;
-      text-decoration: none;
-    }
   }
 
   @media (min-width: $desktop-width) {

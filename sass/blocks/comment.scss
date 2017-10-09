@@ -12,6 +12,24 @@
   &--day {
     padding-top: 19px;
 
+    .comment__text {
+      @media (min-width: $tablet-width) {
+        order: 1;
+        margin-bottom: 0;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-top: 0;
+      }
+    }
+
+    .comment__like {
+      @media (min-width: $tablet-width) {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+
     @media (min-width: $tablet-width) {
       padding-left: 28px;
       padding-top: 22px;
@@ -20,16 +38,6 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-
-      .comment__text {
-        order: 1;
-        margin-bottom: 0;
-      }
-
-      .comment__like {
-        margin-top: 0;
-        margin-bottom: 0;
-      }
     }
 
     @media (min-width: $desktop-width) {
@@ -37,15 +45,6 @@
       padding-left: 30px;
       align-items: flex-start;
       align-content: flex-start;
-
-      .comment__like {
-        margin-top: 0;
-      }
-
-      .comment__text {
-        margin-top: 0;
-        padding-bottom: 0;
-      }
     }
   }
 
@@ -69,7 +68,6 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
-  outline: 1px solid blue;
 }
 
 .comment__time {
@@ -90,7 +88,6 @@
 }
 
 .comment__text {
-  outline: 1px solid blue;
   width: 100%;
   margin: 0;
   margin-top: -1px;
@@ -109,5 +106,4 @@
   padding: 0;
   align-self: flex-start;
   margin-top: auto;
-  outline: 1px solid blue;
 }

@@ -162,6 +162,15 @@
   &--upload {
     color: $pink;
     margin-bottom: 12px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: -1px;
+      margin-right: 45px;
+    }
   }
 
   &--upload:hover,
@@ -198,20 +207,11 @@
     width: 260px;
     margin-left: auto;
     margin-right: auto;
-
-    &--upload {
-      margin-bottom: 25px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     width: 183px;
     margin: 0;
     margin-bottom: 1px;
-
-    &--upload {
-      margin-left: -1px;
-      margin-right: 45px;
-    }
   }
 }

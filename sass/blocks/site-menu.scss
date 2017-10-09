@@ -33,6 +33,24 @@
   line-height: 32px;
   transition: all 0.3s;
 
+  &--current {
+    @media (min-width: $desktop-width) {
+      position: relative;
+    }
+
+    &::after {
+      @media (min-width: $desktop-width) {
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        bottom: -10px;
+        height: 2px;
+        background-color: $white;
+      }
+    }
+  }
+
   &:hover,
   &:focus {
     color: $pink;
@@ -61,19 +79,5 @@
     margin-bottom: 40px;
     margin-left: 80px;
     font-weight: 400;
-
-    &--current {
-      position: relative;
-    }
-
-    &--current::after {
-      position: absolute;
-      content: "";
-      left: 0;
-      right: 0;
-      bottom: -10px;
-      height: 2px;
-      background-color: $white;
-    }
   }
 }

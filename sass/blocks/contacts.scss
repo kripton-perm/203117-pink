@@ -30,30 +30,30 @@
     border-left: 200px solid transparent;
     border-right: 200px solid transparent;
     border-top: 50px solid $white;
+
+    @media (min-width: $tablet-width) {
+      bottom: -65px;
+      border-left-width: 320px;
+      border-right-width: 320px;
+      border-top-width: 65px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: -105px;
+      border-left-width: 600px;
+      border-right-width: 600px;
+      border-top-width: 105px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
     padding-bottom: 28px;
-
-    &::after {
-      bottom: -65px;
-      border-left: 320px solid transparent;
-      border-right: 320px solid transparent;
-      border-top: 65px solid $white;
-    }
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-wrapper-width;
     padding-bottom: 20px;
-
-    &::after {
-      bottom: -105px;
-      border-left: 600px solid transparent;
-      border-right: 600px solid transparent;
-      border-top: 105px solid $white;
-    }
   }
 }
 
@@ -103,36 +103,51 @@
 }
 
 .contacts__item {
-  @media (min-width: $tablet-width) {
-    width: 50%;
-
-    &--phone {
+  &--phone {
+    @media (min-width: $tablet-width) {
       padding-right: 10px;
     }
+  }
 
-    &--mail {
+  &--mail {
+    .contacts__title {
+      padding-left: 8px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 5px;
+        padding-left: 0;
+      }
+    }
+
+    @media (max-width: $tablet-width-only) {
       padding-left: 10px;
     }
 
-    &--address {
+    @media (min-width: $desktop-width) {
+      order: 1;
+    }
+  }
+
+  &--address {
+    @media (max-width: $tablet-width-only) {
       margin-top: 22px;
       margin-left: auto;
       margin-right: auto;
       padding-left: 10px;
       padding-right: 10px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
   }
 
   @media (min-width: $desktop-width) {
     width: 33%;
-
-    &--mail {
-      order: 1;
-    }
-
-    &--address {
-      margin-top: 0;
-    }
   }
 }
 
@@ -145,15 +160,6 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 3px;
-  }
-}
-
-.contacts__item--mail .contacts__title {
-  padding-left: 8px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 5px;
-    padding-left: 0;
   }
 }
 
@@ -246,17 +252,14 @@
     width: 100%;
     margin: 0;
     padding: 0;
-  }
-
-  @media (min-width: $tablet-width) {
-    iframe {
-      height: 370px;
+    min-height: 200px;
+    
+    @media (min-width: $tablet-width) {
+      min-height: 370px;
     }
-  }
 
-  @media (min-width: $desktop-width) {
-    iframe {
-      height: 500px;
+    @media (min-width: $desktop-width) {
+      min-height: 500px;
     }
   }
 }

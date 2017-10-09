@@ -106,10 +106,18 @@
 
   &::before {
     content: "«";
+
+    @media (min-width: $desktop-width) {
+      content: "";
+    }
   }
 
   &::after {
     content: "»";
+
+    @media (min-width: $desktop-width) {
+      content: "";
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -125,14 +133,6 @@
     line-height: 30px;
     font-weight: 400;
     margin-bottom: 35px;
-
-    &::before {
-      content: "";
-    }
-
-    &::after {
-      content: "";
-    }
   }
 }
 

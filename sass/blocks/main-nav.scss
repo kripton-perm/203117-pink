@@ -58,9 +58,19 @@
     box-shadow: 0 1px 0 #000000;
   }
 
+  @media (min-width: $tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 38px;
+  }
+
   svg {
     width: 75px;
     height: 23px;
+
+    @media (min-width: $tablet-width) {
+      width: 147px;
+      height: 40px;
+    }
   }
 
   &[href]:hover path,
@@ -71,16 +81,6 @@
   &[href]:active path {
     fill: $white;
     opacity: 0.3;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-top: 27px;
-    padding-bottom: 38px;
-
-    svg {
-      width: 147px;
-      height: 40px;
-    }
   }
 }
 
@@ -102,12 +102,16 @@
   border: 0;
   cursor: pointer;
 
-  &:hover path {
-    fill: $pink;
+  &:hover {
+    path {
+      fill: $pink;
+    }
   }
 
-  &:active path {
-    opacity: 0.3;
+  &:active {
+    path {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $desktop-width) {

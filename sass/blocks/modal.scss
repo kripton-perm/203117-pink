@@ -10,6 +10,24 @@
   &--success {
     top: 0;
     z-index: 1;
+
+    @media (min-width: $desktop-width) {
+      width: 780px;
+    }
+
+    .modal__message {
+      @media (min-width: $desktop-width) {
+        padding-left: 200px;
+        padding-right: 200px;
+      }
+    }
+
+    .modal__wrapper {
+      @media (min-width: $desktop-width) {
+        padding-left: 160px;
+        padding-right: 160px;
+      }
+    }
   }
 
   &--error {
@@ -23,22 +41,6 @@
 
   @media (min-width: $tablet-width) {
     width: 460px;
-  }
-
-  @media (min-width: $desktop-width) {
-    &--success {
-      width: 780px;
-
-      .modal__message {
-        padding-left: 200px;
-        padding-right: 200px;
-      }
-
-      .modal__wrapper {
-        padding-left: 160px;
-        padding-right: 160px;
-      }
-    }
   }
 }
 
@@ -78,8 +80,10 @@
     line-height: 24px;
     padding-left: 70px;
     padding-right: 70px;
+  }
 
-    br {
+  br {
+    @media (min-width: $tablet-width) {
       display: none;
     }
   }

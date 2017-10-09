@@ -48,19 +48,23 @@
 }
 
 .price__item {
+  &:nth-child(1) {
+    @media (min-width: $tablet-width) {
+      z-index: 3;
+    }
+  }
+
+  &:nth-child(2) {
+    @media (min-width: $tablet-width) {
+      z-index: 2;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     display: block;
     position: relative;
     width: 50%;
     margin-right: -25%;
-
-    &:nth-child(1) {
-      z-index: 3;
-    }
-
-    &:nth-child(2) {
-      z-index: 2;
-    }
   }
 }
 
@@ -73,11 +77,20 @@
   background-color: $blueDarker;
   color: $white;
   text-align: center;
+  cursor: default;
 
   &--hit {
     background-image: url("../img/bg-hit.svg");
     background-repeat: no-repeat;
     background-position: left top;
+
+    @media (min-width: $tablet-width) {
+      background-size: 61px 61px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-size: 74px 73px;
+    }
 
     &::before {
       content: "Хит";
@@ -87,6 +100,11 @@
       top: 13px;
       left: 8px;
       transform: rotate(-45deg) scale(0.8);
+
+      @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+        top: 5px;
+        left: 5px;
+      }
     }
   }
 
@@ -95,29 +113,11 @@
     margin-left: 50%;
     padding-top: 12px;
     padding-bottom: 10px;
-
-    &--hit {
-      background-size: 61px 61px;
-
-      &::before {
-        top: 5px;
-        left: 5px;
-      }
-    }
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 15px;
     padding-bottom: 21px;
-
-    &--hit {
-      background-size: 74px 73px;
-
-      &::before {
-        top: 13px;
-        left: 8px;
-      }
-    }
   }
 }
 
@@ -173,20 +173,17 @@
   padding-right: 40px;
   padding-bottom: 14px;
   border-bottom: 2px solid $greyDark;
+  background-repeat: no-repeat;
+  background-position: 93% center;
 
   &--yes {
     background-image: url("../img/icon-yes.svg");
-    background-repeat: no-repeat;
-    background-size: 31px 21px;
-    background-position: 93% center;
+    background-size: 31px 21px;  
   }
 
   &--no {
-    display: block;
     background-image: url("../img/icon-no.svg");
-    background-repeat: no-repeat;
     background-size: 27px 26px;
-    background-position: 93% center;
   }
 
   @media (min-width: $tablet-width) {
@@ -194,14 +191,7 @@
     padding-top: 7px;
     padding-bottom: 8px;
     text-transform: none;
-
-    &--yes {
-      background-position: 79% center;
-    }
-
-    &--no {
-      background-position: 79% center;
-    }
+    background-position: 79% center;
   }
 
   @media (min-width: $desktop-width) {
@@ -209,14 +199,7 @@
     padding-top: 14px;
     padding-bottom: 15px;
     font-size: 18px;
-
-    &--yes {
-      background-position: 77% center;
-    }
-
-    &--no {
-      background-position: 77% center;
-    }
+    background-position: 77% center;
   }
 }
 

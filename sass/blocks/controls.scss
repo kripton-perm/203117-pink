@@ -12,13 +12,31 @@
 
 .controls__item {
   &--active::after {
-    position: absolute;
-    content: "";
-    bottom: -72px;
-    left: -20px;
-    right: -20px;
-    height: 1px;
-    background-color: #dddfe0;
+    @media (max-width: $mobile-width-only) {
+      position: absolute;
+      content: "";
+      bottom: -72px;
+      left: -20px;
+      right: -20px;
+      height: 1px;
+      background-color: #dddfe0;
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      right: -15px;
+      height: 1px;
+      background-color: #dddfe0;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: -25px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -28,27 +46,11 @@
     justify-content: space-between;
     padding-top: 26px;
     padding-bottom: 22px;
-
-    &::after {
-      position: absolute;
-      content: "";
-      bottom: 0;
-      left: 0;
-      right: -15px;
-      height: 1px;
-      background-color: #dddfe0;
-    }
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 16px;
     padding-bottom: 10px;
-
-    &::after {
-      bottom: 0;
-      left: 0;
-      right: -25px;
-    }
   }
 }
 
@@ -63,6 +65,10 @@
   color: transparent;
   border-color: transparent;
   cursor: pointer;
+
+  &--active {
+    display: block;
+  }
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -97,7 +103,6 @@
   }
 
   &::-moz-range-thumb {
-    /*-webkit-appearance: none;*/
     position: relative;
     top: -6px;
     width: 12px;
@@ -118,7 +123,6 @@
   }
 
   &::-ms-thumb {
-    /*-webkit-appearance: none;*/
     position: relative;
     top: -6px;
     width: 14px;
@@ -136,10 +140,6 @@
     height: 2px;
     cursor: pointer;
     background-color: $blueDarker;
-  }
-
-  &--active {
-    display: block;
   }
 }
 
@@ -162,56 +162,68 @@
     cursor: default;
   }
 
-  &--active .controls__icon {
-    fill: $pink;
+  &--active {
+    .controls__icon {
+      fill: $pink;
+    }
+  }
+
+  .controls__icon {
+    @media (min-width: $tablet-width) {
+      fill: $pink;
+    }
+  }
+
+  &--crop {
+    svg {
+      @media (min-width: $tablet-width) {
+        width: 24px;
+        height: 24px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 48px;
+        height: 48px;
+      }
+    }
   }
 
   &--fill {
     margin-right: 8px;
+
+    svg {
+      @media (min-width: $tablet-width) {
+        width: 24px;
+        height: 22px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 48px;
+        height: 43px;
+      }
+    }
+  }
+
+  &--contrast {
+    svg {
+      @media (min-width: $tablet-width) {
+        width: 16px;
+        height: 16px;
+      }
+      
+      @media (min-width: $tablet-width) {
+        width: 32px;
+        height: 32px;
+        margin-bottom: 9px;
+      }
+    }
+    
+    @media (min-width: $tablet-width) {
+      padding-left: 6px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     opacity: 1;
-
-    .controls__icon {
-      fill: $pink;
-    }
-
-    &--crop svg {
-      width: 24px;
-      height: 24px;
-    }
-
-    &--fill svg {
-      width: 24px;
-      height: 22px;
-    }
-
-    &--contrast {
-      padding-left: 6px;
-    }
-
-    &--contrast svg {
-      width: 16px;
-      height: 16px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &--crop svg {
-      width: 48px;
-      height: 48px;
-    }
-
-    &--fill svg {
-      width: 48px;
-      height: 43px;
-    }
-
-    &--contrast svg {
-      width: 32px;
-      height: 32px;
-      margin-bottom: 9px;
-    }
   }
 }

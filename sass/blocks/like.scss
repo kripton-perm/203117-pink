@@ -10,6 +10,12 @@
   font-weight: 400;
   line-height: 24px;
 
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    width: 100%;
+    text-align: left;
+  }
+
   &::before {
     position: absolute;
     left: 0;
@@ -18,34 +24,31 @@
     width: 13px;
     height: 12px;
     background-image: url("../img/icon-heart.svg");
-  }
 
-  @media (min-width: $tablet-width) {
-    padding-left: 0;
-    width: 100%;
-    text-align: left;
-
-    &::before {
+    @media (min-width: $tablet-width) {
       left: auto;
       right: 0;
       top: 5px;
     }
+    
+  }
 
-    &--day {
+  &--day {
+    @media (min-width: $tablet-width) {
       padding-right: 29px;
       width: auto;
+    }
 
-      &::before {
+    @media (min-width: $desktop-width) {
+      padding-right: 31px;
+    }
+
+    &::before {
+      @media (min-width: $tablet-width) {
         left: auto;
         right: 0;
         top: 5px;
       }
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &--day {
-      padding-right: 31px;
     }
   }
 }
