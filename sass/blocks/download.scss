@@ -119,6 +119,7 @@
   color: $white;
   text-decoration: none;
   transition: transform 0.3s;
+  background-repeat: no-repeat;
 
   &:hover,
   &:focus {
@@ -128,7 +129,7 @@
   &--apple {
     width: 47px;
     height: 57px;
-    background-image: url("../img/logo-apple.svg");
+    background-image: url("../../img/logo-apple.svg");
   }
 
   &--android {
