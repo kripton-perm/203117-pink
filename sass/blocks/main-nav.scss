@@ -1,9 +1,14 @@
 .main-nav {
   position: relative;
   background-color: $blueDarker;
+  
+  &--nojs {
+    .main-nav__toggle {
+      display: none;
+    }
+  }
 
   &--closed {
-    padding-top: 256px;
     background-color: transparent;
 
     .main-nav__list {
@@ -13,10 +18,10 @@
     }
 
     .main-nav__toggle {
-      bottom: 17px;
+      top: 20px;
 
       @media (min-width: $tablet-width) {
-        bottom: 50px;
+        top: 45px;
       }
     }
 
@@ -30,7 +35,7 @@
       top: 20px;
 
       @media (min-width: $tablet-width) {
-        top: 50px;
+        top: 45px;
       }
     }
 
@@ -54,13 +59,13 @@
     margin-right: -20px;
     padding-left: 20px;
     padding-top: 20px;
-    padding-bottom: 21px;
+    padding-bottom: 23px;
     box-shadow: 0 1px 0 #000000;
   }
 
   @media (min-width: $tablet-width) {
     padding-top: 27px;
-    padding-bottom: 38px;
+    padding-bottom: 39px;
   }
 
   svg {
