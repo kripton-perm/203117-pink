@@ -33,7 +33,7 @@
 
   &--id {
     padding-bottom: 26px;
-    
+
     @media (min-width: $tablet-width) {
       padding-top: 51px;
       padding-bottom: 5px;
@@ -41,7 +41,7 @@
       order: -3;
       width: $tablet-width;
     }
-    
+
     @media (min-width: $desktop-width) {
       width: 435px;
       padding-top: 15px;
@@ -65,7 +65,7 @@
     .form__item {
       margin-bottom: 15px;
       padding-top: 4px;
-      
+
       @media (min-width: $tablet-width) {
         display: flex;
         align-items: center;
@@ -93,7 +93,6 @@
         padding-right: 19px;
         margin: 0;
       }
-      
     }
 
     .form__input {
@@ -153,7 +152,6 @@
         padding-left: 25px;
         padding-right: 25px;
       }
-      
     }
 
     .form__list {
@@ -163,7 +161,7 @@
         justify-content: space-between;
       }
     }
-    
+
     .form__item {
       margin-bottom: 20px;
 
@@ -445,7 +443,6 @@
       @media (min-width: $desktop-width) {
         margin-bottom: 3px;
       }
-      
     }
 
     .form__label {
