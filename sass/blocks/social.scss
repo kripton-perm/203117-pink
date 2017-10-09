@@ -1,7 +1,39 @@
-.social {
-  background-color: transparent;
-}
-
 .social__list {
   @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.social__link {
+  display: block;
+  width: 51px;
+  height: 51px;
+  border: 3px solid rgba($blue, 0.1);
+  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: all 0.2s;
+
+  &:hover,
+  &:focus {
+    border: 3px solid rgba($blue, 1);
+  }
+
+  &:active {
+    border: 3px solid rgba($blue, 0.333);
+    opacity: 0.3;
+  }
+
+  &--twitter {
+    background-image: url("../img/icon-twitter.svg");
+  }
+
+  &--facebook {
+    background-image: url("../img/icon-facebook.svg");
+  }
+
+  &--youtube {
+    background-image: url("../img/icon-youtube.svg");
+  }
 }

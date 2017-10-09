@@ -1,25 +1,20 @@
 .page-footer {
-  min-height: 284px;
   padding-top: 40px;
+  padding-bottom: 40px;
   text-align: center;
   background-color: $white;
 
   &--hidden {
     display: none;
-  }
 
-  @media (min-width: $tablet-width) {
-    min-height: 127px;
-    padding-top: 10px;
-
-    &--hidden {
+    @media (min-width: $tablet-width) {
       display: block;
     }
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 197px;
-    padding-top: 40px;
+    padding-top: 70px;
+    padding-bottom: 75px;
   }
 }
 
@@ -29,14 +24,12 @@
   align-items: center;
   width: $mobile-width;
   margin: 0 auto;
-  outline: 1px solid red;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
     padding: 0 20px;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,28 +42,52 @@
 .page-footer__logo {
   width: 147px;
   height: 41px;
-  outline: 1px solid blue;
-}
+  margin-bottom: 38px;
 
-.page-footer__logo-image {
-  width: 147px;
-  height: 41px;
+  path {
+    transition: all 0.5s;
+  }
+
+  svg {
+    width: 147px;
+    height: 41px;
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: $pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-top: -15px;
+  }
 }
 
 .page-footer__social {
-  margin-top: 20px;
-  margin-bottom: 15px;
-  outline: 1px solid blue;
+  width: 179px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    width: 200px;
+    width: 175px;
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 177px;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 5px;
   }
 }
 
 .page-footer__copyright {
-  outline: 1px solid blue;
-
-  @media (min-width: $tablet-width) {
-    width: 150px;
+  @media (min-width: $desktop-width) {
+    margin-top: -3px;
   }
 }

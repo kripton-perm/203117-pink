@@ -1,39 +1,28 @@
 .upload {
   background-color: $greyLight;
-  outline: 1px solid orange;
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 25px;
-  }
-}
-
-.upload__wrapper {
-  display: flex;
-  flex-direction: column;
-  width: $mobile-width;
-  margin: 0 auto;
-  padding: 0 20px;
-  outline: 1px solid red;
+  margin-top: 150px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    margin-top: 175px;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-wrapper-width;
-    padding-left: 0;
-    padding-right: 0;
+    margin-top: 130px;
+    margin-bottom: 30px;
   }
 }
 
 .upload__intro {
+  width: $mobile-width;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   margin: 0;
   padding: 0;
-  padding-top: 24px;
-  padding-bottom: 43px;
+  padding-bottom: 40px;
+  padding-right: 3px;
   background-color: $white;
   text-align: center;
   color: $blue;
@@ -42,38 +31,62 @@
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
-    padding-top: 70px;
+    width: $tablet-width;
     padding-bottom: 70px;
+    padding-right: 0;
     font-size: 18px;
-    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 53px;
+    padding-bottom: 66px;
+    padding-left: 3px;
   }
 }
 
-.upload__picture {
-  outline: 1px solid red;
-  background-color: $greyLight;
-  text-align: center;
-  margin: 0;
-  margin-left: -20px;
-  margin-right: -20px;
-  padding: 0;
+.upload__wrapper {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 0 20px;
   padding-top: 20px;
-  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 340px;
+    width: $tablet-width;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
     padding-top: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 510px;
-    padding-left: 80px;
-    padding-right: 130px;
+    width: $desktop-wrapper-width;
+    padding-top: 57px;
+    padding-bottom: 55px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.upload__picture {
+  text-align: center;
+  margin: 0;
+  margin-left: -2px;
+  padding: 0;
+  width: 280px;
+  height: 374px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    height: 400px;
+    margin-left: 0;
+    padding-left: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 10px;
+    padding-left: 0;
   }
 }
 
@@ -90,32 +103,51 @@
 }
 
 .upload__form {
-  background-color: $greyLight;
   margin: 0;
-  margin-left: -20px;
-  margin-right: -20px;
   padding: 0;
-  padding-top: 175px;
-  padding-bottom: 40px;
-  outline: 1px solid blue;
+  padding-top: 40px;
+  padding-bottom: 43px;
 
   @media (min-width: $tablet-width) {
-    width: 320px;
-    padding-top: 320px;
+    width: 50%;
+    padding-top: 0;
     padding-bottom: 55px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 470px;
-    padding-top: 400px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    align-items: center;
+    align-content: space-between;
+    padding-bottom: 0;
   }
 }
 
 .upload__controls {
   @include list-reset;
+  padding-left: 17px;
+  padding-right: 28px;
+  margin-bottom: 110px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 37px;
+    padding-right: 36px;
+    margin-bottom: 68px;
+    margin-top: -17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-top: -5px;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 88px;
+  }
 }
 
 .upload__button {
@@ -123,10 +155,35 @@
   border-radius: 30px;
   width: 280px;
   cursor: pointer;
+  margin-left: -2px;
+  padding-top: 8px;
+  padding-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 183px;
+    margin: 0;
+    margin-bottom: 1px;
+  }
 
   &--upload {
     color: $pink;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: -1px;
+      margin-right: 45px;
+      margin-bottom: 0;
+    }
   }
 
   &--upload:hover,
@@ -145,6 +202,10 @@
     border-color: $blue;
     color: $blue;
     opacity: 0.1;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
   }
 
   &--reset:hover,
@@ -157,22 +218,5 @@
     background-color: $blue;
     color: $white;
     opacity: 0.3;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 260px;
-
-    &--upload {
-      margin-bottom: 25px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 183px;
-    margin: 0;
-
-    &--upload {
-      margin-right: 45px;
-    }
   }
 }

@@ -1,11 +1,68 @@
 .comment {
+  display: flex;
+  flex-direction: column;
   background-color: $grey;
   color: $blue;
+  padding-top: 18px;
   padding-left: 18px;
   padding-right: 10px;
+  padding-bottom: 20px;
+
+  &--day {
+    padding-top: 19px;
+
+    .comment__text {
+      @media (min-width: $tablet-width) {
+        order: 1;
+        margin-bottom: 0;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-top: 0;
+      }
+    }
+
+    .comment__like {
+      @media (min-width: $tablet-width) {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-left: 28px;
+      padding-top: 22px;
+      padding-right: 30px;
+      padding-bottom: 25px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 24px;
+      padding-left: 30px;
+      align-items: flex-start;
+      align-content: flex-start;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+    padding-left: 27px;
+    padding-right: 31px;
+    padding-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 27px;
+    padding-right: 30px;
+  }
 }
 
 .comment__author {
+  margin: 0;
+  padding: 0;
   font-style: normal;
   font-size: 14px;
   font-weight: 700;
@@ -13,6 +70,8 @@
 }
 
 .comment__time {
+  margin: 0;
+  padding: 0;
   font-size: 12px;
   font-weight: 300;
   line-height: 24px;
@@ -28,14 +87,22 @@
 }
 
 .comment__text {
+  width: 100%;
   margin: 0;
-  margin-bottom: 8px;
+  margin-top: -1px;
+  margin-bottom: 9px;
   padding: 0;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 12px;
+  }
 }
 
 .comment__like {
   padding: 0;
+  align-self: flex-start;
+  margin-top: auto;
 }

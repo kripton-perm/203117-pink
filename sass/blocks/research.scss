@@ -3,38 +3,67 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    background-color: $grey;
-    outline: 1px solid orange;
-    padding-top: 55px;
+    padding-top: 60px;
     padding-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 30px;
-    padding-bottom: 65px;
+    padding-top: 28px;
+    padding-bottom: 68px;
+    background-color: $grey;
   }
 }
 
 .research__wrapper {
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "24";
+      position: absolute;
+      color: $pink;
+      left: 85px;
+      top: 98px;
+      font-size: 96px;
+      font-weight: 700;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 80px;
+      top: 120px;
+      font-size: 120px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     width: $tablet-width;
+    position: relative;
     margin: 0 auto;
     padding: 0 20px;
-    padding-top: 40px;
+    padding-top: 38px;
     padding-bottom: 30px;
     padding-left: 330px;
-    outline: 1px solid red;
+    background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/timer.png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 202px 202px, 238px 276px;
+    background-position: 39px 56px, 20px, top;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-wrapper-width;
-    padding-top: 95px;
+    padding-top: 90px;
     padding-bottom: 50px;
     padding-left: 365px;
+    background-size: 253px 253px, 298px 345px;
+    background-position: 22px 67px, left top;
   }
 }
 
 .research__title {
+  br {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
     margin-bottom: 10px;
@@ -52,17 +81,19 @@
     font-weight: 700;
     line-height: 36px;
     color: $black;
-
-    br {
-      display: none;
-    }
   }
 }
 
 .research__text {
+  br {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
     padding: 0;
     padding-right: 10px;
     font-size: 14px;
@@ -72,20 +103,24 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 33px;
+    margin-bottom: 37px;
     padding-right: 40px;
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
     color: $blue;
-
-    br {
-      display: none;
-    }
   }
 }
 
 .research__link {
+  transition: all 0.3s;
+
+  &:hover,
+  &:focus {
+    color: $blue;
+    text-decoration: none;
+  }
+
   @media (min-width: $tablet-width) {
     color: $pink;
     font-size: 14px;
