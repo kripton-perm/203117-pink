@@ -84,8 +84,8 @@
     background-repeat: no-repeat;
     background-position: left top;
 
-    @media (min-width: $tablet-width) {
-      background-size: 61px 61px;
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+      background-image: url("../img/bg-hit-tablet.svg");
     }
 
     @media (min-width: $desktop-width) {
@@ -102,7 +102,7 @@
       transform: rotate(-45deg) scale(0.8);
 
       @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-        top: 5px;
+        top: 7px;
         left: 5px;
       }
     }

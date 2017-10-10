@@ -260,7 +260,33 @@
   min-height: 200px;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
+  background-size: 320px 421px;
   background-position: center bottom;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 370px;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+    background-size: 700px 848px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 500px;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+    background-size: 1200px 976px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+    }
+    
+  }
 
   iframe {
     width: 100%;
