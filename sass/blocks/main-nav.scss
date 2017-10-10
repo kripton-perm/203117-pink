@@ -67,8 +67,16 @@
     padding-top: 27px;
     padding-bottom: 39px;
   }
+  /*svg {
+    width: 75px;
+    height: 23px;
 
-  svg {
+    @media (min-width: $tablet-width) {
+      width: 147px;
+      height: 40px;
+    }
+  }*/
+  img {
     width: 75px;
     height: 23px;
 

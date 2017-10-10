@@ -3,7 +3,11 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    padding-top: 60px;
+    background-color: $white;
+    position: relative;
+    z-index: 1;
+    top: -1px;
+    padding-top: 56px;
     padding-bottom: 50px;
   }
 
