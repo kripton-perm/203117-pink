@@ -8,11 +8,11 @@
   background-position: center top, center top;
   background-repeat: no-repeat, no-repeat;
   background-size: 700px auto;
-  
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg"), linear-gradient(to bottom, $blueDarker 462px, $white 462px);
   }
-  
+
   @media (min-width: $tablet-width) {
     background-image: url("../img/bg-back-tablet@1x.jpg"), linear-gradient(to bottom, $blueDarker 729px, $white 729px);
     background-size: 1200px auto;
