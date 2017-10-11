@@ -115,8 +115,12 @@
   border: 0;
   cursor: pointer;
 
+  svg {
+    fill: $white;
+  }
+
   &:hover {
-    path {
+    svg {
       fill: $pink;
     }
   }
@@ -135,7 +139,7 @@
 .main-nav__toggle-image {
   &--close {
     width: 24px;
-    height: 23px;
+    height: 24px;
   }
 
   &--open {
