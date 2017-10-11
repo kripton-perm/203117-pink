@@ -186,12 +186,12 @@
   }
 
   &--active {
-    .controls__icon {
+    svg {
       fill: $pink;
     }
   }
 
-  .controls__icon {
+  svg {
     @media (min-width: $tablet-width) {
       fill: $pink;
     }
