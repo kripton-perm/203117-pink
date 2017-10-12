@@ -173,25 +173,12 @@
   padding-right: 40px;
   padding-bottom: 14px;
   border-bottom: 2px solid $greyDark;
-  background-repeat: no-repeat;
-  background-position: 93% center;
-
-  &--yes {
-    background-image: url("../img/icon-yes.svg");
-    background-size: 31px 21px;
-  }
-
-  &--no {
-    background-image: url("../img/icon-no.svg");
-    background-size: 27px 26px;
-  }
 
   @media (min-width: $tablet-width) {
     padding-left: 17px;
     padding-top: 7px;
     padding-bottom: 8px;
     text-transform: none;
-    background-position: 79% center;
   }
 
   @media (min-width: $desktop-width) {
@@ -199,7 +186,37 @@
     padding-top: 14px;
     padding-bottom: 15px;
     font-size: 18px;
-    background-position: 77% center;
+  }
+}
+
+.price__access {
+  position: relative;
+}
+
+.price__icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @media (min-width: $tablet-width) {
+    right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 102px;
+  }
+
+  &--no {
+    top: 48%;
+
+    @media (min-width: $tablet-width) {
+      right: 64px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 104px;
+    }
   }
 }
 

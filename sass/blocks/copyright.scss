@@ -24,17 +24,17 @@
   height: 35px;
   margin-top: 2px;
 
-  path {
+  svg {
     fill: $pink;
     transition: all 0.2s;
   }
 
-  &:hover path,
-  &:focus path {
+  &:hover svg,
+  &:focus svg {
     fill: $blue;
   }
 
-  &:active path {
+  &:active svg {
     fill: rgba($blue, 0.3);
   }
 

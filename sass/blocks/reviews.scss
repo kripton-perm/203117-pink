@@ -33,9 +33,17 @@
     position: relative;
     width: $desktop-wrapper-width;
     padding-top: 117px;
-    background-image: url("../img/quotes.png");
-    background-repeat: no-repeat;
-    background-position: center top;
+  }
+}
+
+.reviews__quotes {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    display: block;
+    top: 0;
+    fill: #efefef;
   }
 }
 
