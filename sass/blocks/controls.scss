@@ -186,15 +186,7 @@
   }
 
   &--active {
-    svg {
-      fill: $pink;
-    }
-  }
-
-  svg {
-    @media (min-width: $tablet-width) {
-      fill: $pink;
-    }
+    color: $pink;
   }
 
   &--crop {
@@ -251,5 +243,6 @@
 
   @media (min-width: $tablet-width) {
     opacity: 1;
+    color: $pink;
   }
 }
