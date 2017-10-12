@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <style>
+    <style>
       HTML {
     background-repeat: no-repeat;
     background-position:  50% 0;
@@ -30,7 +30,7 @@
       body {
         opacity: 0.5;
       }
-    </style> -->
+    </style>
   </head>
   <body class="body">
     <h1 class="visually-hidden">Приложение для обработки фотографий Pink</h1>
@@ -142,10 +142,16 @@
                 <li class="form__item">
                   <label class="form__label" for="phone">Номер телефона</label>
                   <input class="form__input form__input--phone" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+                  <svg class="form__icon form__icon--phone" width="20" height="19">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
                 </li>
                 <li class="form__item">
                   <label class="form__label" for="email">Адрес почты</label>
                   <input class="form__input form__input--mail" type="email" id="email" placeholder="Введите почту *">
+                  <svg class="form__icon form__icon--mail" width="18" height="13">
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  </svg>
                 </li>
               </ul>
             </fieldset>

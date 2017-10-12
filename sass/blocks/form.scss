@@ -166,6 +166,7 @@
 
     .form__item {
       margin-bottom: 18px;
+      position: relative;
 
       @media (min-width: $tablet-width) {
         display: flex;
@@ -210,28 +211,11 @@
       padding: 20px;
       width: 100%;
 
-      &--phone {
-        @media (min-width: $tablet-width) {
-          background-image: url("../img/icon-phone.svg"), linear-gradient(to left, $greyDark 60px, $white 60px);
-        }
-      }
-
-      &--mail {
-        @media (min-width: $tablet-width) {
-          background-image: url("../img/icon-mail.svg"), linear-gradient(to left, $greyDark 60px, $white 60px);
-        }
-      }
-
       @media (min-width: $tablet-width) {
         padding-left: 17px;
         margin-bottom: 10px;
         padding-right: 60px;
-        background-repeat: no-repeat;
-        background-position: 455px center, center center;
-      }
-
-      @media (min-width: $desktop-width) {
-        background-position: 330px center, center center;
+        background-image: linear-gradient(to left, $greyDark 60px, $white 60px);
       }
 
       &:hover {
@@ -551,6 +535,34 @@
         padding-right: 40px;
       }
     }
+  }
+}
+
+.form__icon {
+  display: none;
+  position: absolute;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    top: 20px;
+    right: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 21px;
+    top: 22px;
+  }
+
+  &--mail {
+    @media (min-width: $tablet-width) {
+      top: 23px;
+      right: 81px;
+    }
+
+    @media (min-width: $desktop-width) {
+    right: 22px;
+    top: 25px;
+  }
   }
 }
 
