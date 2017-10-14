@@ -45,6 +45,7 @@ gulp.task("html", function () {
       include()
     ]))
     .pipe(gulp.dest("build"))
+    .pipe(server.stream());
 });
 
 gulp.task("images", function () {
@@ -94,6 +95,5 @@ gulp.task("clean", function () {
 gulp.task("build", function (done) {
   run("clean", "copy", "style", "images", "webp", "sprite", "html", done);
 });
-
 
 

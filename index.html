@@ -40,13 +40,16 @@
     <header class="page-header page-header--opened">
       <div class="page-header__wrapper">
         <nav class="main-nav main-nav--nojs main-nav--opened">
-          <a class="main-nav__logo">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк" width="75" height="23">
-            </picture>
-          </a>
+          <div class="main-nav__logo-wrapper">
+            <a class="main-nav__logo">
+              <include src="build/img/main-nav-logo.svg"></include>
+              <!-- <picture>
+                <source media="(min-width: 1200px)" srcset="img/pink-white-desktop-logo.svg">
+                <source media="(min-width: 660px)" srcset="img/pink-white-tablet-logo.svg">
+                <img src="img/pink-white-mobile-logo.svg" alt="Логотип Пинк" width="75" height="23">
+              </picture> -->
+            </a>
+          </div>
           <button class="main-nav__toggle">
             <span class="visually-hidden">Закрыть меню</span>
             <svg class="main-nav__toggle-image main-nav__toggle-image--close" width="24" height="24">
@@ -332,11 +335,12 @@
     </main>
     <footer class="page-footer page-footer--hidden">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo" href="index.html">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
-            <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Пинк" width="147" height="41">
-          </picture>
+        <a class="page-footer__logo">
+          <include src="build/img/page-footer-logo.svg"></include>
+          <!-- <picture>
+            <source media="(min-width: 1200px)" srcset="img/pink-blue-desktop-logo.svg">
+            <img src="img/pink-blue-mobile-logo.svg" alt="Логотип Пинк" width="147" height="41">
+          </picture> -->
         </a>
         <section class="page-footer__social social">
           <h2 class="visually-hidden">Ищите нас в социальных сетях</h2>

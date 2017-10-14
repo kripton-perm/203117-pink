@@ -52,48 +52,59 @@
   }
 }
 
-.main-nav__logo {
-  @media (max-width: $tablet-width-only) {
-    display: block;
+.main-nav__logo-wrapper {
+  @media (max-width: $mobile-width-only) {
     margin-left: -20px;
     margin-right: -20px;
+    padding-top: 22px;
     padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 23px;
+    padding-right: 20px;
+    padding-bottom: 25px;
     box-shadow: 0 1px 0 #000000;
   }
 
-  @media (min-width: $tablet-width) {
-    padding-top: 27px;
-    padding-bottom: 39px;
-  }
-  /*svg {
-    width: 75px;
-    height: 23px;
-
-    @media (min-width: $tablet-width) {
-      width: 147px;
-      height: 40px;
-    }
-  }*/
-  img {
-    width: 75px;
-    height: 23px;
-
-    @media (min-width: $tablet-width) {
-      width: 147px;
-      height: 40px;
-    }
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 62px;
+    box-shadow: 0 1px 0 #000000;
   }
 
-  &[href]:hover path,
-  &[href]:focus path {
-    fill: $pink;
+  @media (min-width: $desktop-width) {
+    padding-top: 28px;
+    padding-bottom: 30px;
+  }
+}
+
+.main-nav__logo {
+  display: block;
+  color: $white;
+  width: 75px;
+  height: 23px;
+  padding: 0;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: $pink;
   }
 
-  &[href]:active path {
-    fill: $white;
+  &[href]:active {
+    color: $white;
     opacity: 0.3;
+  }
+
+  svg {
+    fill: currentColor;
+    width: auto;
+    height: auto;
+
+    @media (min-width: $tablet-width) {
+      width: auto;
+      height: auto;
+    }
   }
 }
 

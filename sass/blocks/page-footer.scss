@@ -43,22 +43,20 @@
   width: 147px;
   height: 41px;
   margin-bottom: 38px;
-
-  path {
-    transition: all 0.5s;
-  }
+  transition: all 1s;
 
   svg {
     width: 147px;
     height: 41px;
+    fill: $blue;
   }
 
-  &:hover path,
-  &:focus path {
+  &[href]:hover svg,
+  &[href]:focus svg {
     fill: $pink;
   }
 
-  &:active {
+  &[href]:active {
     opacity: 0.3;
   }
 
