@@ -63,9 +63,9 @@ gulp.task('webp', function () {
     .pipe(gulp.dest('img'));
 });
 
-gulp.task("serve", ["style"], function () {
+gulp.task("serve", function () {
   server.init({
-    server: ".",
+    server: "build/",
     notify: false,
     open: false,
     cors: true,
@@ -73,7 +73,7 @@ gulp.task("serve", ["style"], function () {
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
+  gulp.watch("*.html", ["html"]);
 });
 
 gulp.task("copy", function () {
