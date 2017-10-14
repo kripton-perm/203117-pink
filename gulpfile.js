@@ -14,6 +14,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
+var del = require("del");
 
 gulp.task("style", function () {
   gulp.src("sass/style.scss")
@@ -22,10 +23,10 @@ gulp.task("style", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
@@ -35,7 +36,7 @@ gulp.task("sprite", function () {
       inlineSvg: true
     ]))  
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("html", function () {
@@ -43,7 +44,7 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
-    .pipe(gulp.dest("."))
+    .pipe(gulp.dest("build"))
 });
 
 gulp.task("images", function () {
@@ -86,8 +87,12 @@ gulp.task("copy", function () {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("clean", function () {
+  return del("build");
+});
+
 gulp.task("build", function (done) {
-  run("style", "sprite", "html", done);
+  run("clean", "copy", "style", "sprite", "html", done);
 });
 
 
