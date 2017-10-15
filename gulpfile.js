@@ -34,7 +34,7 @@ gulp.task("sprite", function () {
   return gulp.src("build/img/{icon-*.svg,logo-*.svg}")
     .pipe(svgstore({
       inlineSvg: true
-  }))  
+  }))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
 });
@@ -95,5 +95,3 @@ gulp.task("clean", function () {
 gulp.task("build", function (done) {
   run("clean", "copy", "style", "images", "webp", "sprite", "html", done);
 });
-
-
