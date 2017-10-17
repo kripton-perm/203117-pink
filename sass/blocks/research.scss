@@ -101,12 +101,6 @@
 }
 
 .research__title {
-  br {
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     margin: 0;
     margin-bottom: 10px;
@@ -115,6 +109,7 @@
     font-weight: 700;
     line-height: 36px;
     color: $black;
+    padding-right: 142px;
   }
 
   @media (min-width: $desktop-width) {
@@ -128,12 +123,6 @@
 }
 
 .research__text {
-  br {
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     margin: 0;
     margin-bottom: 13px;

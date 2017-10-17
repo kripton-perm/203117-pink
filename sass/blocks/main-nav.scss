@@ -69,7 +69,7 @@
     padding-top: 25px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 62px;
+    padding-bottom: 44px;
     box-shadow: 0 1px 0 #000000;
   }
 
@@ -86,6 +86,11 @@
   height: 23px;
   padding: 0;
 
+  @media (min-width: $tablet-width) {
+    width: 147px;
+    height: 41px;
+  }
+
   &[href]:hover,
   &[href]:focus {
     color: $pink;
@@ -98,13 +103,8 @@
 
   svg {
     fill: currentColor;
-    width: auto;
-    height: auto;
-
-    @media (min-width: $tablet-width) {
-      width: auto;
-      height: auto;
-    }
+    width: 147px;
+    height: 41px;
   }
 }
 

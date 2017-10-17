@@ -1,6 +1,6 @@
 .gallery {
-  background-color: $white;
-  margin-top: 170px;
+  background-image: linear-gradient(to bottom, transparent 180px, $white 180px);
+  /*margin-top: 170px;*/
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -13,21 +13,22 @@
 }
 
 .gallery__title {
-  position: absolute;
+  /*position: absolute;
   bottom: 100%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%);*/
   background-color: transparent;
+  width: $mobile-width;
+  margin: 0 auto;
   color: $white;
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 82px;
   padding-left: 23px;
   padding-right: 20px;
-  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 50px;
@@ -95,6 +96,7 @@
 
 .gallery__list {
   @include list-reset;
+  outline: 1px solid red;
   display: flex;
   flex-direction: column;
 
@@ -109,11 +111,13 @@
     margin-left: -10px;
     padding-left: 0;
     padding-right: 0;
+    align-content: flex-start;
   }
 }
 
 .gallery__item {
-  margin-bottom: 22px;
+  outline: 1px solid orange;
+  margin-bottom: 21px;
   display: flex;
   flex-direction: column;
 
@@ -139,9 +143,11 @@
 
     @media (min-width: $desktop-width) {
       width: $desktop-width;
+      display: block;
       margin-left: -120px;
       margin-right: -120px;
       margin-bottom: 51px;
+      padding-bottom: 0;
     }
 
     .gallery__link {
@@ -226,6 +232,7 @@
 .gallery__badge {
   position: absolute;
   top: 0;
+  right: 20px;
   background-color: $pinkLight;
   font-size: 12px;
   font-weight: 700;

@@ -40,6 +40,7 @@
       border: none;
       order: -3;
       width: $tablet-width;
+      margin-bottom: 6px;
     }
 
     @media (min-width: $desktop-width) {
@@ -47,6 +48,7 @@
       padding-top: 15px;
       padding-bottom: 0;
       margin-left: 0;
+      margin-bottom: 0;
     }
 
     .form__legend {
@@ -101,8 +103,9 @@
       border: 2px solid $greyDark;
       outline: none;
       padding: 20px;
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding-top: 0;
+      padding-bottom: 0;
+      height: 62px;
       width: 100%;
 
       &:hover {
@@ -117,7 +120,7 @@
       &::placeholder {
         color: $blue;
         font-size: 18px;
-        line-height: 30px;
+        line-height: 58px;
         font-weight: 400;
       }
     }
@@ -128,18 +131,19 @@
 
     @media (min-width: $tablet-width) {
       order: -1;
-      padding-top: 24px;
+      padding-top: 32px;
       padding-bottom: 10px;
-      margin-bottom: 57px;
+      margin-bottom: 65px;
+      position: relative;
     }
 
     @media (min-width: $desktop-width) {
-      margin-top: 56px;
-      padding-top: 35px;
+      margin-top: 65px;
+      padding-top: 42px;
       padding-left: 59px;
       padding-right: 59px;
       padding-bottom: 14px;
-      margin-bottom: 57px;
+      margin-bottom: 65px;
     }
 
     .form__legend {
@@ -149,7 +153,6 @@
 
       @media (min-width: $tablet-width) {
         background-color: $white;
-        margin: 0;
         padding: 0;
         padding-left: 25px;
         padding-right: 25px;
@@ -208,7 +211,8 @@
       box-sizing: border-box;
       border: 2px solid $greyDark;
       outline: none;
-      padding: 20px;
+      padding: 0 20px;
+      height: 62px;
       width: 100%;
 
       @media (min-width: $tablet-width) {
@@ -230,7 +234,7 @@
       &::placeholder {
         color: $blue;
         font-size: 18px;
-        line-height: 30px;
+        line-height: 58px;
         font-weight: 400;
       }
     }
@@ -244,20 +248,21 @@
 
     @media (max-width: $mobile-width-only) {
       background-color: $grey;
+      overflow: hidden;
     }
 
     @media (min-width: $tablet-width) {
-      padding-top: 23px;
+      padding-top: 30px;
       padding-bottom: 26px;
-      margin-bottom: 57px;
+      margin-bottom: 66px;
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 15px;
+      padding-top: 30px;
       padding-left: 58px;
       padding-right: 58px;
-      padding-bottom: 0;
-      height: 240px;
+      padding-bottom: 10px;
+      height: 232px;
     }
 
     .form__legend {
@@ -272,6 +277,7 @@
       }
 
       @media (min-width: $tablet-width) {
+        outline: 1px solid green;
         background-color: $white;
         padding-left: 30px;
         padding-right: 30px;
@@ -385,19 +391,21 @@
 
     @media (max-width: $mobile-width-only) {
       background-color: $grey;
+      overflow: hidden;
     }
 
     @media (min-width: $tablet-width) {
       order: -2;
-      padding-top: 23px;
+      padding-top: 30px;
       padding-bottom: 40px;
-      margin-bottom: 55px;
+      margin-bottom: 65px;
     }
 
     @media (min-width: $desktop-width) {
       width: 435px;
-      padding-top: 20px;
+      padding-top: 35px;
       margin: 0;
+      margin-top: 8px;
     }
 
     .form__legend {
@@ -503,9 +511,10 @@
     padding-top: 60px;
     position: relative;
     padding-bottom: 45px;
+    overflow: hidden;
 
     @media (min-width: $tablet-width) {
-      padding-top: 38px;
+      padding-top: 45px;
       padding-bottom: 48px;
       padding-left: 59px;
       padding-right: 59px;
@@ -513,8 +522,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 28px;
-      padding-bottom: 38px;
+      padding-top: 40px;
+      padding-bottom: 40px;
       margin-bottom: 65px;
     }
 
@@ -535,6 +544,7 @@
         padding-right: 40px;
       }
     }
+    
   }
 }
 
@@ -584,9 +594,14 @@
   padding-left: 25px;
   padding-right: 25px;
 
-  @media (min-width: $desktop-width) {
-    padding-top: 0;
-    margin-bottom: 7px;
+  @media (min-width: $tablet-width) {
+    /*position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);*/
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

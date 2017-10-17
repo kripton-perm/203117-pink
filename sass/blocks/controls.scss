@@ -15,7 +15,7 @@
     @media (max-width: $mobile-width-only) {
       position: absolute;
       content: "";
-      bottom: -75px;
+      bottom: 0;
       left: -20px;
       right: -20px;
       height: 1px;
@@ -67,12 +67,12 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 26px;
-    padding-bottom: 21px;
+    padding-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
@@ -80,7 +80,7 @@
   position: absolute;
   width: 240px;
   left: 17px;
-  bottom: -40px;
+  bottom: 35px;
   display: none;
   appearance: none;
   background-color: transparent;
@@ -145,24 +145,35 @@
     background-color: $blueDarker;
   }
 
+  &::-ms-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 8px 0;
+    color: transparent;
+  }
+
+  &::-ms-fill-lower {
+    background-color: $blueDarker;
+  }
+
+  &::-ms-fill-upper {
+    background-color: $blueDarker;
+  }
+
   &::-ms-thumb {
-    position: relative;
-    top: -6px;
-    width: 14px;
+    border: 2px solid $pink;
     height: 14px;
+    width: 14px;
     border-radius: 50%;
     background-color: $greyLight;
-    border: 2px solid $pink;
+    cursor: pointer;
   }
 
   &:focus::-ms-thumb {
     background-color: $pink;
-  }
-
-  &::-moz-ms-track {
-    height: 2px;
-    cursor: pointer;
-    background-color: $blueDarker;
   }
 }
 
