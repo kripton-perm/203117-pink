@@ -1,5 +1,5 @@
 .contest {
-  background-image: linear-gradient(to bottom, transparent 172px, $white 172px);
+  background-image: linear-gradient(to bottom, transparent 170px, $white 170px);
   /*position: relative;
   margin-top: 172px;*/
   display: flex;
@@ -12,7 +12,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 283px;
+    /*margin-top: 283px;*/
+    background-image: linear-gradient(to bottom, transparent 283px, $white 283px);
   }
 }
 
@@ -30,8 +31,8 @@
   text-align: center;
   padding-left: 25px;
   padding-right: 25px;
-  padding-top: 30px;
-  padding-bottom: 53px;
+  padding-top: 28px;
+  padding-bottom: 52px;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
@@ -44,7 +45,7 @@
   @media (min-width: $desktop-width) {
     width: $desktop-width;
     padding-top: 60px;
-    padding-bottom: 100px;
+    padding-bottom: 103px;
     padding-left: 100px;
     padding-right: 100px;
   }
