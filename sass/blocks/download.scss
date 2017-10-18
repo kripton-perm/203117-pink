@@ -138,10 +138,6 @@
 }
 
 .download__item {
-  &:last-child {
-    margin-bottom: 3px;
-  }
-
   &:nth-child(2) {
     @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
       opacity: 0.4;

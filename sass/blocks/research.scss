@@ -122,6 +122,20 @@
   }
 }
 
+.research__break {
+  &--tablet {
+    @media (max-width: $tablet-width-only) {
+      white-space: nowrap;
+    }
+  }
+
+  &--desktop {
+    @media (min-width: $desktop-width) {
+      white-space: nowrap;
+    }
+  }
+}
+
 .research__text {
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -136,7 +150,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 37px;
-    padding-right: 40px;
+    padding-right: 25px;
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;

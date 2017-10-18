@@ -1,6 +1,6 @@
 .features {
   background-color: $grey;
-  background-image: linear-gradient(174deg, $white 260px, $grey 260px);
+  background-image: linear-gradient(174deg, $white 250px, $grey 250px);
 
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(175deg, $white 300px, $grey 300px);
@@ -17,7 +17,7 @@
   width: $mobile-width;
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 40px;
+  padding-top: 41px;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
