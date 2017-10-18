@@ -1,25 +1,22 @@
 .upload {
   background-image: linear-gradient(to bottom, $white 130px, $greyLight 130px);
-  /*margin-top: 150px;*/
-  margin-top: 50px;
+  margin-top: 22px;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin-top: 175px;
+    margin-top: 45px;
+    background-image: linear-gradient(to bottom, $white 129px, $greyLight 129px);
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 130px;
     margin-bottom: 30px;
+    margin-top: 3px;
+    background-image: linear-gradient(to bottom, $white 127px, $greyLight 127px);
   }
 }
 
 .upload__intro {
   width: $mobile-width;
-  /*position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);*/
   margin: 0 auto;
   padding: 0;
   padding-bottom: 40px;
@@ -51,7 +48,7 @@
   width: $mobile-width;
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 20px;
+  padding-top: 21px;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
@@ -64,7 +61,7 @@
   @media (min-width: $desktop-width) {
     width: $desktop-wrapper-width;
     padding-top: 57px;
-    padding-bottom: 55px;
+    padding-bottom: 57px;
     padding-left: 0;
     padding-right: 0;
   }

@@ -1,14 +1,16 @@
 .gallery {
-  background-image: linear-gradient(to bottom, transparent 180px, $white 180px);
-  /*margin-top: 170px;*/
-  position: relative;
+  background-image: linear-gradient(to bottom, transparent 170px, $white 170px);
+  /*margin-top: 170px;
+  position: relative;*/
 
   @media (min-width: $tablet-width) {
-    margin-top: 330px;
+    /*margin-top: 330px;*/
+    background-image: linear-gradient(to bottom, transparent 330px, $white 330px);
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 285px;
+    /*margin-top: 285px;*/
+    background-image: linear-gradient(to bottom, transparent 283px, $white 283px);
   }
 }
 
@@ -25,12 +27,13 @@
   font-weight: 300;
   line-height: 30px;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 82px;
   padding-left: 23px;
   padding-right: 20px;
 
   @media (min-width: $tablet-width) {
+    width: $tablet-width;
     font-size: 50px;
     line-height: 60px;
     padding-left: 107px;
@@ -41,7 +44,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 63px;
-    padding-left: 157px;
+    padding-left: 155px;
     padding-right: 150px;
     padding-bottom: 102px;
   }
@@ -95,15 +98,17 @@
 }
 
 .gallery__list {
-  @include list-reset;
   outline: 1px solid red;
-  display: flex;
-  flex-direction: column;
+  @include list-reset;
+  /*display: flex;
+  flex-direction: column;*/
 
   @media (min-width: $tablet-width) {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    /*align-content: flex-start;*/
   }
 
   @media (min-width: $desktop-width) {
@@ -111,34 +116,36 @@
     margin-left: -10px;
     padding-left: 0;
     padding-right: 0;
-    align-content: flex-start;
   }
 }
 
 .gallery__item {
-  outline: 1px solid orange;
-  margin-bottom: 21px;
-  display: flex;
-  flex-direction: column;
+  /*outline: 1px solid orange;*/
+  /*margin-bottom: 20px;*/
+  /*display: flex;
+  flex-direction: column;*/
+  /*display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;*/
 
   @media (min-width: $tablet-width) {
     width: 300px;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
   }
 
   @media (min-width: $desktop-width) {
     width: 33.3%;
-    margin-bottom: 55px;
+    /*margin-bottom: 55px;*/
   }
 
   &--day {
     margin-left: -20px;
     margin-right: -20px;
-    margin-bottom: 19px;
+    /*margin-bottom: 19px;*/
 
     @media (min-width: $tablet-width) {
       width: $tablet-width;
-      margin-bottom: 53px;
+      /*margin-bottom: 53px;*/
     }
 
     @media (min-width: $desktop-width) {
@@ -146,11 +153,12 @@
       display: block;
       margin-left: -120px;
       margin-right: -120px;
-      margin-bottom: 51px;
+      /*margin-bottom: 51px;*/
       padding-bottom: 0;
     }
 
     .gallery__link {
+      position: relative;
       width: $mobile-width;
       height: 137px;
 
@@ -183,19 +191,18 @@
     .gallery__text {
       margin-left: 20px;
       margin-right: 20px;
-      min-height: 118px;
+      /*min-height: 118px;*/
 
       @media (min-width: $desktop-width) {
         margin-left: 130px;
         margin-right: 130px;
-        min-height: 92px;
+        /*min-height: 92px;*/
       }
     }
   }
 }
 
 .gallery__link {
-  position: relative;
   text-decoration: none;
   color: $white;
   text-transform: uppercase;
@@ -240,7 +247,7 @@
   padding: 11px 20px;
 
   @media (min-width: $tablet-width) {
-    top: 58px;
+    top: 55px;
     right: 20px;
   }
 
@@ -253,14 +260,16 @@
 .gallery__text {
   margin: 0;
   padding: 0;
-  flex-grow: 1;
+  /*flex-grow: 1;*/
+  /*min-height: 100px;*/
+  background-color: yellow;
 
   @media (min-width: $tablet-width) {
-    min-height: 155px;
+    /*min-height: 155px;*/
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 30px;
+    /*padding-bottom: 30px;*/
     margin-bottom: 0;
     margin-left: 10px;
     margin-right: 10px;
