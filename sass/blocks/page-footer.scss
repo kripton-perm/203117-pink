@@ -40,6 +40,7 @@
 }
 
 .page-footer__logo {
+  outline: 1px solid red;
   width: 147px;
   height: 41px;
   margin-bottom: 38px;
@@ -67,13 +68,15 @@
 }
 
 .page-footer__social {
+  outline: 1px solid red;
   width: 179px;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     width: 175px;
     margin-bottom: 0;
-    margin-right: 15px;
+    margin-right: 20px;
+    margin-top: -1px;
   }
 
   @media (min-width: $desktop-width) {
@@ -85,6 +88,7 @@
 }
 
 .page-footer__copyright {
+  outline: 1px solid red;
   @media (min-width: $desktop-width) {
     margin-top: -3px;
   }
