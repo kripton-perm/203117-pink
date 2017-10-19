@@ -43,10 +43,10 @@
     width: $desktop-wrapper-width;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-size: 1050px 645px;
-    background-position: 15px bottom;
+    background-position: 25px bottom;
     padding-top: 110px;
-    padding-left: 0;
-    padding-right: 640px;
+    padding-left: 10px;
+    padding-right: 650px;
     padding-bottom: 125px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
