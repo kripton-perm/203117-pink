@@ -53,6 +53,12 @@
     @media (min-width: $tablet-width) {
       z-index: 3;
     }
+
+    .price__option {
+      @media (min-width: $tablet-width) {
+        border-right: 2px solid $greyDark;
+      }
+    }
   }
 
   &:nth-child(2) {
@@ -79,6 +85,8 @@
   color: $white;
   text-align: center;
   cursor: default;
+  border-right: 1px solid $greyDark;
+  border-left: 1px solid $greyDark;
 
   &--hit {
     background-image: url("../img/bg-hit.svg");
@@ -112,6 +120,7 @@
   @media (min-width: $tablet-width) {
     width: 50%;
     margin-left: 50%;
+    margin-bottom: -2px;
     padding-top: 12px;
     padding-bottom: 10px;
   }
@@ -161,10 +170,6 @@
   width: 100%;
   border-collapse: collapse;
   background-color: $white;
-
-  tr {
-    
-  }
 }
 
 .price__option {
@@ -177,13 +182,20 @@
   padding-left: 23px;
   padding-right: 40px;
   padding-bottom: 14px;
-  border-bottom: 2px solid $greyDark;
+  border: 1px solid $greyDark;
+  border-right: none;
+  border-top: none;
+  border-bottom-width: 2px;
 
   @media (min-width: $tablet-width) {
+    width: 100%;
     padding-left: 17px;
+    padding-right: 0;
     padding-top: 7px;
     padding-bottom: 8px;
     text-transform: none;
+    border: 2px solid $greyDark;
+    border-right: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -195,7 +207,15 @@
 }
 
 .price__access {
-  border-bottom: 2px solid $greyDark;
+  border: 1px solid $greyDark;
+  border-left: none;
+  border-top: none;
+  border-bottom-width: 2px;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid $greyDark;
+    border-left: none;
+  }
 }
 
 .price__icon {
@@ -222,10 +242,12 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 60px;
+    margin-left: 58px;
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 101px;
+    margin-left: 97px;
   }
 }
 
