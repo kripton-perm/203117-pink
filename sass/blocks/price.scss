@@ -1,30 +1,50 @@
 .price {
   background-color: $grey;
-  background-image: linear-gradient(175.7deg, $white 70px, $grey 70px);
   padding-top: 133px;
   padding-bottom: 47px;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    padding-top: 108px;
-    background-image: linear-gradient(175.6deg, $white 76px, $grey 76px);
+    padding-top: 107px;
     padding-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 188px;
-    background-image: linear-gradient(176deg, $white 130px, $grey 130px);
     padding-bottom: 97px;
   }
 }
 
 .price__wrapper {
   width: $mobile-width;
+  position: relative;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 500%;
+    height: 145px;
+    background-color: $white;
+    top: -250px;
+    left: -100%;
+    transform: rotate(-4.5deg);
+
+    @media (min-width: $tablet-width) {
+      transform: rotate(-4.5deg);
+      height: 135px;
+    }
+
+    @media (min-width: $desktop-width) {
+      transform: rotate(-4deg);
+      height: 175px;
+      top: -350px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
@@ -59,11 +79,21 @@
         border-right: 2px solid $greyDark;
       }
     }
+
+    .price__title {
+      border-left-color: transparent;
+    }
   }
 
   &:nth-child(2) {
     @media (min-width: $tablet-width) {
       z-index: 2;
+    }
+  }
+
+  &:nth-child(3) {
+    .price__title {
+      border-right-color: transparent;
     }
   }
 
@@ -189,7 +219,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    padding-left: 17px;
+    padding-left: 15px;
     padding-right: 0;
     padding-top: 7px;
     padding-bottom: 8px;
@@ -199,7 +229,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 23px;
+    padding-left: 21px;
     padding-top: 14px;
     padding-bottom: 15px;
     font-size: 18px;
@@ -230,24 +260,16 @@
   &--no {
     width: 26px;
     height: 26px;
-
-    @media (min-width: $tablet-width) {
-      
-    }
-
-    @media (min-width: $desktop-width) {
-      
-    }
   }
 
   @media (min-width: $tablet-width) {
-    margin-right: 60px;
-    margin-left: 58px;
+    margin-right: 58px;
+    margin-left: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 101px;
-    margin-left: 97px;
+    margin-right: 99px;
+    margin-left: 99px;
   }
 }
 
