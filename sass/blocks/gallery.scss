@@ -117,10 +117,9 @@
   /*outline: 1px solid orange;*/
   margin-bottom: 20px;
   /*display: flex;
-  flex-direction: column;*/
-  /*display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;*/
+  outline: 1px solid red;
+  justify-content: center;*/
 
   @media (min-width: $tablet-width) {
     width: 300px;
@@ -254,7 +253,7 @@
 .gallery__text {
   margin: 0;
   padding: 0;
-  /*flex-grow: 1;*/
+  flex-grow: 1;
   min-height: 100px;
   background-color: yellow;
 
