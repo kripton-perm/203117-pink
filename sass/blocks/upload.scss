@@ -1,25 +1,23 @@
 .upload {
-  background-color: $greyLight;
-  margin-top: 150px;
+  background-image: linear-gradient(to bottom, $white 130px, $greyLight 130px);
+  margin-top: 22px;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin-top: 175px;
+    margin-top: 45px;
+    background-image: linear-gradient(to bottom, $white 129px, $greyLight 129px);
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 130px;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
+    margin-top: 3px;
+    background-image: linear-gradient(to bottom, $white 127px, $greyLight 127px);
   }
 }
 
 .upload__intro {
   width: $mobile-width;
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   padding-bottom: 40px;
   padding-right: 3px;
@@ -50,7 +48,7 @@
   width: $mobile-width;
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 20px;
+  padding-top: 21px;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
@@ -63,9 +61,9 @@
   @media (min-width: $desktop-width) {
     width: $desktop-wrapper-width;
     padding-top: 57px;
-    padding-bottom: 55px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-bottom: 57px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -77,16 +75,26 @@
   width: 280px;
   height: 374px;
 
+  img {
+    display: block;
+    width: 280px;
+    height: 374px;
+
+    @media (min-width: $tablet-width) {
+      width: 300px;
+      height: 400px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     width: 50%;
     height: 400px;
     margin-left: 0;
-    padding-left: 10px;
+    padding-left: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 10px;
-    padding-left: 0;
+    padding-left: 80px;
   }
 }
 
@@ -132,18 +140,20 @@
   @include list-reset;
   padding-left: 17px;
   padding-right: 28px;
-  margin-bottom: 115px;
+  margin-bottom: 38px;
+  padding-bottom: 72px;
 
   @media (min-width: $tablet-width) {
     padding-left: 37px;
     padding-right: 36px;
-    margin-bottom: 68px;
+    padding-bottom: 0;
+    margin-bottom: 70px;
     margin-top: -17px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    margin-top: -5px;
+    margin-top: -8px;
     margin-bottom: 0;
     padding-left: 0;
     padding-right: 88px;

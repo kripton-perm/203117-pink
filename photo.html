@@ -5,8 +5,14 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/style.css">
-  <!-- <style>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="/fonts/opensans.woff2" as="font">
+    <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="/fonts/opensanslight.woff2" as="font">
+    <link rel="preload" href="/fonts/opensans.woff" as="font">
+    <link rel="preload" href="/fonts/opensansbold.woff" as="font">
+    <link rel="preload" href="/fonts/opensanslight.woff" as="font">
+  <style>
     HTML {
   background-repeat: no-repeat;
   background-position:  50% 0;
@@ -21,7 +27,7 @@
   }
     }
     /* Десктоп */
-    @media ( min-width: 1200px ) {
+    @media ( min-width: 960px ) {
   HTML {
     /* Десктопный макет */
     background-image: url( "pp/pink-photo-desktop.jpg" );
@@ -30,7 +36,7 @@
     BODY {
       opacity: 0.5;
     }
-  </style> -->
+  </style>
   </head>
   <body class="body">
     <div style="display: none">
@@ -43,11 +49,6 @@
           <div class="main-nav__logo-wrapper">
             <a class="main-nav__logo" href="index.html">
               <include src="build/img/main-nav-logo.svg"></include>
-              <!-- <picture>
-                <source media="(min-width: 1200px)" srcset="img/pink-white-desktop-logo.svg">
-                <source media="(min-width: 660px)" srcset="img/pink-white-tablet-logo.svg">
-                <img src="img/pink-white-mobile-logo.svg" alt="Логотип Пинк" width="75" height="23">
-              </picture> -->
             </a>
           </div>
           <button class="main-nav__toggle">
@@ -71,7 +72,7 @@
               <a class="site-menu__link" href="form.html">Конкурс</a>
             </li>
             <li class="site-menu__item">
-              <a class="site-menu__link" href="#">HTML Academy</a>
+              <a class="site-menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -86,10 +87,10 @@
             <li class="gallery__item gallery__item--day">
               <a class="gallery__link" href="#">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-panorama-desktop@1x.webp 1x, img/photo-panorama-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-panorama-desktop@1x.webp 1x, img/photo-panorama-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-panorama-tablet@1x.webp 1x, img/photo-panorama-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/photo-panorama-mobile@1x.webp 1x, img/photo-panorama-mobile@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/photo-panorama-desktop@1x.jpg 1x, img/photo-panorama-desktop@2x.jpg 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-panorama-desktop@1x.jpg 1x, img/photo-panorama-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-panorama-tablet@1x.jpg 1x, img/photo-panorama-tablet@2x.jpg 2x">
                   <img class="gallery__image gallery__image" src="img/photo-panorama-mobile@1x.jpg" srcset="img/photo-panorama-mobile@2x.jpg 2x" alt="Картинка 1" width="320" height="137">
                 </picture>
@@ -113,10 +114,10 @@
             <li class="gallery__item">
               <a class="gallery__link" href="#">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
                   <img class="gallery__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Картинка 2" width="280" height="180">
                 </picture>
@@ -141,10 +142,10 @@
             <li class="gallery__item">
               <a class="gallery__link" href="#">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
                   <img class="gallery__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Картинка 3" width="280" height="180">
                 </picture>
@@ -167,10 +168,10 @@
             <li class="gallery__item">
               <a class="gallery__link" href="#">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
                   <img class="gallery__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Картинка 4" width="280" height="180">
                 </picture>
@@ -193,10 +194,10 @@
             <li class="gallery__item">
               <a class="gallery__link" href="#">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
                   <img class="gallery__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Картинка 5" width="280" height="180">
                 </picture>
@@ -219,10 +220,10 @@
             <li class="gallery__item">
               <a class="gallery__link" href="#">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
                   <img class="gallery__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Картинка 6" width="280" height="180">
                 </picture>
@@ -245,10 +246,10 @@
             <li class="gallery__item">
               <a class="gallery__link" href="#">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
                   <img class="gallery__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Картинка 7" width="280" height="180">
                 </picture>
@@ -277,10 +278,10 @@
         <div class="upload__wrapper">
           <p class="upload__picture">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
               <img class="upload__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фотография для обработки" width="280" height="374">
             </picture>
@@ -288,13 +289,13 @@
           <form class="upload__form" action="https://echo.htmlacademy.ru" method="post">
             <ul class="upload__controls controls">
               <li class="controls__item controls__item--active">
-                <button class="controls__action controls__action--active controls__action--crop">
+                <button class="controls__action controls__action--crop">
                   <span class="visually-hidden">Обрезка</span>
                   <svg class="icon" width="48" height="48">
                     <use xlink:href="#icon-crop"></use>
                   </svg>
                 </button>
-                <input class="controls__range controls__range--active" type="range">
+                <input class="controls__range" type="range">
               </li>
               <li class="controls__item">
                 <button class="controls__action controls__action--fill">
@@ -325,10 +326,6 @@
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
           <include src="build/img/page-footer-logo.svg"></include>
-          <!-- <picture>
-            <source media="(min-width: 1200px)" srcset="img/pink-blue-desktop-logo.svg">
-            <img src="img/pink-blue-mobile-logo.svg" alt="Логотип Пинк" width="147" height="41">
-          </picture> -->
         </a>
         <section class="page-footer__social social">
           <h2 class="visually-hidden">Ищите нас в социальных сетях</h2>
@@ -370,6 +367,7 @@
         </div>
       </div>
     </footer>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/picturefill.min.js"></script>
   </body>
 </html>

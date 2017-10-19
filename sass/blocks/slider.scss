@@ -14,14 +14,13 @@
       display: flex;
       width: 100%;
       position: relative;
-      left: -282px;
+      left: -280px;
     }
 
     .slider__item {
       @media (max-width: $mobile-width-only) {
         width: 100%;
         flex-shrink: 0;
-        margin-right: 2px;
       }
     }
   }
@@ -98,14 +97,17 @@
 
   &:hover,
   &:focus {
-    transform: rotate(45deg) scale(1.2);
-    border-color: $pink;
+    border-color: rgba($blue, 0.6);
+  }
+
+  &:active {
+    border-color: rgba($blue, 0.1);
   }
 
   &--prev,
   &--prev:hover,
   &--prev:focus {
-    left: 5px;
+    left: 15px;
     border-right-color: transparent;
     border-top-color: transparent;
   }
@@ -113,7 +115,7 @@
   &--next,
   &--next:hover,
   &--next:focus {
-    right: 5px;
+    right: 15px;
     border-left-color: transparent;
     border-bottom-color: transparent;
   }

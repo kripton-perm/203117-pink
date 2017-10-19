@@ -29,6 +29,13 @@
       }
     }
 
+    .comment__header {
+      @media (min-width: $tablet-width) {
+        width: 70%;
+        flex-grow: 1;
+      }
+    }
+
     @media (min-width: $tablet-width) {
       padding-left: 28px;
       padding-top: 22px;
@@ -58,6 +65,12 @@
     padding-left: 27px;
     padding-right: 30px;
   }
+}
+
+.comment__header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .comment__author {
@@ -90,7 +103,7 @@
   width: 100%;
   margin: 0;
   margin-top: -1px;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
   padding: 0;
   font-size: 14px;
   font-weight: 400;
@@ -105,4 +118,5 @@
   padding: 0;
   align-self: flex-start;
   margin-top: auto;
+  color: $pink;
 }

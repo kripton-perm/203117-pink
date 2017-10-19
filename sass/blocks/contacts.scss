@@ -23,22 +23,22 @@
     content: "";
     position: absolute;
     bottom: -50px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     width: 0;
     height: 0;
-    border-left: 200px solid transparent;
-    border-right: 200px solid transparent;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
     border-top: 50px solid $white;
 
     @media (min-width: $tablet-width) {
       bottom: -65px;
-      border-left-width: 320px;
-      border-right-width: 320px;
+      border-left-width: 330px;
+      border-right-width: 330px;
       border-top-width: 65px;
     }
 
     @media (min-width: $desktop-width) {
+      left: -120px;
       bottom: -105px;
       border-left-width: 600px;
       border-right-width: 600px;
@@ -97,8 +97,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-left: -10px;
+    margin-right: -10px;
   }
 }
 

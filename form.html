@@ -5,8 +5,14 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- <style>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="/fonts/opensans.woff2" as="font">
+    <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="/fonts/opensanslight.woff2" as="font">
+    <link rel="preload" href="/fonts/opensans.woff" as="font">
+    <link rel="preload" href="/fonts/opensansbold.woff" as="font">
+    <link rel="preload" href="/fonts/opensanslight.woff" as="font">
+    <style>
       HTML {
     background-repeat: no-repeat;
     background-position:  50% 0;
@@ -21,7 +27,7 @@
     }
       }
       /* Десктоп */
-      @media ( min-width: 1200px ) {
+      @media ( min-width: 960px ) {
     HTML {
       /* Десктопный макет */
       background-image: url( "pp/pink-form-desktop.jpg" );
@@ -30,7 +36,7 @@
       body {
         opacity: 0.5;
       }
-    </style> -->
+    </style>
   </head>
   <body class="body">
     <div style="display: none">
@@ -43,11 +49,6 @@
           <div class="main-nav__logo-wrapper">
             <a class="main-nav__logo" href="index.html">
               <include src="build/img/main-nav-logo.svg"></include>
-              <!-- <picture>
-                <source media="(min-width: 1200px)" srcset="img/pink-white-desktop-logo.svg">
-                <source media="(min-width: 660px)" srcset="img/pink-white-tablet-logo.svg">
-                <img src="img/pink-white-mobile-logo.svg" alt="Логотип Пинк" width="75" height="23">
-              </picture> -->
             </a>
           </div>
           <button class="main-nav__toggle">
@@ -71,7 +72,7 @@
               <a class="site-menu__link site-menu__link--current">Конкурс</a>
             </li>
             <li class="site-menu__item">
-              <a class="site-menu__link" href="#">HTML Academy</a>
+              <a class="site-menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -101,7 +102,7 @@
               </ul>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--checkbox">
-              <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+              <div class="form__legend">Ваши безбашенные достижения в путешествии</div>
               <ul class="form__list">
                 <li class="form__item">
                   <label class="form__label" for="shark">
@@ -143,7 +144,7 @@
               </ul>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--contacts">
-              <legend class="form__legend">Контактная информация</legend>
+              <div class="form__legend">Контактная информация</div>
               <ul class="form__list">
                 <li class="form__item">
                   <label class="form__label" for="phone">Номер телефона</label>
@@ -162,7 +163,7 @@
               </ul>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--radio">
-              <legend class="form__legend">С каким приложением путешествовали?</legend>
+              <div class="form__legend">С каким приложением путешествовали?</div>
               <ul class="form__list">
                 <li class="form__item">
                   <label class="form__label" for="ios">
@@ -185,7 +186,7 @@
               </ul>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--comment">
-              <legend class="form__legend">Опишите свои эмоции</legend>
+              <div class="form__legend">Опишите свои эмоции</div>
               <textarea class="form__textarea" name="comment" id="comment" cols="5" rows="4" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
             <button class="button form__button" type="submit">Отправить форму</button>
@@ -198,10 +199,6 @@
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
           <include src="build/img/page-footer-logo.svg"></include>
-          <!-- <picture>
-            <source media="(min-width: 1200px)" srcset="img/pink-blue-desktop-logo.svg">
-            <img src="img/pink-blue-mobile-logo.svg" alt="Логотип Пинк" width="147" height="41">
-          </picture> -->
         </a>
         <section class="page-footer__social social">
           <h2 class="visually-hidden">Ищите нас в социальных сетях</h2>
@@ -257,6 +254,6 @@
         <button class="modal__close button" type="button">Ок</button>
       </div>
     </section>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>

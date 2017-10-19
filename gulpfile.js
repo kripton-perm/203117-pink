@@ -15,6 +15,7 @@ var include = require("posthtml-include");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
 var del = require("del");
+var htmlmin = require("gulp-htmlmin");
 
 gulp.task("style", function () {
   gulp.src("sass/style.scss")
@@ -44,6 +45,7 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"))
     .pipe(server.stream());
 });
@@ -85,7 +87,7 @@ gulp.task("serve", function () {
 gulp.task("copy", function () {
   return gulp.src([
       "fonts/**/*.{woff,woff2}",
-      //"img/images/pictures/*.{jpg,png}",
+      "pp/**",
       "js/**"
     ], {
       base: "."

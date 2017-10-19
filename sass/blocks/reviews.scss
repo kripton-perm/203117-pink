@@ -32,6 +32,7 @@
   @media (min-width: $desktop-width) {
     position: relative;
     width: $desktop-wrapper-width;
+    padding: 0 30px;
     padding-top: 117px;
   }
 }
@@ -43,15 +44,19 @@
     position: absolute;
     display: block;
     top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     fill: #efefef;
   }
 }
 
 .reviews__list {
   position: relative;
+  width: 100%;
 }
 
 .reviews__item {
+  width: 100%;
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
@@ -106,6 +111,7 @@
 }
 
 .reviews__text {
+  width: 100%;
   color: $blue;
   text-align: center;
   font-size: 14px;

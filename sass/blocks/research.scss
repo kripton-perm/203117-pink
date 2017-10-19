@@ -31,7 +31,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      left: 80px;
+      left: 90px;
       top: 120px;
       font-size: 120px;
     }
@@ -51,7 +51,7 @@
     width: $desktop-wrapper-width;
     padding-top: 90px;
     padding-bottom: 50px;
-    padding-left: 365px;
+    padding-left: 375px;
   }
 }
 
@@ -64,7 +64,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: 0;
+    left: 10px;
     top: -15px;
   }
 }
@@ -101,12 +101,6 @@
 }
 
 .research__title {
-  br {
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     margin: 0;
     margin-bottom: 10px;
@@ -115,6 +109,7 @@
     font-weight: 700;
     line-height: 36px;
     color: $black;
+    padding-right: 142px;
   }
 
   @media (min-width: $desktop-width) {
@@ -127,13 +122,21 @@
   }
 }
 
-.research__text {
-  br {
-    @media (min-width: $desktop-width) {
-      display: none;
+.research__break {
+  &--tablet {
+    @media (max-width: $tablet-width-only) {
+      white-space: nowrap;
     }
   }
 
+  &--desktop {
+    @media (min-width: $desktop-width) {
+      white-space: nowrap;
+    }
+  }
+}
+
+.research__text {
   @media (min-width: $tablet-width) {
     margin: 0;
     margin-bottom: 13px;
@@ -147,7 +150,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 37px;
-    padding-right: 40px;
+    padding-right: 25px;
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
