@@ -12,33 +12,8 @@
     <link rel="preload" href="/fonts/opensans.woff" as="font">
     <link rel="preload" href="/fonts/opensansbold.woff" as="font">
     <link rel="preload" href="/fonts/opensanslight.woff" as="font">
-    <style>
-      HTML {
-    background-repeat: no-repeat;
-    background-position:  50% 0;
-    /* По умолчанию показывается мобильный макет */
-    background-image: url( "pp/pink-form-mobile.jpg" );
-      }
-      /* Планшет */
-      @media ( min-width: 660px ) {
-    HTML {
-      /* Планшетный макет */
-      background-image: url( "pp/pink-form-tablet.jpg" );
-    }
-      }
-      /* Десктоп */
-      @media ( min-width: 960px ) {
-    HTML {
-      /* Десктопный макет */
-      background-image: url( "pp/pink-form-desktop.jpg" );
-    }
-      }
-      body {
-        opacity: 0.5;
-      }
-    </style>
   </head>
-  <body class="body">
+  <body>
     <div style="display: none">
       <include src="build/img/sprite.svg"></include>
     </div>
@@ -242,7 +217,7 @@
     </footer>
     <section class="modal modal--success">
       <h2 class="modal__title">Ваша заявка отправлена</h2>
-      <p class="modal__message">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и <br> оповестим вас.</p>
+      <p class="modal__message">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и <span class="modal__break">оповестим вас.</span></p>
       <div class="modal__wrapper">
         <button class="modal__close button" type="button">Закрыть окно</button>
       </div>
