@@ -3,14 +3,17 @@
   background-color: $white;
   width: $mobile-width;
   position: fixed;
+  z-index: 10;
   left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 
-  &--success {
-    top: 0;
-    z-index: 1;
+  @media (min-width: $tablet-width) {
+    width: 460px;
+  }
 
+  &--success {
     @media (min-width: $desktop-width) {
       width: 780px;
     }
@@ -31,16 +34,10 @@
   }
 
   &--error {
-    bottom: 3%;
-
     .modal__wrapper {
       background-color: $white;
       padding-top: 0;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 460px;
   }
 }
 
@@ -104,4 +101,10 @@
   background-color: $greenLight;
   border-color: $greenLight;
   cursor: pointer;
+}
+
+.modal__break {
+  @media (max-width: $mobile-width-only) {
+    white-space: nowrap;
+  }
 }
