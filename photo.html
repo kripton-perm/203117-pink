@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="/fonts/opensans.woff2" as="font">
-    <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
-    <link rel="preload" href="/fonts/opensanslight.woff2" as="font">
-    <link rel="preload" href="/fonts/opensans.woff" as="font">
-    <link rel="preload" href="/fonts/opensansbold.woff" as="font">
-    <link rel="preload" href="/fonts/opensanslight.woff" as="font">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+    <link rel="preload" href="fonts/opensans.woff" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff" as="font">
   </head>
   <body>
     <div style="display: none">
@@ -71,11 +71,11 @@
                 </picture>
                 <div class="gallery__badge">Панорама дня</div>
               </a>
-              <blockquote class="gallery__text comment comment--day">
-                <header class="comment__header">
+              <div class="gallery__text comment comment--day">
+                <p class="comment__header">
                   <cite class="comment__author">Анна</cite>
                   <time class="comment__time" datetime="2017-09-23T18:04:18">5 минут назад</time>
-                </header>
+                </p>
                 <p class="comment__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
                 <button class="comment__like like like--day" type="button">
                   <span class="like__text"><span class="visually-hidden">Мне</span> Нравится:</span>
@@ -84,7 +84,7 @@
                     <use xlink:href="#icon-heart"></use>
                   </svg>
                 </button>
-              </blockquote>
+              </div>
             </li>
             <li class="gallery__item">
               <a class="gallery__link" href="#">
@@ -97,11 +97,11 @@
                   <img class="gallery__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Картинка 2" width="280" height="180">
                 </picture>
               </a>
-              <blockquote class="gallery__text comment">
-                <header class="comment__header">
+              <div class="gallery__text comment">
+                <p class="comment__header">
                   <cite class="comment__author">Левон</cite>
                   <time class="comment__time" datetime="2017-09-23T13:04:18">5 часов назад</time>
-                </header>
+                </p>
                 <p class="comment__text">
                   Вчера он на луну летал, сегодня в руки к нам попал.
                 </p>
@@ -112,7 +112,7 @@
                     <use xlink:href="#icon-heart"></use>
                   </svg>
                 </button>
-              </blockquote>
+              </div>
             </li>
             <li class="gallery__item">
               <a class="gallery__link" href="#">
@@ -125,11 +125,11 @@
                   <img class="gallery__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Картинка 3" width="280" height="180">
                 </picture>
               </a>
-              <blockquote class="gallery__text comment">
-                <header class="comment__header">
+              <div class="gallery__text comment">
+                <p class="comment__header">
                   <cite class="comment__author">Антон</cite>
                   <time class="comment__time" datetime="2017-09-23T06:04:18">12 часов назад</time>
-                </header>
+                </p>
                 <p class="comment__text">Соседи будут рады!</p>
                 <button class="comment__like like" type="button">
                   <span class="like__text"><span class="visually-hidden">Мне</span> Нравится:</span>
@@ -138,7 +138,7 @@
                     <use xlink:href="#icon-heart"></use>
                   </svg>
                 </button>
-              </blockquote>
+              </div>
             </li>
             <li class="gallery__item">
               <a class="gallery__link" href="#">
@@ -151,11 +151,11 @@
                   <img class="gallery__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Картинка 4" width="280" height="180">
                 </picture>
               </a>
-              <blockquote class="gallery__text comment">
-                <header class="comment__header">
+              <div class="gallery__text comment">
+                <p class="comment__header">
                   <cite class="comment__author">Борис</cite>
                   <time class="comment__time" datetime="2017-09-22T22:04:18">20 часов назад</time>
-                </header>
+                </p>
                 <p class="comment__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
                 <button class="comment__like like" type="button">
                   <span class="like__text"><span class="visually-hidden">Мне</span> Нравится:</span>
@@ -164,7 +164,7 @@
                     <use xlink:href="#icon-heart"></use>
                   </svg>
                 </button>
-              </blockquote>
+              </div>
             </li>
             <li class="gallery__item">
               <a class="gallery__link" href="#">
@@ -177,11 +177,11 @@
                   <img class="gallery__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Картинка 5" width="280" height="180">
                 </picture>
               </a>
-              <blockquote class="gallery__text comment">
-                <header class="comment__header">
+              <div class="gallery__text comment">
+                <p class="comment__header">
                   <cite class="comment__author">Сергей</cite>
                   <time class="comment__time" datetime="2017-09-22T17:04:18">25 часов назад</time>
-                </header>
+                </p>
                 <p class="comment__text">Самая кубанская в мире!</p>
                 <button class="comment__like like" type="button">
                   <span class="like__text"><span class="visually-hidden">Мне</span> Нравится:</span>
@@ -190,7 +190,7 @@
                     <use xlink:href="#icon-heart"></use>
                   </svg>
                 </button>
-              </blockquote>
+              </div>
             </li>
             <li class="gallery__item">
               <a class="gallery__link" href="#">
@@ -203,11 +203,11 @@
                   <img class="gallery__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Картинка 6" width="280" height="180">
                 </picture>
               </a>
-              <blockquote class="gallery__text comment">
-                <header class="comment__header">
+              <div class="gallery__text comment">
+                <p class="comment__header">
                   <cite class="comment__author">Максим</cite>
                   <time class="comment__time" datetime="2017-09-22T02:04:18">40 часов назад</time>
-                </header>
+                </p>
                 <p class="comment__text">Где снег-то?</p>
                 <button class="comment__like like" type="button">
                   <span class="like__text"><span class="visually-hidden">Мне</span> Нравится:</span>
@@ -216,7 +216,7 @@
                     <use xlink:href="#icon-heart"></use>
                   </svg>
                 </button>
-              </blockquote>
+              </div>
             </li>
             <li class="gallery__item">
               <a class="gallery__link" href="#">
@@ -229,11 +229,11 @@
                   <img class="gallery__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Картинка 7" width="280" height="180">
                 </picture>
               </a>
-              <blockquote class="gallery__text comment">
-                <header class="comment__header">
+              <div class="gallery__text comment">
+                <p class="comment__header">
                   <cite class="comment__author">Надежда</cite>
                   <time class="comment__time" datetime="2017-09-21T21:04:18">45 часов назад</time>
-                </header>
+                </p>
                 <p class="comment__text">Всем GM и взаимные лайки!</p>
                 <button class="comment__like like" type="button">
                   <span class="like__text"><span class="visually-hidden">Мне</span> Нравится:</span>
@@ -242,7 +242,7 @@
                     <use xlink:href="#icon-heart"></use>
                   </svg>
                 </button>
-              </blockquote>
+              </div>
             </li>
           </ul>
         </div>
